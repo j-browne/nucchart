@@ -1,30 +1,39 @@
 use std::io::{BufReader,BufRead};
 use std::fs::File;
+use std::collections::HashMap;
 
-struct Color {
-    r: u8,
-    g: u8,
-    b: u8,
+struct Nucleus {
+    z: u8,
+    n: u8,
 }
 
-impl Color {
-    fn new(rs: &str, gs: &str, bs: &str) -> Color {
-        Color {
-            r: rs.parse::<u8>().unwrap(),
-            g: gs.parse::<u8>().unwrap(),
-            b: bs.parse::<u8>().unwrap(),
+impl Nucleus {
+    fn new(zs: String, ns: String) -> Nucleus {
+        Nucleus {
+            z: zs.parse::<u8>().unwrap(),
+            n: ns.parse::<u8>().unwrap(),
         }
+    }
+
+    fn a(&self) -> u16 {
+        (self.z as u16)+(self.n as u16)
     }
 }
 
 fn main() {
-    let f = BufReader::new(File::open("data/colors").unwrap());
+    let mut nucl = HashMap::new();
+
+    let f = BufReader::new(File::open("data/nuclei").unwrap());
     for l in f.lines() {
-        let l = l.unwrap();
+        let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
-        let n = x[0];
-        let c = Color::new(x[1], x[2], x[3]);
-        println!("{},{},{},{}",n,c.r,c.g,c.b);
+
+        let name = x[0].to_string();
+        let n = Nucleus::new(x[1].to_string(), x[2].to_string());
+        nucl.insert(name, n);
     }
-    println!("Hello, world!");
+
+    for (name, n) in nucl {
+        println!("{},{},{},{}", name, n.z, n.n, n.a());
+    }
 }
