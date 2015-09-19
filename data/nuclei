@@ -1,3338 +1,3338 @@
-1n	0	1	betam
-1H	1	0	stable
-2H	1	1	stable
-3H	1	2	betam
-4H	1	3	n
-5H	1	4	n
-6H	1	5	n
-7H	1	6	n
-3He	2	1	stable
-4He	2	2	stable
-5He	2	3	n
-6He	2	4	betam
-7He	2	5	n
-8He	2	6	betam
-9He	2	7	n
-10He	2	8	n
-3Li	3	0	p
-4Li	3	1	p
-5Li	3	2	alpha
-6Li	3	3	stable
-7Li	3	4	stable
-8Li	3	5	alpha
-9Li	3	6	betam
-10Li	3	7	n
-11Li	3	8	betam
-12Li	3	9	n
-13Li	3	10	unknown
-5Be	4	1	p
-6Be	4	2	alpha
-7Be	4	3	betap
-8Be	4	4	alpha
-9Be	4	5	stable
-10Be	4	6	betam
-11Be	4	7	betam
-12Be	4	8	betam
-13Be	4	9	n
-14Be	4	10	betam
-15Be	4	11	n
-16Be	4	12	n
-6B	5	1	p
-7B	5	2	p
-8B	5	3	alpha
-9B	5	4	alpha
-10B	5	5	stable
-11B	5	6	stable
-12B	5	7	betam
-13B	5	8	betam
-14B	5	9	betam
-15B	5	10	betam
-16B	5	11	n
-17B	5	12	betam
-18B	5	13	n
-19B	5	14	betam
-20B	5	15	unknown
-21B	5	16	unknown
-8C	6	2	p
-9C	6	3	betap
-10C	6	4	betap
-11C	6	5	betap
-12C	6	6	stable
-13C	6	7	stable
-14C	6	8	betam
-15C	6	9	betam
-16C	6	10	betam
-17C	6	11	betam
-18C	6	12	betam
-19C	6	13	n
-20C	6	14	betam
-21C	6	15	n
-22C	6	16	betam
-23C	6	17	unknown
-10N	7	3	p
-11N	7	4	p
-12N	7	5	betap
-13N	7	6	betap
-14N	7	7	stable
-15N	7	8	stable
-16N	7	9	betam
-17N	7	10	betam
-18N	7	11	betam
-19N	7	12	betam
-20N	7	13	betam
-21N	7	14	betam
-22N	7	15	betam
-23N	7	16	betam
-24N	7	17	n
-25N	7	18	unknown
-12O	8	4	p
-13O	8	5	betap
-14O	8	6	betap
-15O	8	7	betap
-16O	8	8	stable
-17O	8	9	stable
-18O	8	10	stable
-19O	8	11	betam
-20O	8	12	betam
-21O	8	13	betam
-22O	8	14	betam
-23O	8	15	betam
-24O	8	16	betam
-25O	8	17	unknown
-26O	8	18	n
-27O	8	19	n
-28O	8	20	n
-14F	9	5	p
-15F	9	6	p
-16F	9	7	p
-17F	9	8	betap
-18F	9	9	betap
-19F	9	10	stable
-20F	9	11	betam
-21F	9	12	betam
-22F	9	13	betam
-23F	9	14	betam
-24F	9	15	betam
-25F	9	16	betam
-26F	9	17	betam
-27F	9	18	betam
-28F	9	19	unknown
-29F	9	20	n
-30F	9	21	n
-31F	9	22	betam
-16Ne	10	6	p
-17Ne	10	7	betap
-18Ne	10	8	betap
-19Ne	10	9	betap
-20Ne	10	10	stable
-21Ne	10	11	stable
-22Ne	10	12	stable
-23Ne	10	13	betam
-24Ne	10	14	betam
-25Ne	10	15	betam
-26Ne	10	16	betam
-27Ne	10	17	betam
-28Ne	10	18	betam
-29Ne	10	19	betam
-30Ne	10	20	betam
-31Ne	10	21	betam
-32Ne	10	22	betam
-33Ne	10	23	n
-34Ne	10	24	betam
-18Na	11	7	p
-19Na	11	8	p
-20Na	11	9	betap
-21Na	11	10	betap
-22Na	11	11	betap
-23Na	11	12	stable
-24Na	11	13	betam
-25Na	11	14	betam
-26Na	11	15	betam
-27Na	11	16	betam
-28Na	11	17	betam
-29Na	11	18	betam
-30Na	11	19	betam
-31Na	11	20	betam
-32Na	11	21	betam
-33Na	11	22	betam
-34Na	11	23	betam
-35Na	11	24	betam
-36Na	11	25	n
-37Na	11	26	betam
-19Mg	12	7	p
-20Mg	12	8	betap
-21Mg	12	9	betap
-22Mg	12	10	betap
-23Mg	12	11	betap
-24Mg	12	12	stable
-25Mg	12	13	stable
-26Mg	12	14	stable
-27Mg	12	15	betam
-28Mg	12	16	betam
-29Mg	12	17	betam
-30Mg	12	18	betam
-31Mg	12	19	betam
-32Mg	12	20	betam
-33Mg	12	21	betam
-34Mg	12	22	betam
-35Mg	12	23	betam
-36Mg	12	24	betam
-37Mg	12	25	betam
-38Mg	12	26	n
-39Mg	12	27	n
-40Mg	12	28	n
-21Al	13	8	p
-22Al	13	9	betap
-23Al	13	10	betap
-24Al	13	11	betap
-25Al	13	12	betap
-26Al	13	13	betap
-27Al	13	14	stable
-28Al	13	15	betam
-29Al	13	16	betam
-30Al	13	17	betam
-31Al	13	18	betam
-32Al	13	19	betam
-33Al	13	20	betam
-34Al	13	21	betam
-35Al	13	22	betam
-36Al	13	23	betam
-37Al	13	24	betam
-38Al	13	25	n
-39Al	13	26	betam
-40Al	13	27	n
-41Al	13	28	betam
-42Al	13	29	n
-43Al	13	30	n
-22Si	14	8	betap
-23Si	14	9	betap
-24Si	14	10	betap
-25Si	14	11	betap
-26Si	14	12	betap
-27Si	14	13	betap
-28Si	14	14	stable
-29Si	14	15	stable
-30Si	14	16	stable
-31Si	14	17	betam
-32Si	14	18	betam
-33Si	14	19	betam
-34Si	14	20	betam
-35Si	14	21	betam
-36Si	14	22	betam
-37Si	14	23	betam
-38Si	14	24	n
-39Si	14	25	n
-40Si	14	26	n
-41Si	14	27	n
-42Si	14	28	betam
-43Si	14	29	n
-44Si	14	30	n
-45Si	14	31	unknown
-24P	15	9	p
-25P	15	10	p
-26P	15	11	betap
-27P	15	12	betap
-28P	15	13	betap
-29P	15	14	betap
-30P	15	15	betap
-31P	15	16	stable
-32P	15	17	betam
-33P	15	18	betam
-34P	15	19	betam
-35P	15	20	betam
-36P	15	21	betam
-37P	15	22	betam
-38P	15	23	betam
-39P	15	24	betam
-40P	15	25	betam
-41P	15	26	betam
-42P	15	27	betam
-43P	15	28	n
-44P	15	29	n
-45P	15	30	betam
-46P	15	31	betam
-47P	15	32	unknown
-26S	16	10	p
-27S	16	11	betap
-28S	16	12	betap
-29S	16	13	betap
-30S	16	14	betap
-31S	16	15	betap
-32S	16	16	stable
-33S	16	17	stable
-34S	16	18	stable
-35S	16	19	betam
-36S	16	20	stable
-37S	16	21	betam
-38S	16	22	betam
-39S	16	23	betam
-40S	16	24	betam
-41S	16	25	betam
-42S	16	26	betam
-43S	16	27	betam
-44S	16	28	betam
-45S	16	29	betam
-46S	16	30	betam
-47S	16	31	unknown
-48S	16	32	betam
-49S	16	33	n
-28Cl	17	11	p
-29Cl	17	12	p
-30Cl	17	13	p
-31Cl	17	14	betap
-32Cl	17	15	betap
-33Cl	17	16	betap
-34Cl	17	17	betap
-35Cl	17	18	stable
-36Cl	17	19	betam
-37Cl	17	20	stable
-38Cl	17	21	betam
-39Cl	17	22	betam
-40Cl	17	23	betam
-41Cl	17	24	betam
-42Cl	17	25	betam
-43Cl	17	26	betam
-44Cl	17	27	betam
-45Cl	17	28	betam
-46Cl	17	29	betam
-47Cl	17	30	betam
-48Cl	17	31	betam
-49Cl	17	32	betam
-50Cl	17	33	n
-51Cl	17	34	betam
-30Ar	18	12	p
-31Ar	18	13	betap
-32Ar	18	14	betap
-33Ar	18	15	betap
-34Ar	18	16	betap
-35Ar	18	17	betap
-36Ar	18	18	stable
-37Ar	18	19	betap
-38Ar	18	20	stable
-39Ar	18	21	betam
-40Ar	18	22	stable
-41Ar	18	23	betam
-42Ar	18	24	betam
-43Ar	18	25	betam
-44Ar	18	26	betam
-45Ar	18	27	betam
-46Ar	18	28	betam
-47Ar	18	29	betam
-48Ar	18	30	betam
-49Ar	18	31	betam
-50Ar	18	32	betam
-51Ar	18	33	betam
-52Ar	18	34	betam
-53Ar	18	35	n
-32K	19	13	p
-33K	19	14	p
-34K	19	15	p
-35K	19	16	betap
-36K	19	17	betap
-37K	19	18	betap
-38K	19	19	betap
-39K	19	20	stable
-40K	19	21	betam
-41K	19	22	stable
-42K	19	23	betam
-43K	19	24	betam
-44K	19	25	betam
-45K	19	26	betam
-46K	19	27	betam
-47K	19	28	betam
-48K	19	29	betam
-49K	19	30	betam
-50K	19	31	betam
-51K	19	32	betam
-52K	19	33	betam
-53K	19	34	betam
-54K	19	35	betam
-55K	19	36	n
-56K	19	37	n
-34Ca	20	14	p
-35Ca	20	15	betap
-36Ca	20	16	betap
-37Ca	20	17	betap
-38Ca	20	18	betap
-39Ca	20	19	betap
-40Ca	20	20	betap
-41Ca	20	21	betap
-42Ca	20	22	stable
-43Ca	20	23	stable
-44Ca	20	24	stable
-45Ca	20	25	betam
-46Ca	20	26	betam
-47Ca	20	27	betam
-48Ca	20	28	betam
-49Ca	20	29	betam
-50Ca	20	30	betam
-51Ca	20	31	betam
-52Ca	20	32	betam
-53Ca	20	33	betam
-54Ca	20	34	betam
-55Ca	20	35	betam
-56Ca	20	36	n
-57Ca	20	37	n
-58Ca	20	38	n
-36Sc	21	15	p
-37Sc	21	16	p
-38Sc	21	17	p
-39Sc	21	18	p
-40Sc	21	19	betap
-41Sc	21	20	betap
-42Sc	21	21	betap
-43Sc	21	22	betap
-44Sc	21	23	betap
-45Sc	21	24	stable
-46Sc	21	25	betam
-47Sc	21	26	betam
-48Sc	21	27	betam
-49Sc	21	28	betam
-50Sc	21	29	betam
-51Sc	21	30	betam
-52Sc	21	31	betam
-53Sc	21	32	betam
-54Sc	21	33	betam
-55Sc	21	34	betam
-56Sc	21	35	betam
-57Sc	21	36	betam
-58Sc	21	37	betam
-59Sc	21	38	n
-60Sc	21	39	n
-61Sc	21	40	n
-38Ti	22	16	unknown
-39Ti	22	17	betap
-40Ti	22	18	betap
-41Ti	22	19	betap
-42Ti	22	20	betap
-43Ti	22	21	betap
-44Ti	22	22	betap
-45Ti	22	23	betap
-46Ti	22	24	stable
-47Ti	22	25	stable
-48Ti	22	26	stable
-49Ti	22	27	stable
-50Ti	22	28	stable
-51Ti	22	29	betam
-52Ti	22	30	betam
-53Ti	22	31	betam
-54Ti	22	32	betam
-55Ti	22	33	betam
-56Ti	22	34	betam
-57Ti	22	35	betam
-58Ti	22	36	betam
-59Ti	22	37	betam
-60Ti	22	38	betam
-61Ti	22	39	betam
-62Ti	22	40	n
-63Ti	22	41	n
-40V	23	17	p
-41V	23	18	p
-42V	23	19	p
-43V	23	20	betap
-44V	23	21	betap
-45V	23	22	betap
-46V	23	23	betap
-47V	23	24	betap
-48V	23	25	betap
-49V	23	26	betap
-50V	23	27	betap
-51V	23	28	stable
-52V	23	29	betam
-53V	23	30	betam
-54V	23	31	betam
-55V	23	32	betam
-56V	23	33	betam
-57V	23	34	betam
-58V	23	35	betam
-59V	23	36	betam
-60V	23	37	betam
-61V	23	38	betam
-62V	23	39	betam
-63V	23	40	betam
-64V	23	41	betam
-65V	23	42	betam
-66V	23	43	n
-42Cr	24	18	betap
-43Cr	24	19	betap
-44Cr	24	20	betap
-45Cr	24	21	betap
-46Cr	24	22	betap
-47Cr	24	23	betap
-48Cr	24	24	betap
-49Cr	24	25	betap
-50Cr	24	26	betap
-51Cr	24	27	betap
-52Cr	24	28	stable
-53Cr	24	29	stable
-54Cr	24	30	stable
-55Cr	24	31	betam
-56Cr	24	32	betam
-57Cr	24	33	betam
-58Cr	24	34	betam
-59Cr	24	35	betam
-60Cr	24	36	betam
-61Cr	24	37	betam
-62Cr	24	38	betam
-63Cr	24	39	betam
-64Cr	24	40	betam
-65Cr	24	41	betam
-66Cr	24	42	betam
-67Cr	24	43	betam
-68Cr	24	44	n
-44Mn	25	19	p
-45Mn	25	20	unknown
-46Mn	25	21	betap
-47Mn	25	22	betap
-48Mn	25	23	betap
-49Mn	25	24	betap
-50Mn	25	25	betap
-51Mn	25	26	betap
-52Mn	25	27	betap
-53Mn	25	28	betap
-54Mn	25	29	betap
-55Mn	25	30	stable
-56Mn	25	31	betam
-57Mn	25	32	betam
-58Mn	25	33	betam
-59Mn	25	34	betam
-60Mn	25	35	betam
-61Mn	25	36	betam
-62Mn	25	37	betam
-63Mn	25	38	betam
-64Mn	25	39	betam
-65Mn	25	40	betam
-66Mn	25	41	betam
-67Mn	25	42	betam
-68Mn	25	43	betam
-69Mn	25	44	betam
-70Mn	25	45	n
-71Mn	25	46	n
-45Fe	26	19	p
-46Fe	26	20	betap
-47Fe	26	21	betap
-48Fe	26	22	betap
-49Fe	26	23	betap
-50Fe	26	24	betap
-51Fe	26	25	betap
-52Fe	26	26	betap
-53Fe	26	27	betap
-54Fe	26	28	stable
-55Fe	26	29	betap
-56Fe	26	30	stable
-57Fe	26	31	stable
-58Fe	26	32	stable
-59Fe	26	33	betam
-60Fe	26	34	betam
-61Fe	26	35	betam
-62Fe	26	36	betam
-63Fe	26	37	betam
-64Fe	26	38	betam
-65Fe	26	39	betam
-66Fe	26	40	betam
-67Fe	26	41	betam
-68Fe	26	42	betam
-69Fe	26	43	betam
-70Fe	26	44	betam
-71Fe	26	45	betam
-72Fe	26	46	betam
-73Fe	26	47	n
-74Fe	26	48	n
-47Co	27	20	unknown
-48Co	27	21	unknown
-49Co	27	22	unknown
-50Co	27	23	betap
-51Co	27	24	betap
-52Co	27	25	betap
-53Co	27	26	betap
-54Co	27	27	betap
-55Co	27	28	betap
-56Co	27	29	betap
-57Co	27	30	betap
-58Co	27	31	betap
-59Co	27	32	stable
-60Co	27	33	betam
-61Co	27	34	betam
-62Co	27	35	betam
-63Co	27	36	betam
-64Co	27	37	betam
-65Co	27	38	betam
-66Co	27	39	betam
-67Co	27	40	betam
-68Co	27	41	betam
-69Co	27	42	betam
-70Co	27	43	betam
-71Co	27	44	betam
-72Co	27	45	betam
-73Co	27	46	betam
-74Co	27	47	n
-75Co	27	48	betam
-76Co	27	49	n
-48Ni	28	20	p
-49Ni	28	21	betap
-50Ni	28	22	betap
-51Ni	28	23	betap
-52Ni	28	24	betap
-53Ni	28	25	betap
-54Ni	28	26	betap
-55Ni	28	27	betap
-56Ni	28	28	betap
-57Ni	28	29	betap
-58Ni	28	30	stable
-59Ni	28	31	betap
-60Ni	28	32	stable
-61Ni	28	33	stable
-62Ni	28	34	stable
-63Ni	28	35	betam
-64Ni	28	36	stable
-65Ni	28	37	betam
-66Ni	28	38	betam
-67Ni	28	39	betam
-68Ni	28	40	betam
-69Ni	28	41	betam
-70Ni	28	42	betam
-71Ni	28	43	betam
-72Ni	28	44	betam
-73Ni	28	45	betam
-74Ni	28	46	betam
-75Ni	28	47	betam
-76Ni	28	48	betam
-77Ni	28	49	betam
-78Ni	28	50	betam
-79Ni	28	51	n
-52Cu	29	23	p
-53Cu	29	24	p
-54Cu	29	25	p
-55Cu	29	26	betap
-56Cu	29	27	betap
-57Cu	29	28	betap
-58Cu	29	29	betap
-59Cu	29	30	betap
-60Cu	29	31	betap
-61Cu	29	32	betap
-62Cu	29	33	betap
-63Cu	29	34	stable
-64Cu	29	35	betap
-65Cu	29	36	stable
-66Cu	29	37	betam
-67Cu	29	38	betam
-68Cu	29	39	betam
-69Cu	29	40	betam
-70Cu	29	41	betam
-71Cu	29	42	betam
-72Cu	29	43	betam
-73Cu	29	44	betam
-74Cu	29	45	betam
-75Cu	29	46	betam
-76Cu	29	47	betam
-77Cu	29	48	betam
-78Cu	29	49	betam
-79Cu	29	50	betam
-80Cu	29	51	betam
-81Cu	29	52	n
-82Cu	29	53	n
-54Zn	30	24	p
-55Zn	30	25	betap
-56Zn	30	26	betap
-57Zn	30	27	betap
-58Zn	30	28	betap
-59Zn	30	29	betap
-60Zn	30	30	betap
-61Zn	30	31	betap
-62Zn	30	32	betap
-63Zn	30	33	betap
-64Zn	30	34	betap
-65Zn	30	35	betap
-66Zn	30	36	stable
-67Zn	30	37	stable
-68Zn	30	38	stable
-69Zn	30	39	betam
-70Zn	30	40	betam
-71Zn	30	41	betam
-72Zn	30	42	betam
-73Zn	30	43	betam
-74Zn	30	44	betam
-75Zn	30	45	betam
-76Zn	30	46	betam
-77Zn	30	47	betam
-78Zn	30	48	betam
-79Zn	30	49	betam
-80Zn	30	50	betam
-81Zn	30	51	betam
-82Zn	30	52	betam
-83Zn	30	53	n
-84Zn	30	54	n
-85Zn	30	55	n
-56Ga	31	25	p
-57Ga	31	26	p
-58Ga	31	27	p
-59Ga	31	28	p
-60Ga	31	29	betap
-61Ga	31	30	betap
-62Ga	31	31	betap
-63Ga	31	32	betap
-64Ga	31	33	betap
-65Ga	31	34	betap
-66Ga	31	35	betap
-67Ga	31	36	betap
-68Ga	31	37	betap
-69Ga	31	38	stable
-70Ga	31	39	betam
-71Ga	31	40	stable
-72Ga	31	41	betam
-73Ga	31	42	betam
-74Ga	31	43	betam
-75Ga	31	44	betam
-76Ga	31	45	betam
-77Ga	31	46	betam
-78Ga	31	47	betam
-79Ga	31	48	betam
-80Ga	31	49	betam
-81Ga	31	50	betam
-82Ga	31	51	betam
-83Ga	31	52	betam
-84Ga	31	53	betam
-85Ga	31	54	n
-86Ga	31	55	n
-87Ga	31	56	n
-58Ge	32	26	p
-59Ge	32	27	p
-60Ge	32	28	betap
-61Ge	32	29	betap
-62Ge	32	30	betap
-63Ge	32	31	betap
-64Ge	32	32	betap
-65Ge	32	33	betap
-66Ge	32	34	betap
-67Ge	32	35	betap
-68Ge	32	36	betap
-69Ge	32	37	betap
-70Ge	32	38	stable
-71Ge	32	39	betap
-72Ge	32	40	stable
-73Ge	32	41	stable
-74Ge	32	42	stable
-75Ge	32	43	betam
-76Ge	32	44	stable
-77Ge	32	45	betam
-78Ge	32	46	betam
-79Ge	32	47	betam
-80Ge	32	48	betam
-81Ge	32	49	betam
-82Ge	32	50	betam
-83Ge	32	51	betam
-84Ge	32	52	betam
-85Ge	32	53	betam
-86Ge	32	54	n
-87Ge	32	55	betam
-88Ge	32	56	betam
-89Ge	32	57	betam
-90Ge	32	58	n
-60As	33	27	p
-61As	33	28	p
-62As	33	29	p
-63As	33	30	p
-64As	33	31	betap
-65As	33	32	betap
-66As	33	33	betap
-67As	33	34	betap
-68As	33	35	betap
-69As	33	36	betap
-70As	33	37	betap
-71As	33	38	betap
-72As	33	39	betap
-73As	33	40	betap
-74As	33	41	betap
-75As	33	42	stable
-76As	33	43	betam
-77As	33	44	betam
-78As	33	45	betam
-79As	33	46	betam
-80As	33	47	betam
-81As	33	48	betam
-82As	33	49	betam
-83As	33	50	betam
-84As	33	51	betam
-85As	33	52	betam
-86As	33	53	betam
-87As	33	54	betam
-88As	33	55	betam
-89As	33	56	n
-90As	33	57	n
-91As	33	58	betam
-92As	33	59	betam
-64Se	34	30	betap
-65Se	34	31	betap
-66Se	34	32	unknown
-67Se	34	33	betap
-68Se	34	34	betap
-69Se	34	35	betap
-70Se	34	36	betap
-71Se	34	37	betap
-72Se	34	38	betap
-73Se	34	39	betap
-74Se	34	40	stable
-75Se	34	41	betap
-76Se	34	42	stable
-77Se	34	43	stable
-78Se	34	44	stable
-79Se	34	45	betam
-80Se	34	46	betam
-81Se	34	47	betam
-82Se	34	48	stable
-83Se	34	49	betam
-84Se	34	50	betam
-85Se	34	51	betam
-86Se	34	52	betam
-87Se	34	53	betam
-88Se	34	54	betam
-89Se	34	55	betam
-90Se	34	56	n
-91Se	34	57	betam
-92Se	34	58	betam
-93Se	34	59	betam
-94Se	34	60	betam
-95Se	34	61	n
-67Br	35	32	p
-68Br	35	33	p
-69Br	35	34	p
-70Br	35	35	betap
-71Br	35	36	betap
-72Br	35	37	betap
-73Br	35	38	betap
-74Br	35	39	betap
-75Br	35	40	betap
-76Br	35	41	betap
-77Br	35	42	betap
-78Br	35	43	betap
-79Br	35	44	stable
-80Br	35	45	betam
-81Br	35	46	stable
-82Br	35	47	betam
-83Br	35	48	betam
-84Br	35	49	betam
-85Br	35	50	betam
-86Br	35	51	betam
-87Br	35	52	betam
-88Br	35	53	betam
-89Br	35	54	betam
-90Br	35	55	betam
-91Br	35	56	betam
-92Br	35	57	betam
-93Br	35	58	betam
-94Br	35	59	betam
-95Br	35	60	betam
-96Br	35	61	betam
-97Br	35	62	betam
-98Br	35	63	n
-69Kr	36	33	betap
-70Kr	36	34	betap
-71Kr	36	35	betap
-72Kr	36	36	betap
-73Kr	36	37	betap
-74Kr	36	38	betap
-75Kr	36	39	betap
-76Kr	36	40	betap
-77Kr	36	41	betap
-78Kr	36	42	betap
-79Kr	36	43	betap
-80Kr	36	44	stable
-81Kr	36	45	betap
-82Kr	36	46	stable
-83Kr	36	47	stable
-84Kr	36	48	stable
-85Kr	36	49	betam
-86Kr	36	50	stable
-87Kr	36	51	betam
-88Kr	36	52	betam
-89Kr	36	53	betam
-90Kr	36	54	betam
-91Kr	36	55	betam
-92Kr	36	56	betam
-93Kr	36	57	betam
-94Kr	36	58	betam
-95Kr	36	59	betam
-96Kr	36	60	betam
-97Kr	36	61	betam
-98Kr	36	62	betam
-99Kr	36	63	betam
-100Kr	36	64	betam
-101Kr	36	65	n
-71Rb	37	34	p
-72Rb	37	35	p
-73Rb	37	36	p
-74Rb	37	37	betap
-75Rb	37	38	betap
-76Rb	37	39	betap
-77Rb	37	40	betap
-78Rb	37	41	betap
-79Rb	37	42	betap
-80Rb	37	43	betap
-81Rb	37	44	betap
-82Rb	37	45	betap
-83Rb	37	46	betap
-84Rb	37	47	betap
-85Rb	37	48	stable
-86Rb	37	49	betam
-87Rb	37	50	betam
-88Rb	37	51	betam
-89Rb	37	52	betam
-90Rb	37	53	betam
-91Rb	37	54	betam
-92Rb	37	55	betam
-93Rb	37	56	betam
-94Rb	37	57	betam
-95Rb	37	58	betam
-96Rb	37	59	betam
-97Rb	37	60	betam
-98Rb	37	61	betam
-99Rb	37	62	betam
-100Rb	37	63	betam
-101Rb	37	64	betam
-102Rb	37	65	betam
-103Rb	37	66	n
-73Sr	38	35	betap
-74Sr	38	36	betap
-75Sr	38	37	betap
-76Sr	38	38	betap
-77Sr	38	39	betap
-78Sr	38	40	betap
-79Sr	38	41	betap
-80Sr	38	42	betap
-81Sr	38	43	betap
-82Sr	38	44	betap
-83Sr	38	45	betap
-84Sr	38	46	stable
-85Sr	38	47	betap
-86Sr	38	48	stable
-87Sr	38	49	stable
-88Sr	38	50	stable
-89Sr	38	51	betam
-90Sr	38	52	betam
-91Sr	38	53	betam
-92Sr	38	54	betam
-93Sr	38	55	betam
-94Sr	38	56	betam
-95Sr	38	57	betam
-96Sr	38	58	betam
-97Sr	38	59	betam
-98Sr	38	60	betam
-99Sr	38	61	betam
-100Sr	38	62	betam
-101Sr	38	63	betam
-102Sr	38	64	betam
-103Sr	38	65	betam
-104Sr	38	66	betam
-105Sr	38	67	betam
-106Sr	38	68	n
-107Sr	38	69	n
-76Y	39	37	p
-77Y	39	38	betap
-78Y	39	39	betap
-79Y	39	40	betap
-80Y	39	41	betap
-81Y	39	42	betap
-82Y	39	43	betap
-83Y	39	44	betap
-84Y	39	45	betap
-85Y	39	46	betap
-86Y	39	47	betap
-87Y	39	48	betap
-88Y	39	49	betap
-89Y	39	50	stable
-90Y	39	51	betam
-91Y	39	52	betam
-92Y	39	53	betam
-93Y	39	54	betam
-94Y	39	55	betam
-95Y	39	56	betam
-96Y	39	57	betam
-97Y	39	58	betam
-98Y	39	59	betam
-99Y	39	60	betam
-100Y	39	61	betam
-101Y	39	62	betam
-102Y	39	63	betam
-103Y	39	64	betam
-104Y	39	65	betam
-105Y	39	66	n
-106Y	39	67	betam
-107Y	39	68	betam
-108Y	39	69	n
-109Y	39	70	n
-78Zr	40	38	betap
-79Zr	40	39	betap
-80Zr	40	40	betap
-81Zr	40	41	betap
-82Zr	40	42	betap
-83Zr	40	43	betap
-84Zr	40	44	betap
-85Zr	40	45	betap
-86Zr	40	46	betap
-87Zr	40	47	betap
-88Zr	40	48	betap
-89Zr	40	49	betap
-90Zr	40	50	stable
-91Zr	40	51	stable
-92Zr	40	52	stable
-93Zr	40	53	betam
-94Zr	40	54	stable
-95Zr	40	55	betam
-96Zr	40	56	betam
-97Zr	40	57	betam
-98Zr	40	58	betam
-99Zr	40	59	betam
-100Zr	40	60	betam
-101Zr	40	61	betam
-102Zr	40	62	betam
-103Zr	40	63	betam
-104Zr	40	64	betam
-105Zr	40	65	betam
-106Zr	40	66	betam
-107Zr	40	67	betam
-108Zr	40	68	betam
-109Zr	40	69	n
-110Zr	40	70	betam
-111Zr	40	71	n
-112Zr	40	72	n
-81Nb	41	40	betap
-82Nb	41	41	betap
-83Nb	41	42	betap
-84Nb	41	43	betap
-85Nb	41	44	betap
-86Nb	41	45	betap
-87Nb	41	46	betap
-88Nb	41	47	betap
-89Nb	41	48	betap
-90Nb	41	49	betap
-91Nb	41	50	betap
-92Nb	41	51	betap
-93Nb	41	52	stable
-94Nb	41	53	betam
-95Nb	41	54	betam
-96Nb	41	55	betam
-97Nb	41	56	betam
-98Nb	41	57	betam
-99Nb	41	58	betam
-100Nb	41	59	betam
-101Nb	41	60	betam
-102Nb	41	61	betam
-103Nb	41	62	betam
-104Nb	41	63	betam
-105Nb	41	64	betam
-106Nb	41	65	betam
-107Nb	41	66	betam
-108Nb	41	67	betam
-109Nb	41	68	betam
-110Nb	41	69	betam
-111Nb	41	70	betam
-112Nb	41	71	betam
-113Nb	41	72	betam
-114Nb	41	73	n
-115Nb	41	74	betam
-83Mo	42	41	betap
-84Mo	42	42	betap
-85Mo	42	43	betap
-86Mo	42	44	betap
-87Mo	42	45	betap
-88Mo	42	46	betap
-89Mo	42	47	betap
-90Mo	42	48	betap
-91Mo	42	49	betap
-92Mo	42	50	stable
-93Mo	42	51	betap
-94Mo	42	52	stable
-95Mo	42	53	stable
-96Mo	42	54	stable
-97Mo	42	55	stable
-98Mo	42	56	stable
-99Mo	42	57	betam
-100Mo	42	58	betam
-101Mo	42	59	betam
-102Mo	42	60	betam
-103Mo	42	61	betam
-104Mo	42	62	betam
-105Mo	42	63	betam
-106Mo	42	64	betam
-107Mo	42	65	betam
-108Mo	42	66	betam
-109Mo	42	67	betam
-110Mo	42	68	betam
-111Mo	42	69	n
-112Mo	42	70	betam
-113Mo	42	71	betam
-114Mo	42	72	betam
-115Mo	42	73	n
-116Mo	42	74	n
-117Mo	42	75	n
-85Tc	43	42	p
-86Tc	43	43	betap
-87Tc	43	44	betap
-88Tc	43	45	betap
-89Tc	43	46	betap
-90Tc	43	47	betap
-91Tc	43	48	betap
-92Tc	43	49	betap
-93Tc	43	50	betap
-94Tc	43	51	betap
-95Tc	43	52	betap
-96Tc	43	53	betap
-97Tc	43	54	betap
-98Tc	43	55	betam
-99Tc	43	56	betam
-100Tc	43	57	betam
-101Tc	43	58	betam
-102Tc	43	59	betam
-103Tc	43	60	betam
-104Tc	43	61	betam
-105Tc	43	62	betam
-106Tc	43	63	betam
-107Tc	43	64	betam
-108Tc	43	65	betam
-109Tc	43	66	betam
-110Tc	43	67	betam
-111Tc	43	68	betam
-112Tc	43	69	betam
-113Tc	43	70	n
-114Tc	43	71	betam
-115Tc	43	72	n
-116Tc	43	73	betam
-117Tc	43	74	betam
-118Tc	43	75	betam
-119Tc	43	76	n
-120Tc	43	77	n
-87Ru	44	43	betap
-88Ru	44	44	betap
-89Ru	44	45	betap
-90Ru	44	46	betap
-91Ru	44	47	betap
-92Ru	44	48	betap
-93Ru	44	49	betap
-94Ru	44	50	betap
-95Ru	44	51	betap
-96Ru	44	52	stable
-97Ru	44	53	betap
-98Ru	44	54	stable
-99Ru	44	55	stable
-100Ru	44	56	stable
-101Ru	44	57	stable
-102Ru	44	58	stable
-103Ru	44	59	betam
-104Ru	44	60	stable
-105Ru	44	61	betam
-106Ru	44	62	betam
-107Ru	44	63	betam
-108Ru	44	64	betam
-109Ru	44	65	betam
-110Ru	44	66	betam
-111Ru	44	67	betam
-112Ru	44	68	betam
-113Ru	44	69	betam
-114Ru	44	70	betam
-115Ru	44	71	betam
-116Ru	44	72	betam
-117Ru	44	73	betam
-118Ru	44	74	betam
-119Ru	44	75	betam
-120Ru	44	76	betam
-121Ru	44	77	n
-122Ru	44	78	n
-123Ru	44	79	n
-124Ru	44	80	n
-89Rh	45	44	p
-90Rh	45	45	betap
-91Rh	45	46	betap
-92Rh	45	47	betap
-93Rh	45	48	betap
-94Rh	45	49	betap
-95Rh	45	50	betap
-96Rh	45	51	betap
-97Rh	45	52	betap
-98Rh	45	53	betap
-99Rh	45	54	betap
-100Rh	45	55	betap
-101Rh	45	56	betap
-102Rh	45	57	betap
-103Rh	45	58	stable
-104Rh	45	59	betam
-105Rh	45	60	betam
-106Rh	45	61	betam
-107Rh	45	62	betam
-108Rh	45	63	betam
-109Rh	45	64	betam
-110Rh	45	65	betam
-111Rh	45	66	betam
-112Rh	45	67	betam
-113Rh	45	68	betam
-114Rh	45	69	betam
-115Rh	45	70	betam
-116Rh	45	71	betam
-117Rh	45	72	betam
-118Rh	45	73	betam
-119Rh	45	74	betam
-120Rh	45	75	betam
-121Rh	45	76	betam
-122Rh	45	77	n
-123Rh	45	78	n
-124Rh	45	79	n
-125Rh	45	80	n
-126Rh	45	81	n
-91Pd	46	45	betap
-92Pd	46	46	betap
-93Pd	46	47	betap
-94Pd	46	48	betap
-95Pd	46	49	betap
-96Pd	46	50	betap
-97Pd	46	51	betap
-98Pd	46	52	betap
-99Pd	46	53	betap
-100Pd	46	54	betap
-101Pd	46	55	betap
-102Pd	46	56	stable
-103Pd	46	57	betap
-104Pd	46	58	stable
-105Pd	46	59	stable
-106Pd	46	60	stable
-107Pd	46	61	betam
-108Pd	46	62	stable
-109Pd	46	63	betam
-110Pd	46	64	stable
-111Pd	46	65	betam
-112Pd	46	66	betam
-113Pd	46	67	betam
-114Pd	46	68	betam
-115Pd	46	69	betam
-116Pd	46	70	betam
-117Pd	46	71	betam
-118Pd	46	72	betam
-119Pd	46	73	betam
-120Pd	46	74	betam
-121Pd	46	75	betam
-122Pd	46	76	betam
-123Pd	46	77	betam
-124Pd	46	78	betam
-125Pd	46	79	n
-126Pd	46	80	n
-128Pd	46	82	n
-93Ag	47	46	betap
-94Ag	47	47	betap
-95Ag	47	48	betap
-96Ag	47	49	betap
-97Ag	47	50	betap
-98Ag	47	51	betap
-99Ag	47	52	betap
-100Ag	47	53	betap
-101Ag	47	54	betap
-102Ag	47	55	betap
-103Ag	47	56	betap
-104Ag	47	57	betap
-105Ag	47	58	betap
-106Ag	47	59	betap
-107Ag	47	60	stable
-108Ag	47	61	betam
-109Ag	47	62	stable
-110Ag	47	63	betam
-111Ag	47	64	betam
-112Ag	47	65	betam
-113Ag	47	66	betam
-114Ag	47	67	betam
-115Ag	47	68	betam
-116Ag	47	69	betam
-117Ag	47	70	betam
-118Ag	47	71	betam
-119Ag	47	72	betam
-120Ag	47	73	betam
-121Ag	47	74	betam
-122Ag	47	75	betam
-123Ag	47	76	betam
-124Ag	47	77	betam
-125Ag	47	78	betam
-126Ag	47	79	betam
-127Ag	47	80	betam
-128Ag	47	81	betam
-129Ag	47	82	betam
-130Ag	47	83	n
-95Cd	48	47	betap
-96Cd	48	48	betap
-97Cd	48	49	betap
-98Cd	48	50	betap
-99Cd	48	51	betap
-100Cd	48	52	betap
-101Cd	48	53	betap
-102Cd	48	54	betap
-103Cd	48	55	betap
-104Cd	48	56	betap
-105Cd	48	57	betap
-106Cd	48	58	betap
-107Cd	48	59	betap
-108Cd	48	60	betap
-109Cd	48	61	betap
-110Cd	48	62	stable
-111Cd	48	63	stable
-112Cd	48	64	stable
-113Cd	48	65	betam
-114Cd	48	66	betam
-115Cd	48	67	betam
-116Cd	48	68	betam
-117Cd	48	69	betam
-118Cd	48	70	betam
-119Cd	48	71	betam
-120Cd	48	72	betam
-121Cd	48	73	betam
-122Cd	48	74	betam
-123Cd	48	75	betam
-124Cd	48	76	betam
-125Cd	48	77	betam
-126Cd	48	78	betam
-127Cd	48	79	betam
-128Cd	48	80	betam
-129Cd	48	81	unknown
-130Cd	48	82	betam
-131Cd	48	83	betam
-132Cd	48	84	betam
-133Cd	48	85	betam
-97In	49	48	p
-98In	49	49	betap
-99In	49	50	betap
-100In	49	51	betap
-101In	49	52	betap
-102In	49	53	betap
-103In	49	54	betap
-104In	49	55	betap
-105In	49	56	betap
-106In	49	57	betap
-107In	49	58	betap
-108In	49	59	betap
-109In	49	60	betap
-110In	49	61	betap
-111In	49	62	betap
-112In	49	63	betap
-113In	49	64	stable
-114In	49	65	betam
-115In	49	66	betam
-116In	49	67	betam
-117In	49	68	betam
-118In	49	69	betam
-119In	49	70	betam
-120In	49	71	betam
-121In	49	72	betam
-122In	49	73	betam
-123In	49	74	betam
-124In	49	75	betam
-125In	49	76	betam
-126In	49	77	betam
-127In	49	78	betam
-128In	49	79	betam
-129In	49	80	betam
-130In	49	81	betam
-131In	49	82	betam
-132In	49	83	betam
-133In	49	84	betam
-134In	49	85	betam
-135In	49	86	betam
-99Sn	50	49	betap
-100Sn	50	50	betap
-101Sn	50	51	betap
-102Sn	50	52	betap
-103Sn	50	53	betap
-104Sn	50	54	betap
-105Sn	50	55	betap
-106Sn	50	56	betap
-107Sn	50	57	betap
-108Sn	50	58	betap
-109Sn	50	59	betap
-110Sn	50	60	betap
-111Sn	50	61	betap
-112Sn	50	62	betap
-113Sn	50	63	betap
-114Sn	50	64	stable
-115Sn	50	65	stable
-116Sn	50	66	stable
-117Sn	50	67	stable
-118Sn	50	68	stable
-119Sn	50	69	stable
-120Sn	50	70	stable
-121Sn	50	71	betam
-122Sn	50	72	stable
-123Sn	50	73	betam
-124Sn	50	74	betam
-125Sn	50	75	betam
-126Sn	50	76	betam
-127Sn	50	77	betam
-128Sn	50	78	betam
-129Sn	50	79	betam
-130Sn	50	80	betam
-131Sn	50	81	betam
-132Sn	50	82	betam
-133Sn	50	83	betam
-134Sn	50	84	betam
-135Sn	50	85	betam
-136Sn	50	86	betam
-137Sn	50	87	betam
-138Sn	50	88	n
-103Sb	51	52	betap
-104Sb	51	53	betap
-105Sb	51	54	betap
-106Sb	51	55	betap
-107Sb	51	56	betap
-108Sb	51	57	betap
-109Sb	51	58	betap
-110Sb	51	59	betap
-111Sb	51	60	betap
-112Sb	51	61	betap
-113Sb	51	62	betap
-114Sb	51	63	betap
-115Sb	51	64	betap
-116Sb	51	65	betap
-117Sb	51	66	betap
-118Sb	51	67	betap
-119Sb	51	68	betap
-120Sb	51	69	betap
-121Sb	51	70	stable
-122Sb	51	71	betam
-123Sb	51	72	stable
-124Sb	51	73	betam
-125Sb	51	74	betam
-126Sb	51	75	betam
-127Sb	51	76	betam
-128Sb	51	77	betam
-129Sb	51	78	betam
-130Sb	51	79	betam
-131Sb	51	80	betam
-132Sb	51	81	betam
-133Sb	51	82	betam
-134Sb	51	83	betam
-135Sb	51	84	betam
-136Sb	51	85	betam
-137Sb	51	86	betam
-138Sb	51	87	betam
-139Sb	51	88	betam
-140Sb	51	89	n
-105Te	52	53	alpha
-106Te	52	54	alpha
-107Te	52	55	alpha
-108Te	52	56	betap
-109Te	52	57	betap
-110Te	52	58	betap
-111Te	52	59	betap
-112Te	52	60	betap
-113Te	52	61	betap
-114Te	52	62	betap
-115Te	52	63	betap
-116Te	52	64	betap
-117Te	52	65	betap
-118Te	52	66	betap
-119Te	52	67	betap
-120Te	52	68	stable
-121Te	52	69	betap
-122Te	52	70	stable
-123Te	52	71	betap
-124Te	52	72	stable
-125Te	52	73	stable
-126Te	52	74	stable
-127Te	52	75	betam
-128Te	52	76	betam
-129Te	52	77	betam
-130Te	52	78	betam
-131Te	52	79	betam
-132Te	52	80	betam
-133Te	52	81	betam
-134Te	52	82	betam
-135Te	52	83	betam
-136Te	52	84	betam
-137Te	52	85	betam
-138Te	52	86	betam
-139Te	52	87	n
-140Te	52	88	n
-141Te	52	89	n
-142Te	52	90	unknown
-143Te	52	91	n
-107I	53	54	unknown
-108I	53	55	alpha
-109I	53	56	p
-110I	53	57	betap
-111I	53	58	betap
-112I	53	59	betap
-113I	53	60	betap
-114I	53	61	betap
-115I	53	62	betap
-116I	53	63	betap
-117I	53	64	betap
-118I	53	65	betap
-119I	53	66	betap
-120I	53	67	betap
-121I	53	68	betap
-122I	53	69	betap
-123I	53	70	betap
-124I	53	71	betap
-125I	53	72	betap
-126I	53	73	betap
-127I	53	74	stable
-128I	53	75	betam
-129I	53	76	betam
-130I	53	77	betam
-131I	53	78	betam
-132I	53	79	betam
-133I	53	80	betam
-134I	53	81	betam
-135I	53	82	betam
-136I	53	83	betam
-137I	53	84	betam
-138I	53	85	betam
-139I	53	86	betam
-140I	53	87	betam
-141I	53	88	betam
-142I	53	89	betam
-143I	53	90	betam
-144I	53	91	betam
-145I	53	92	n
-108Xe	54	54	unknown
-109Xe	54	55	alpha
-110Xe	54	56	alpha
-111Xe	54	57	betap
-112Xe	54	58	betap
-113Xe	54	59	betap
-114Xe	54	60	betap
-115Xe	54	61	betap
-116Xe	54	62	betap
-117Xe	54	63	betap
-118Xe	54	64	betap
-119Xe	54	65	betap
-120Xe	54	66	betap
-121Xe	54	67	betap
-122Xe	54	68	betap
-123Xe	54	69	betap
-124Xe	54	70	betap
-125Xe	54	71	betap
-126Xe	54	72	stable
-127Xe	54	73	betap
-128Xe	54	74	stable
-129Xe	54	75	stable
-130Xe	54	76	stable
-131Xe	54	77	stable
-132Xe	54	78	stable
-133Xe	54	79	betam
-134Xe	54	80	betam
-135Xe	54	81	betam
-136Xe	54	82	betam
-137Xe	54	83	betam
-138Xe	54	84	betam
-139Xe	54	85	betam
-140Xe	54	86	betam
-141Xe	54	87	betam
-142Xe	54	88	betam
-143Xe	54	89	betam
-144Xe	54	90	betam
-145Xe	54	91	betam
-146Xe	54	92	betam
-147Xe	54	93	n
-148Xe	54	94	n
-112Cs	55	57	p
-113Cs	55	58	p
-114Cs	55	59	betap
-115Cs	55	60	betap
-116Cs	55	61	betap
-117Cs	55	62	betap
-118Cs	55	63	betap
-119Cs	55	64	betap
-120Cs	55	65	betap
-121Cs	55	66	betap
-122Cs	55	67	betap
-123Cs	55	68	betap
-124Cs	55	69	betap
-125Cs	55	70	betap
-126Cs	55	71	betap
-127Cs	55	72	betap
-128Cs	55	73	betap
-129Cs	55	74	betap
-130Cs	55	75	betap
-131Cs	55	76	betap
-132Cs	55	77	betap
-133Cs	55	78	stable
-134Cs	55	79	betam
-135Cs	55	80	betam
-136Cs	55	81	betam
-137Cs	55	82	betam
-138Cs	55	83	betam
-139Cs	55	84	betam
-140Cs	55	85	betam
-141Cs	55	86	betam
-142Cs	55	87	betam
-143Cs	55	88	betam
-144Cs	55	89	betam
-145Cs	55	90	betam
-146Cs	55	91	betam
-147Cs	55	92	betam
-148Cs	55	93	betam
-149Cs	55	94	n
-150Cs	55	95	n
-151Cs	55	96	n
-112Ba	56	56	unknown
-113Ba	56	57	unknown
-114Ba	56	58	betap
-115Ba	56	59	betap
-116Ba	56	60	betap
-117Ba	56	61	betap
-118Ba	56	62	betap
-119Ba	56	63	betap
-120Ba	56	64	betap
-121Ba	56	65	betap
-122Ba	56	66	betap
-123Ba	56	67	betap
-124Ba	56	68	betap
-125Ba	56	69	betap
-126Ba	56	70	betap
-127Ba	56	71	betap
-128Ba	56	72	betap
-129Ba	56	73	betap
-130Ba	56	74	betap
-131Ba	56	75	betap
-132Ba	56	76	betap
-133Ba	56	77	betap
-134Ba	56	78	stable
-135Ba	56	79	stable
-136Ba	56	80	stable
-137Ba	56	81	stable
-138Ba	56	82	stable
-139Ba	56	83	betam
-140Ba	56	84	betam
-141Ba	56	85	betam
-142Ba	56	86	betam
-143Ba	56	87	betam
-144Ba	56	88	betam
-145Ba	56	89	betam
-146Ba	56	90	betam
-147Ba	56	91	betam
-148Ba	56	92	betam
-149Ba	56	93	betam
-150Ba	56	94	betam
-151Ba	56	95	n
-152Ba	56	96	n
-153Ba	56	97	betam
-117La	57	60	p
-118La	57	61	betap
-119La	57	62	betap
-120La	57	63	betap
-121La	57	64	betap
-122La	57	65	betap
-123La	57	66	betap
-124La	57	67	betap
-125La	57	68	betap
-126La	57	69	betap
-127La	57	70	betap
-128La	57	71	betap
-129La	57	72	betap
-130La	57	73	betap
-131La	57	74	betap
-132La	57	75	betap
-133La	57	76	betap
-134La	57	77	betap
-135La	57	78	betap
-136La	57	79	betap
-137La	57	80	betap
-138La	57	81	betap
-139La	57	82	stable
-140La	57	83	betam
-141La	57	84	betam
-142La	57	85	betam
-143La	57	86	betam
-144La	57	87	betam
-145La	57	88	betam
-146La	57	89	betam
-147La	57	90	betam
-148La	57	91	betam
-149La	57	92	betam
-150La	57	93	betam
-151La	57	94	n
-152La	57	95	betam
-153La	57	96	betam
-154La	57	97	betam
-155La	57	98	betam
-119Ce	58	61	betap
-120Ce	58	62	betap
-121Ce	58	63	betap
-122Ce	58	64	betap
-123Ce	58	65	betap
-124Ce	58	66	betap
-125Ce	58	67	betap
-126Ce	58	68	betap
-127Ce	58	69	betap
-128Ce	58	70	betap
-129Ce	58	71	betap
-130Ce	58	72	betap
-131Ce	58	73	betap
-132Ce	58	74	betap
-133Ce	58	75	betap
-134Ce	58	76	betap
-135Ce	58	77	betap
-136Ce	58	78	betap
-137Ce	58	79	betap
-138Ce	58	80	betap
-139Ce	58	81	betap
-140Ce	58	82	stable
-141Ce	58	83	betam
-142Ce	58	84	betam
-143Ce	58	85	betam
-144Ce	58	86	betam
-145Ce	58	87	betam
-146Ce	58	88	betam
-147Ce	58	89	betam
-148Ce	58	90	betam
-149Ce	58	91	betam
-150Ce	58	92	betam
-151Ce	58	93	betam
-152Ce	58	94	betam
-153Ce	58	95	betam
-154Ce	58	96	betam
-155Ce	58	97	betam
-156Ce	58	98	betam
-157Ce	58	99	betam
-121Pr	59	62	p
-122Pr	59	63	betap
-123Pr	59	64	betap
-124Pr	59	65	betap
-125Pr	59	66	betap
-126Pr	59	67	betap
-127Pr	59	68	betap
-128Pr	59	69	betap
-129Pr	59	70	betap
-130Pr	59	71	betap
-131Pr	59	72	betap
-132Pr	59	73	betap
-133Pr	59	74	betap
-134Pr	59	75	betap
-135Pr	59	76	betap
-136Pr	59	77	betap
-137Pr	59	78	betap
-138Pr	59	79	betap
-139Pr	59	80	betap
-140Pr	59	81	betap
-141Pr	59	82	stable
-142Pr	59	83	betam
-143Pr	59	84	betam
-144Pr	59	85	betam
-145Pr	59	86	betam
-146Pr	59	87	betam
-147Pr	59	88	betam
-148Pr	59	89	betam
-149Pr	59	90	betam
-150Pr	59	91	betam
-151Pr	59	92	betam
-152Pr	59	93	betam
-153Pr	59	94	betam
-154Pr	59	95	betam
-155Pr	59	96	betam
-156Pr	59	97	betam
-157Pr	59	98	betam
-158Pr	59	99	betam
-159Pr	59	100	betam
-124Nd	60	64	betap
-125Nd	60	65	betap
-126Nd	60	66	betap
-127Nd	60	67	betap
-128Nd	60	68	betap
-129Nd	60	69	betap
-130Nd	60	70	betap
-131Nd	60	71	betap
-132Nd	60	72	betap
-133Nd	60	73	betap
-134Nd	60	74	betap
-135Nd	60	75	betap
-136Nd	60	76	betap
-137Nd	60	77	betap
-138Nd	60	78	betap
-139Nd	60	79	betap
-140Nd	60	80	betap
-141Nd	60	81	betap
-142Nd	60	82	stable
-143Nd	60	83	stable
-144Nd	60	84	alpha
-145Nd	60	85	stable
-146Nd	60	86	stable
-147Nd	60	87	betam
-148Nd	60	88	stable
-149Nd	60	89	betam
-150Nd	60	90	unknown
-151Nd	60	91	betam
-152Nd	60	92	betam
-153Nd	60	93	betam
-154Nd	60	94	betam
-155Nd	60	95	betam
-156Nd	60	96	betam
-157Nd	60	97	betam
-158Nd	60	98	betam
-159Nd	60	99	betam
-160Nd	60	100	betam
-161Nd	60	101	betam
-126Pm	61	65	betap
-127Pm	61	66	betap
-128Pm	61	67	betap
-129Pm	61	68	betap
-130Pm	61	69	betap
-131Pm	61	70	betap
-132Pm	61	71	betap
-133Pm	61	72	betap
-134Pm	61	73	betap
-135Pm	61	74	betap
-136Pm	61	75	betap
-137Pm	61	76	betap
-138Pm	61	77	betap
-139Pm	61	78	betap
-140Pm	61	79	betap
-141Pm	61	80	betap
-142Pm	61	81	betap
-143Pm	61	82	betap
-144Pm	61	83	betap
-145Pm	61	84	betap
-146Pm	61	85	betap
-147Pm	61	86	betam
-148Pm	61	87	betam
-149Pm	61	88	betam
-150Pm	61	89	betam
-151Pm	61	90	betam
-152Pm	61	91	betam
-153Pm	61	92	betam
-154Pm	61	93	betam
-155Pm	61	94	betam
-156Pm	61	95	betam
-157Pm	61	96	betam
-158Pm	61	97	betam
-159Pm	61	98	betam
-160Pm	61	99	betam
-161Pm	61	100	betam
-162Pm	61	101	betam
-163Pm	61	102	betam
-128Sm	62	66	p
-129Sm	62	67	betap
-130Sm	62	68	betap
-131Sm	62	69	betap
-132Sm	62	70	betap
-133Sm	62	71	betap
-134Sm	62	72	betap
-135Sm	62	73	betap
-136Sm	62	74	betap
-137Sm	62	75	betap
-138Sm	62	76	betap
-139Sm	62	77	betap
-140Sm	62	78	betap
-141Sm	62	79	betap
-142Sm	62	80	betap
-143Sm	62	81	betap
-144Sm	62	82	stable
-145Sm	62	83	betap
-146Sm	62	84	alpha
-147Sm	62	85	alpha
-148Sm	62	86	alpha
-149Sm	62	87	stable
-150Sm	62	88	stable
-151Sm	62	89	betam
-152Sm	62	90	stable
-153Sm	62	91	betam
-154Sm	62	92	stable
-155Sm	62	93	betam
-156Sm	62	94	betam
-157Sm	62	95	betam
-158Sm	62	96	betam
-159Sm	62	97	betam
-160Sm	62	98	betam
-161Sm	62	99	betam
-162Sm	62	100	betam
-163Sm	62	101	betam
-164Sm	62	102	betam
-165Sm	62	103	betam
-130Eu	63	67	p
-131Eu	63	68	p
-132Eu	63	69	betap
-133Eu	63	70	betap
-134Eu	63	71	betap
-135Eu	63	72	betap
-136Eu	63	73	betap
-137Eu	63	74	betap
-138Eu	63	75	betap
-139Eu	63	76	betap
-140Eu	63	77	betap
-141Eu	63	78	betap
-142Eu	63	79	betap
-143Eu	63	80	betap
-144Eu	63	81	betap
-145Eu	63	82	betap
-146Eu	63	83	betap
-147Eu	63	84	betap
-148Eu	63	85	betap
-149Eu	63	86	betap
-150Eu	63	87	betap
-151Eu	63	88	alpha
-152Eu	63	89	betap
-153Eu	63	90	stable
-154Eu	63	91	betam
-155Eu	63	92	betam
-156Eu	63	93	betam
-157Eu	63	94	betam
-158Eu	63	95	betam
-159Eu	63	96	betam
-160Eu	63	97	betam
-161Eu	63	98	betam
-162Eu	63	99	betam
-163Eu	63	100	betam
-164Eu	63	101	betam
-165Eu	63	102	betam
-166Eu	63	103	betam
-167Eu	63	104	betam
-133Gd	64	69	unknown
-134Gd	64	70	betap
-135Gd	64	71	betap
-136Gd	64	72	unknown
-137Gd	64	73	betap
-138Gd	64	74	betap
-139Gd	64	75	betap
-140Gd	64	76	betap
-141Gd	64	77	betap
-142Gd	64	78	betap
-143Gd	64	79	betap
-144Gd	64	80	betap
-145Gd	64	81	betap
-146Gd	64	82	betap
-147Gd	64	83	betap
-148Gd	64	84	alpha
-149Gd	64	85	betap
-150Gd	64	86	alpha
-151Gd	64	87	betap
-152Gd	64	88	alpha
-153Gd	64	89	betap
-154Gd	64	90	stable
-155Gd	64	91	stable
-156Gd	64	92	stable
-157Gd	64	93	stable
-158Gd	64	94	stable
-159Gd	64	95	betam
-160Gd	64	96	betam
-161Gd	64	97	betam
-162Gd	64	98	betam
-163Gd	64	99	betam
-164Gd	64	100	betam
-165Gd	64	101	betam
-166Gd	64	102	betam
-167Gd	64	103	betam
-168Gd	64	104	betam
-169Gd	64	105	betam
-135Tb	65	70	p
-136Tb	65	71	betap
-137Tb	65	72	betap
-138Tb	65	73	betap
-139Tb	65	74	betap
-140Tb	65	75	betap
-141Tb	65	76	betap
-142Tb	65	77	betap
-143Tb	65	78	betap
-144Tb	65	79	betap
-145Tb	65	80	betap
-146Tb	65	81	betap
-147Tb	65	82	betap
-148Tb	65	83	betap
-149Tb	65	84	betap
-150Tb	65	85	betap
-151Tb	65	86	betap
-152Tb	65	87	betap
-153Tb	65	88	betap
-154Tb	65	89	betap
-155Tb	65	90	betap
-156Tb	65	91	betap
-157Tb	65	92	betap
-158Tb	65	93	betap
-159Tb	65	94	stable
-160Tb	65	95	betam
-161Tb	65	96	betam
-162Tb	65	97	betam
-163Tb	65	98	betam
-164Tb	65	99	betam
-165Tb	65	100	betam
-166Tb	65	101	betam
-167Tb	65	102	betam
-168Tb	65	103	betam
-169Tb	65	104	betam
-170Tb	65	105	betam
-171Tb	65	106	betam
-138Dy	66	72	betap
-139Dy	66	73	betap
-140Dy	66	74	betap
-141Dy	66	75	betap
-142Dy	66	76	betap
-143Dy	66	77	betap
-144Dy	66	78	betap
-145Dy	66	79	betap
-146Dy	66	80	betap
-147Dy	66	81	betap
-148Dy	66	82	betap
-149Dy	66	83	betap
-150Dy	66	84	betap
-151Dy	66	85	betap
-152Dy	66	86	betap
-153Dy	66	87	betap
-154Dy	66	88	alpha
-155Dy	66	89	betap
-156Dy	66	90	stable
-157Dy	66	91	betap
-158Dy	66	92	stable
-159Dy	66	93	betap
-160Dy	66	94	stable
-161Dy	66	95	stable
-162Dy	66	96	stable
-163Dy	66	97	stable
-164Dy	66	98	stable
-165Dy	66	99	betam
-166Dy	66	100	betam
-167Dy	66	101	betam
-168Dy	66	102	betam
-169Dy	66	103	betam
-170Dy	66	104	betam
-171Dy	66	105	betam
-172Dy	66	106	betam
-173Dy	66	107	betam
-140Ho	67	73	p
-141Ho	67	74	p
-142Ho	67	75	betap
-143Ho	67	76	betap
-144Ho	67	77	betap
-145Ho	67	78	betap
-146Ho	67	79	betap
-147Ho	67	80	betap
-148Ho	67	81	betap
-149Ho	67	82	betap
-150Ho	67	83	betap
-151Ho	67	84	betap
-152Ho	67	85	betap
-153Ho	67	86	betap
-154Ho	67	87	betap
-155Ho	67	88	betap
-156Ho	67	89	betap
-157Ho	67	90	betap
-158Ho	67	91	betap
-159Ho	67	92	betap
-160Ho	67	93	betap
-161Ho	67	94	betap
-162Ho	67	95	betap
-163Ho	67	96	betap
-164Ho	67	97	betap
-165Ho	67	98	stable
-166Ho	67	99	betam
-167Ho	67	100	betam
-168Ho	67	101	betam
-169Ho	67	102	betam
-170Ho	67	103	betam
-171Ho	67	104	betam
-172Ho	67	105	betam
-173Ho	67	106	betam
-174Ho	67	107	betam
-175Ho	67	108	betam
-142Er	68	74	unknown
-143Er	68	75	betap
-144Er	68	76	betap
-145Er	68	77	betap
-146Er	68	78	betap
-147Er	68	79	betap
-148Er	68	80	betap
-149Er	68	81	betap
-150Er	68	82	betap
-151Er	68	83	betap
-152Er	68	84	alpha
-153Er	68	85	alpha
-154Er	68	86	betap
-155Er	68	87	betap
-156Er	68	88	betap
-157Er	68	89	betap
-158Er	68	90	betap
-159Er	68	91	betap
-160Er	68	92	betap
-161Er	68	93	betap
-162Er	68	94	stable
-163Er	68	95	betap
-164Er	68	96	stable
-165Er	68	97	betap
-166Er	68	98	stable
-167Er	68	99	stable
-168Er	68	100	stable
-169Er	68	101	betam
-170Er	68	102	stable
-171Er	68	103	betam
-172Er	68	104	betam
-173Er	68	105	betam
-174Er	68	106	betam
-175Er	68	107	betam
-176Er	68	108	betam
-177Er	68	109	betam
-144Tm	69	75	p
-145Tm	69	76	p
-146Tm	69	77	betap
-147Tm	69	78	betap
-148Tm	69	79	betap
-149Tm	69	80	betap
-150Tm	69	81	betap
-151Tm	69	82	betap
-152Tm	69	83	betap
-153Tm	69	84	alpha
-154Tm	69	85	alpha
-155Tm	69	86	betap
-156Tm	69	87	betap
-157Tm	69	88	betap
-158Tm	69	89	betap
-159Tm	69	90	betap
-160Tm	69	91	betap
-161Tm	69	92	betap
-162Tm	69	93	betap
-163Tm	69	94	betap
-164Tm	69	95	betap
-165Tm	69	96	betap
-166Tm	69	97	betap
-167Tm	69	98	betap
-168Tm	69	99	betap
-169Tm	69	100	stable
-170Tm	69	101	betam
-171Tm	69	102	betam
-172Tm	69	103	betam
-173Tm	69	104	betam
-174Tm	69	105	betam
-175Tm	69	106	betam
-176Tm	69	107	betam
-177Tm	69	108	betam
-178Tm	69	109	betam
-179Tm	69	110	betam
-148Yb	70	78	betap
-149Yb	70	79	betap
-150Yb	70	80	betap
-151Yb	70	81	betap
-152Yb	70	82	betap
-153Yb	70	83	alpha
-154Yb	70	84	alpha
-155Yb	70	85	alpha
-156Yb	70	86	betap
-157Yb	70	87	betap
-158Yb	70	88	betap
-159Yb	70	89	betap
-160Yb	70	90	betap
-161Yb	70	91	betap
-162Yb	70	92	betap
-163Yb	70	93	betap
-164Yb	70	94	betap
-165Yb	70	95	betap
-166Yb	70	96	betap
-167Yb	70	97	betap
-168Yb	70	98	stable
-169Yb	70	99	betap
-170Yb	70	100	stable
-171Yb	70	101	stable
-172Yb	70	102	stable
-173Yb	70	103	stable
-174Yb	70	104	stable
-175Yb	70	105	betam
-176Yb	70	106	stable
-177Yb	70	107	betam
-178Yb	70	108	betam
-179Yb	70	109	betam
-180Yb	70	110	betam
-181Yb	70	111	betam
-150Lu	71	79	p
-151Lu	71	80	p
-152Lu	71	81	betap
-153Lu	71	82	alpha
-154Lu	71	83	unknown
-155Lu	71	84	alpha
-156Lu	71	85	alpha
-157Lu	71	86	alpha
-158Lu	71	87	betap
-159Lu	71	88	betap
-160Lu	71	89	betap
-161Lu	71	90	betap
-162Lu	71	91	betap
-163Lu	71	92	betap
-164Lu	71	93	betap
-165Lu	71	94	betap
-166Lu	71	95	betap
-167Lu	71	96	betap
-168Lu	71	97	betap
-169Lu	71	98	betap
-170Lu	71	99	betap
-171Lu	71	100	betap
-172Lu	71	101	betap
-173Lu	71	102	betap
-174Lu	71	103	betap
-175Lu	71	104	stable
-176Lu	71	105	betam
-177Lu	71	106	betam
-178Lu	71	107	betam
-179Lu	71	108	betam
-180Lu	71	109	betam
-181Lu	71	110	betam
-182Lu	71	111	betam
-183Lu	71	112	betam
-184Lu	71	113	betam
-153Hf	72	81	betap
-154Hf	72	82	betap
-155Hf	72	83	betap
-156Hf	72	84	alpha
-157Hf	72	85	alpha
-158Hf	72	86	betap
-159Hf	72	87	betap
-160Hf	72	88	betap
-161Hf	72	89	betap
-162Hf	72	90	betap
-163Hf	72	91	betap
-164Hf	72	92	betap
-165Hf	72	93	betap
-166Hf	72	94	betap
-167Hf	72	95	betap
-168Hf	72	96	betap
-169Hf	72	97	betap
-170Hf	72	98	betap
-171Hf	72	99	betap
-172Hf	72	100	betap
-173Hf	72	101	betap
-174Hf	72	102	alpha
-175Hf	72	103	betap
-176Hf	72	104	stable
-177Hf	72	105	stable
-178Hf	72	106	stable
-179Hf	72	107	stable
-180Hf	72	108	stable
-181Hf	72	109	betam
-182Hf	72	110	betam
-183Hf	72	111	betam
-184Hf	72	112	betam
-185Hf	72	113	betam
-186Hf	72	114	betam
-187Hf	72	115	betam
-188Hf	72	116	betam
-189Hf	72	117	unknown
-155Ta	73	82	p
-156Ta	73	83	p
-157Ta	73	84	alpha
-158Ta	73	85	alpha
-159Ta	73	86	betap
-160Ta	73	87	betap
-161Ta	73	88	alpha
-162Ta	73	89	betap
-163Ta	73	90	betap
-164Ta	73	91	betap
-165Ta	73	92	betap
-166Ta	73	93	betap
-167Ta	73	94	betap
-168Ta	73	95	betap
-169Ta	73	96	betap
-170Ta	73	97	betap
-171Ta	73	98	betap
-172Ta	73	99	betap
-173Ta	73	100	betap
-174Ta	73	101	betap
-175Ta	73	102	betap
-176Ta	73	103	betap
-177Ta	73	104	betap
-178Ta	73	105	betap
-179Ta	73	106	betap
-180Ta	73	107	betap
-181Ta	73	108	stable
-182Ta	73	109	betam
-183Ta	73	110	betam
-184Ta	73	111	betam
-185Ta	73	112	betam
-186Ta	73	113	betam
-187Ta	73	114	betam
-188Ta	73	115	betam
-189Ta	73	116	betam
-190Ta	73	117	betam
-191Ta	73	118	betam
-192Ta	73	119	betam
-157W	74	83	betap
-158W	74	84	alpha
-159W	74	85	alpha
-160W	74	86	alpha
-161W	74	87	alpha
-162W	74	88	betap
-163W	74	89	betap
-164W	74	90	betap
-165W	74	91	betap
-166W	74	92	betap
-167W	74	93	betap
-168W	74	94	betap
-169W	74	95	betap
-170W	74	96	betap
-171W	74	97	betap
-172W	74	98	betap
-173W	74	99	betap
-174W	74	100	betap
-175W	74	101	betap
-176W	74	102	betap
-177W	74	103	betap
-178W	74	104	betap
-179W	74	105	betap
-180W	74	106	betap
-181W	74	107	betap
-182W	74	108	stable
-183W	74	109	alpha
-184W	74	110	stable
-185W	74	111	betam
-186W	74	112	betam
-187W	74	113	betam
-188W	74	114	betam
-189W	74	115	betam
-190W	74	116	betam
-191W	74	117	betam
-192W	74	118	betam
-193W	74	119	betam
-194W	74	120	betam
-159Re	75	84	unknown
-160Re	75	85	p
-161Re	75	86	p
-162Re	75	87	alpha
-163Re	75	88	betap
-164Re	75	89	alpha
-165Re	75	90	betap
-166Re	75	91	betap
-167Re	75	92	betap
-168Re	75	93	betap
-169Re	75	94	betap
-170Re	75	95	betap
-171Re	75	96	betap
-172Re	75	97	betap
-173Re	75	98	betap
-174Re	75	99	betap
-175Re	75	100	betap
-176Re	75	101	betap
-177Re	75	102	betap
-178Re	75	103	betap
-179Re	75	104	betap
-180Re	75	105	betap
-181Re	75	106	betap
-182Re	75	107	betap
-183Re	75	108	betap
-184Re	75	109	betap
-185Re	75	110	stable
-186Re	75	111	betam
-187Re	75	112	betam
-188Re	75	113	betam
-189Re	75	114	betam
-190Re	75	115	betam
-191Re	75	116	betam
-192Re	75	117	betam
-193Re	75	118	unknown
-194Re	75	119	betam
-195Re	75	120	betam
-196Re	75	121	betam
-161Os	76	85	alpha
-162Os	76	86	alpha
-163Os	76	87	alpha
-164Os	76	88	alpha
-165Os	76	89	alpha
-166Os	76	90	alpha
-167Os	76	91	alpha
-168Os	76	92	betap
-169Os	76	93	betap
-170Os	76	94	betap
-171Os	76	95	betap
-172Os	76	96	betap
-173Os	76	97	alpha
-174Os	76	98	betap
-175Os	76	99	betap
-176Os	76	100	betap
-177Os	76	101	betap
-178Os	76	102	betap
-179Os	76	103	betap
-180Os	76	104	betap
-181Os	76	105	betap
-182Os	76	106	betap
-183Os	76	107	betap
-184Os	76	108	alpha
-185Os	76	109	betap
-186Os	76	110	alpha
-187Os	76	111	stable
-188Os	76	112	stable
-189Os	76	113	stable
-190Os	76	114	stable
-191Os	76	115	betam
-192Os	76	116	stable
-193Os	76	117	betam
-194Os	76	118	betam
-195Os	76	119	betam
-196Os	76	120	betam
-197Os	76	121	betam
-198Os	76	122	betam
-199Os	76	123	betam
-200Os	76	124	betam
-201Os	76	125	betam
-202Os	76	126	betam
-164Ir	77	87	p
-165Ir	77	88	alpha
-166Ir	77	89	alpha
-167Ir	77	90	alpha
-168Ir	77	91	alpha
-169Ir	77	92	alpha
-170Ir	77	93	betap
-171Ir	77	94	alpha
-172Ir	77	95	betap
-173Ir	77	96	betap
-174Ir	77	97	betap
-175Ir	77	98	betap
-176Ir	77	99	betap
-177Ir	77	100	betap
-178Ir	77	101	betap
-179Ir	77	102	betap
-180Ir	77	103	betap
-181Ir	77	104	betap
-182Ir	77	105	betap
-183Ir	77	106	betap
-184Ir	77	107	betap
-185Ir	77	108	betap
-186Ir	77	109	betap
-187Ir	77	110	betap
-188Ir	77	111	betap
-189Ir	77	112	betap
-190Ir	77	113	betap
-191Ir	77	114	stable
-192Ir	77	115	betam
-193Ir	77	116	stable
-194Ir	77	117	betam
-195Ir	77	118	betam
-196Ir	77	119	betam
-197Ir	77	120	betam
-198Ir	77	121	betam
-199Ir	77	122	betam
-200Ir	77	123	betam
-201Ir	77	124	betam
-202Ir	77	125	betam
-203Ir	77	126	betam
-204Ir	77	127	unknown
-166Pt	78	88	alpha
-167Pt	78	89	alpha
-168Pt	78	90	alpha
-169Pt	78	91	alpha
-170Pt	78	92	alpha
-171Pt	78	93	alpha
-172Pt	78	94	alpha
-173Pt	78	95	alpha
-174Pt	78	96	alpha
-175Pt	78	97	alpha
-176Pt	78	98	betap
-177Pt	78	99	betap
-178Pt	78	100	betap
-179Pt	78	101	betap
-180Pt	78	102	betap
-181Pt	78	103	betap
-182Pt	78	104	betap
-183Pt	78	105	betap
-184Pt	78	106	betap
-185Pt	78	107	betap
-186Pt	78	108	betap
-187Pt	78	109	betap
-188Pt	78	110	betap
-189Pt	78	111	betap
-190Pt	78	112	alpha
-191Pt	78	113	betap
-192Pt	78	114	stable
-193Pt	78	115	betap
-194Pt	78	116	stable
-195Pt	78	117	stable
-196Pt	78	118	stable
-197Pt	78	119	betam
-198Pt	78	120	stable
-199Pt	78	121	betam
-200Pt	78	122	betam
-201Pt	78	123	betam
-202Pt	78	124	betam
-203Pt	78	125	betam
-204Pt	78	126	betam
-205Pt	78	127	betam
-169Au	79	90	alpha
-170Au	79	91	p
-171Au	79	92	p
-172Au	79	93	alpha
-173Au	79	94	alpha
-174Au	79	95	alpha
-175Au	79	96	alpha
-176Au	79	97	unknown
-177Au	79	98	alpha
-178Au	79	99	betap
-179Au	79	100	betap
-180Au	79	101	betap
-181Au	79	102	betap
-182Au	79	103	betap
-183Au	79	104	betap
-184Au	79	105	betap
-185Au	79	106	betap
-186Au	79	107	betap
-187Au	79	108	betap
-188Au	79	109	betap
-189Au	79	110	betap
-190Au	79	111	betap
-191Au	79	112	betap
-192Au	79	113	betap
-193Au	79	114	betap
-194Au	79	115	betap
-195Au	79	116	betap
-196Au	79	117	betap
-197Au	79	118	stable
-198Au	79	119	betam
-199Au	79	120	betam
-200Au	79	121	betam
-201Au	79	122	betam
-202Au	79	123	betam
-203Au	79	124	betam
-204Au	79	125	betam
-205Au	79	126	betam
-206Au	79	127	betam
-207Au	79	128	n
-208Au	79	129	n
-209Au	79	130	n
-210Au	79	131	n
-171Hg	80	91	alpha
-172Hg	80	92	alpha
-173Hg	80	93	alpha
-174Hg	80	94	alpha
-175Hg	80	95	alpha
-176Hg	80	96	alpha
-177Hg	80	97	alpha
-178Hg	80	98	alpha
-179Hg	80	99	alpha
-180Hg	80	100	betap
-181Hg	80	101	betap
-182Hg	80	102	betap
-183Hg	80	103	betap
-184Hg	80	104	betap
-185Hg	80	105	betap
-186Hg	80	106	betap
-187Hg	80	107	betap
-188Hg	80	108	betap
-189Hg	80	109	betap
-190Hg	80	110	betap
-191Hg	80	111	betap
-192Hg	80	112	betap
-193Hg	80	113	betap
-194Hg	80	114	betap
-195Hg	80	115	betap
-196Hg	80	116	stable
-197Hg	80	117	betap
-198Hg	80	118	stable
-199Hg	80	119	stable
-200Hg	80	120	stable
-201Hg	80	121	stable
-202Hg	80	122	stable
-203Hg	80	123	betam
-204Hg	80	124	stable
-205Hg	80	125	betam
-206Hg	80	126	betam
-207Hg	80	127	betam
-208Hg	80	128	betam
-209Hg	80	129	betam
-210Hg	80	130	betam
-211Hg	80	131	betam
-212Hg	80	132	n
-213Hg	80	133	n
-214Hg	80	134	n
-215Hg	80	135	n
-216Hg	80	136	n
-176Tl	81	95	p
-177Tl	81	96	alpha
-178Tl	81	97	alpha
-179Tl	81	98	alpha
-180Tl	81	99	betap
-181Tl	81	100	alpha
-182Tl	81	101	betap
-183Tl	81	102	betap
-184Tl	81	103	betap
-185Tl	81	104	betap
-186Tl	81	105	betap
-187Tl	81	106	betap
-188Tl	81	107	betap
-189Tl	81	108	betap
-190Tl	81	109	betap
-191Tl	81	110	unknown
-192Tl	81	111	betap
-193Tl	81	112	betap
-194Tl	81	113	betap
-195Tl	81	114	betap
-196Tl	81	115	betap
-197Tl	81	116	betap
-198Tl	81	117	betap
-199Tl	81	118	betap
-200Tl	81	119	betap
-201Tl	81	120	betap
-202Tl	81	121	betap
-203Tl	81	122	stable
-204Tl	81	123	betam
-205Tl	81	124	stable
-206Tl	81	125	betam
-207Tl	81	126	betam
-208Tl	81	127	betam
-209Tl	81	128	betam
-210Tl	81	129	betam
-211Tl	81	130	betam
-212Tl	81	131	betam
-213Tl	81	132	betam
-214Tl	81	133	n
-215Tl	81	134	n
-216Tl	81	135	n
-217Tl	81	136	n
-178Pb	82	96	alpha
-179Pb	82	97	alpha
-180Pb	82	98	alpha
-181Pb	82	99	alpha
-182Pb	82	100	alpha
-183Pb	82	101	alpha
-184Pb	82	102	alpha
-185Pb	82	103	alpha
-186Pb	82	104	betap
-187Pb	82	105	betap
-188Pb	82	106	betap
-189Pb	82	107	betap
-190Pb	82	108	betap
-191Pb	82	109	betap
-192Pb	82	110	betap
-193Pb	82	111	betap
-194Pb	82	112	betap
-195Pb	82	113	betap
-196Pb	82	114	alpha
-197Pb	82	115	betap
-198Pb	82	116	betap
-199Pb	82	117	betap
-200Pb	82	118	betap
-201Pb	82	119	betap
-202Pb	82	120	betap
-203Pb	82	121	betap
-204Pb	82	122	alpha
-205Pb	82	123	betap
-206Pb	82	124	stable
-207Pb	82	125	stable
-208Pb	82	126	stable
-209Pb	82	127	betam
-210Pb	82	128	betam
-211Pb	82	129	betam
-212Pb	82	130	betam
-213Pb	82	131	betam
-214Pb	82	132	betam
-215Pb	82	133	betam
-216Pb	82	134	betam
-217Pb	82	135	betam
-218Pb	82	136	betam
-219Pb	82	137	betam
-220Pb	82	138	betam
-184Bi	83	101	alpha
-185Bi	83	102	p
-186Bi	83	103	alpha
-187Bi	83	104	alpha
-188Bi	83	105	alpha
-189Bi	83	106	betap
-190Bi	83	107	alpha
-191Bi	83	108	alpha
-192Bi	83	109	betap
-193Bi	83	110	betap
-194Bi	83	111	betap
-195Bi	83	112	betap
-196Bi	83	113	betap
-197Bi	83	114	betap
-198Bi	83	115	betap
-199Bi	83	116	betap
-200Bi	83	117	betap
-201Bi	83	118	betap
-202Bi	83	119	betap
-203Bi	83	120	betap
-204Bi	83	121	betap
-205Bi	83	122	betap
-206Bi	83	123	betap
-207Bi	83	124	betap
-208Bi	83	125	betap
-209Bi	83	126	stable
-210Bi	83	127	betam
-211Bi	83	128	alpha
-212Bi	83	129	betam
-213Bi	83	130	betam
-214Bi	83	131	betam
-215Bi	83	132	betam
-216Bi	83	133	betam
-217Bi	83	134	betam
-218Bi	83	135	betam
-219Bi	83	136	betam
-220Bi	83	137	betam
-221Bi	83	138	n
-222Bi	83	139	betam
-223Bi	83	140	n
-224Bi	83	141	n
-186Po	84	102	unknown
-187Po	84	103	alpha
-188Po	84	104	betap
-189Po	84	105	alpha
-190Po	84	106	alpha
-191Po	84	107	alpha
-192Po	84	108	alpha
-193Po	84	109	alpha
-194Po	84	110	alpha
-195Po	84	111	alpha
-196Po	84	112	alpha
-197Po	84	113	betap
-198Po	84	114	alpha
-199Po	84	115	betap
-200Po	84	116	betap
-201Po	84	117	betap
-202Po	84	118	betap
-203Po	84	119	betap
-204Po	84	120	betap
-205Po	84	121	betap
-206Po	84	122	betap
-207Po	84	123	betap
-208Po	84	124	alpha
-209Po	84	125	alpha
-210Po	84	126	alpha
-211Po	84	127	alpha
-212Po	84	128	alpha
-213Po	84	129	alpha
-214Po	84	130	alpha
-215Po	84	131	alpha
-216Po	84	132	alpha
-217Po	84	133	alpha
-218Po	84	134	alpha
-219Po	84	135	betam
-220Po	84	136	betam
-221Po	84	137	betam
-222Po	84	138	betam
-223Po	84	139	betam
-224Po	84	140	betam
-225Po	84	141	betam
-226Po	84	142	betam
-227Po	84	143	betam
-191At	85	106	alpha
-192At	85	107	alpha
-193At	85	108	alpha
-194At	85	109	alpha
-195At	85	110	alpha
-196At	85	111	alpha
-197At	85	112	alpha
-198At	85	113	alpha
-199At	85	114	alpha
-200At	85	115	alpha
-201At	85	116	alpha
-202At	85	117	betap
-203At	85	118	betap
-204At	85	119	betap
-205At	85	120	betap
-206At	85	121	betap
-207At	85	122	betap
-208At	85	123	betap
-209At	85	124	betap
-210At	85	125	betap
-211At	85	126	betap
-212At	85	127	alpha
-213At	85	128	alpha
-214At	85	129	alpha
-215At	85	130	alpha
-216At	85	131	alpha
-217At	85	132	alpha
-218At	85	133	alpha
-219At	85	134	alpha
-220At	85	135	betam
-221At	85	136	betam
-222At	85	137	betam
-223At	85	138	betam
-224At	85	139	betam
-225At	85	140	betam
-226At	85	141	betam
-227At	85	142	betam
-228At	85	143	betam
-229At	85	144	n
-193Rn	86	107	alpha
-194Rn	86	108	alpha
-195Rn	86	109	alpha
-196Rn	86	110	alpha
-197Rn	86	111	alpha
-198Rn	86	112	betap
-199Rn	86	113	alpha
-200Rn	86	114	alpha
-201Rn	86	115	betap
-202Rn	86	116	alpha
-203Rn	86	117	alpha
-204Rn	86	118	alpha
-205Rn	86	119	betap
-206Rn	86	120	alpha
-207Rn	86	121	betap
-208Rn	86	122	alpha
-209Rn	86	123	betap
-210Rn	86	124	alpha
-211Rn	86	125	betap
-212Rn	86	126	alpha
-213Rn	86	127	alpha
-214Rn	86	128	alpha
-215Rn	86	129	alpha
-216Rn	86	130	alpha
-217Rn	86	131	alpha
-218Rn	86	132	alpha
-219Rn	86	133	alpha
-220Rn	86	134	alpha
-221Rn	86	135	betam
-222Rn	86	136	alpha
-223Rn	86	137	betam
-224Rn	86	138	betam
-225Rn	86	139	betam
-226Rn	86	140	betam
-227Rn	86	141	betam
-228Rn	86	142	betam
-229Rn	86	143	betam
-230Rn	86	144	betam
-231Rn	86	145	betam
-199Fr	87	112	alpha
-200Fr	87	113	alpha
-201Fr	87	114	alpha
-202Fr	87	115	alpha
-203Fr	87	116	alpha
-204Fr	87	117	alpha
-205Fr	87	118	alpha
-206Fr	87	119	alpha
-207Fr	87	120	alpha
-208Fr	87	121	alpha
-209Fr	87	122	alpha
-210Fr	87	123	alpha
-211Fr	87	124	alpha
-212Fr	87	125	betap
-213Fr	87	126	alpha
-214Fr	87	127	alpha
-215Fr	87	128	alpha
-216Fr	87	129	alpha
-217Fr	87	130	alpha
-218Fr	87	131	alpha
-219Fr	87	132	alpha
-220Fr	87	133	alpha
-221Fr	87	134	alpha
-222Fr	87	135	betam
-223Fr	87	136	betam
-224Fr	87	137	betam
-225Fr	87	138	betam
-226Fr	87	139	betam
-227Fr	87	140	betam
-228Fr	87	141	betam
-229Fr	87	142	betam
-230Fr	87	143	betam
-231Fr	87	144	betam
-232Fr	87	145	betam
-233Fr	87	146	betam
-201Ra	88	113	alpha
-202Ra	88	114	alpha
-203Ra	88	115	alpha
-204Ra	88	116	alpha
-205Ra	88	117	alpha
-206Ra	88	118	alpha
-207Ra	88	119	alpha
-208Ra	88	120	alpha
-209Ra	88	121	alpha
-210Ra	88	122	alpha
-211Ra	88	123	alpha
-212Ra	88	124	alpha
-213Ra	88	125	alpha
-214Ra	88	126	alpha
-215Ra	88	127	alpha
-216Ra	88	128	alpha
-217Ra	88	129	alpha
-218Ra	88	130	alpha
-219Ra	88	131	alpha
-220Ra	88	132	alpha
-221Ra	88	133	alpha
-222Ra	88	134	alpha
-223Ra	88	135	alpha
-224Ra	88	136	alpha
-225Ra	88	137	betam
-226Ra	88	138	alpha
-227Ra	88	139	betam
-228Ra	88	140	betam
-229Ra	88	141	betam
-230Ra	88	142	betam
-231Ra	88	143	betam
-232Ra	88	144	betam
-233Ra	88	145	betam
-234Ra	88	146	betam
-235Ra	88	147	unknown
-206Ac	89	117	alpha
-207Ac	89	118	alpha
-208Ac	89	119	alpha
-209Ac	89	120	alpha
-210Ac	89	121	alpha
-211Ac	89	122	alpha
-212Ac	89	123	alpha
-213Ac	89	124	alpha
-214Ac	89	125	alpha
-215Ac	89	126	alpha
-216Ac	89	127	alpha
-217Ac	89	128	alpha
-218Ac	89	129	alpha
-219Ac	89	130	alpha
-220Ac	89	131	alpha
-221Ac	89	132	alpha
-222Ac	89	133	alpha
-223Ac	89	134	alpha
-224Ac	89	135	betap
-225Ac	89	136	alpha
-226Ac	89	137	betam
-227Ac	89	138	betam
-228Ac	89	139	betam
-229Ac	89	140	betam
-230Ac	89	141	betam
-231Ac	89	142	betam
-232Ac	89	143	betam
-233Ac	89	144	betam
-234Ac	89	145	betam
-235Ac	89	146	betam
-236Ac	89	147	betam
-237Ac	89	148	unknown
-208Th	90	118	alpha
-209Th	90	119	alpha
-210Th	90	120	alpha
-211Th	90	121	alpha
-212Th	90	122	alpha
-213Th	90	123	alpha
-214Th	90	124	alpha
-215Th	90	125	alpha
-216Th	90	126	alpha
-217Th	90	127	alpha
-218Th	90	128	alpha
-219Th	90	129	alpha
-220Th	90	130	alpha
-221Th	90	131	alpha
-222Th	90	132	alpha
-223Th	90	133	alpha
-224Th	90	134	alpha
-225Th	90	135	alpha
-226Th	90	136	alpha
-227Th	90	137	alpha
-228Th	90	138	alpha
-229Th	90	139	alpha
-230Th	90	140	alpha
-231Th	90	141	betam
-232Th	90	142	alpha
-233Th	90	143	betam
-234Th	90	144	betam
-235Th	90	145	betam
-236Th	90	146	betam
-237Th	90	147	betam
-238Th	90	148	betam
-239Th	90	149	unknown
-212Pa	91	121	alpha
-213Pa	91	122	alpha
-214Pa	91	123	alpha
-215Pa	91	124	alpha
-216Pa	91	125	alpha
-217Pa	91	126	alpha
-218Pa	91	127	alpha
-219Pa	91	128	alpha
-220Pa	91	129	alpha
-221Pa	91	130	alpha
-222Pa	91	131	alpha
-223Pa	91	132	alpha
-224Pa	91	133	alpha
-225Pa	91	134	alpha
-226Pa	91	135	alpha
-227Pa	91	136	alpha
-228Pa	91	137	betap
-229Pa	91	138	betap
-230Pa	91	139	betap
-231Pa	91	140	alpha
-232Pa	91	141	betam
-233Pa	91	142	betam
-234Pa	91	143	betam
-235Pa	91	144	betam
-236Pa	91	145	betam
-237Pa	91	146	betam
-238Pa	91	147	betam
-239Pa	91	148	betam
-240Pa	91	149	betam
-241Pa	91	150	unknown
-217U	92	125	alpha
-218U	92	126	alpha
-219U	92	127	alpha
-220U	92	128	betap
-221U	92	129	unknown
-222U	92	130	alpha
-223U	92	131	alpha
-224U	92	132	alpha
-225U	92	133	alpha
-226U	92	134	alpha
-227U	92	135	alpha
-228U	92	136	alpha
-229U	92	137	betap
-230U	92	138	alpha
-231U	92	139	betap
-232U	92	140	alpha
-233U	92	141	alpha
-234U	92	142	alpha
-235U	92	143	alpha
-236U	92	144	alpha
-237U	92	145	betam
-238U	92	146	alpha
-239U	92	147	betam
-240U	92	148	betam
-241U	92	149	betam
-242U	92	150	betam
-243U	92	151	unknown
-225Np	93	132	alpha
-226Np	93	133	alpha
-227Np	93	134	alpha
-228Np	93	135	betap
-229Np	93	136	alpha
-230Np	93	137	betap
-231Np	93	138	betap
-232Np	93	139	betap
-233Np	93	140	betap
-234Np	93	141	betap
-235Np	93	142	betap
-236Np	93	143	betap
-237Np	93	144	alpha
-238Np	93	145	betam
-239Np	93	146	betam
-240Np	93	147	betam
-241Np	93	148	betam
-242Np	93	149	betam
-243Np	93	150	betam
-244Np	93	151	betam
-245Np	93	152	unknown
-228Pu	94	134	alpha
-229Pu	94	135	alpha
-230Pu	94	136	alpha
-231Pu	94	137	betap
-232Pu	94	138	betap
-233Pu	94	139	betap
-234Pu	94	140	betap
-235Pu	94	141	betap
-236Pu	94	142	alpha
-237Pu	94	143	betap
-238Pu	94	144	alpha
-239Pu	94	145	alpha
-240Pu	94	146	alpha
-241Pu	94	147	betam
-242Pu	94	148	alpha
-243Pu	94	149	betam
-244Pu	94	150	alpha
-245Pu	94	151	betam
-246Pu	94	152	betam
-247Pu	94	153	betam
-230Am	95	135	betap
-231Am	95	136	betap
-232Am	95	137	betap
-233Am	95	138	alpha
-234Am	95	139	betap
-235Am	95	140	betap
-236Am	95	141	betap
-237Am	95	142	betap
-238Am	95	143	betap
-239Am	95	144	betap
-240Am	95	145	betap
-241Am	95	146	alpha
-242Am	95	147	betam
-243Am	95	148	alpha
-244Am	95	149	betam
-245Am	95	150	betam
-246Am	95	151	betam
-247Am	95	152	betam
-248Am	95	153	betam
-249Am	95	154	betam
-233Cm	96	137	betap
-234Cm	96	138	fission
-235Cm	96	139	betap
-236Cm	96	140	alpha
-237Cm	96	141	betap
-238Cm	96	142	betap
-239Cm	96	143	betap
-240Cm	96	144	alpha
-241Cm	96	145	betap
-242Cm	96	146	alpha
-243Cm	96	147	alpha
-244Cm	96	148	alpha
-245Cm	96	149	alpha
-246Cm	96	150	alpha
-247Cm	96	151	alpha
-248Cm	96	152	alpha
-249Cm	96	153	betam
-250Cm	96	154	fission
-251Cm	96	155	betam
-252Cm	96	156	unknown
-234Bk	97	137	alpha
-235Bk	97	138	alpha
-236Bk	97	139	unknown
-237Bk	97	140	alpha
-238Bk	97	141	betap
-239Bk	97	142	betap
-240Bk	97	143	betap
-241Bk	97	144	betap
-242Bk	97	145	betap
-243Bk	97	146	betap
-244Bk	97	147	betap
-245Bk	97	148	betap
-246Bk	97	149	betap
-247Bk	97	150	alpha
-248Bk	97	151	alpha
-249Bk	97	152	betam
-250Bk	97	153	betam
-251Bk	97	154	betam
-252Bk	97	155	unknown
-253Bk	97	156	betam
-254Bk	97	157	unknown
-237Cf	98	139	fission
-238Cf	98	140	fission
-239Cf	98	141	alpha
-240Cf	98	142	alpha
-241Cf	98	143	betap
-242Cf	98	144	alpha
-243Cf	98	145	betap
-244Cf	98	146	alpha
-245Cf	98	147	betap
-246Cf	98	148	alpha
-247Cf	98	149	betap
-248Cf	98	150	alpha
-249Cf	98	151	alpha
-250Cf	98	152	alpha
-251Cf	98	153	alpha
-252Cf	98	154	alpha
-253Cf	98	155	betam
-254Cf	98	156	fission
-255Cf	98	157	betam
-256Cf	98	158	fission
-240Es	99	141	betap
-241Es	99	142	alpha
-242Es	99	143	alpha
-243Es	99	144	alpha
-244Es	99	145	betap
-245Es	99	146	betap
-246Es	99	147	betap
-247Es	99	148	betap
-248Es	99	149	betap
-249Es	99	150	betap
-250Es	99	151	betap
-251Es	99	152	betap
-252Es	99	153	alpha
-253Es	99	154	alpha
-254Es	99	155	alpha
-255Es	99	156	betam
-256Es	99	157	betam
-257Es	99	158	fission
-258Es	99	159	unknown
-241Fm	100	141	fission
-242Fm	100	142	fission
-243Fm	100	143	alpha
-244Fm	100	144	fission
-245Fm	100	145	alpha
-246Fm	100	146	alpha
-247Fm	100	147	alpha
-248Fm	100	148	alpha
-249Fm	100	149	betap
-250Fm	100	150	alpha
-251Fm	100	151	betap
-252Fm	100	152	alpha
-253Fm	100	153	betap
-254Fm	100	154	alpha
-255Fm	100	155	alpha
-256Fm	100	156	fission
-257Fm	100	157	alpha
-258Fm	100	158	fission
-259Fm	100	159	fission
-260Fm	100	160	fission
-245Md	101	144	fission
-246Md	101	145	alpha
-247Md	101	146	alpha
-248Md	101	147	alpha
-249Md	101	148	alpha
-250Md	101	149	betap
-251Md	101	150	betap
-252Md	101	151	betap
-253Md	101	152	betap
-254Md	101	153	betap
-255Md	101	154	betap
-256Md	101	155	betap
-257Md	101	156	betap
-258Md	101	157	alpha
-259Md	101	158	fission
-260Md	101	159	fission
-261Md	101	160	alpha
-262Md	101	161	alpha
-248No	102	146	fission
-249No	102	147	unknown
-250No	102	148	fission
-251No	102	149	alpha
-252No	102	150	alpha
-253No	102	151	alpha
-254No	102	152	alpha
-255No	102	153	betap
-256No	102	154	alpha
-257No	102	155	alpha
-258No	102	156	fission
-259No	102	157	alpha
-260No	102	158	fission
-261No	102	159	alpha
-262No	102	160	fission
-263No	102	161	fission
-264No	102	162	alpha
-251Lr	103	148	alpha
-252Lr	103	149	alpha
-253Lr	103	150	alpha
-254Lr	103	151	alpha
-255Lr	103	152	alpha
-256Lr	103	153	alpha
-257Lr	103	154	alpha
-258Lr	103	155	alpha
-259Lr	103	156	alpha
-260Lr	103	157	alpha
-261Lr	103	158	fission
-262Lr	103	159	fission
-263Lr	103	160	alpha
-264Lr	103	161	alpha
-265Lr	103	162	alpha
-266Lr	103	163	fission
-253Rf	104	149	fission
-254Rf	104	150	fission
-255Rf	104	151	alpha
-256Rf	104	152	fission
-257Rf	104	153	alpha
-258Rf	104	154	fission
-259Rf	104	155	alpha
-260Rf	104	156	fission
-261Rf	104	157	alpha
-262Rf	104	158	fission
-263Rf	104	159	fission
-264Rf	104	160	alpha
-265Rf	104	161	fission
-266Rf	104	162	alpha
-267Rf	104	163	unknown
-268Rf	104	164	fission
-255Db	105	150	alpha
-256Db	105	151	alpha
-257Db	105	152	alpha
-258Db	105	153	alpha
-259Db	105	154	alpha
-260Db	105	155	alpha
-261Db	105	156	alpha
-262Db	105	157	alpha
-263Db	105	158	fission
-264Db	105	159	alpha
-265Db	105	160	alpha
-266Db	105	161	alpha
-267Db	105	162	fission
-268Db	105	163	fission
-269Db	105	164	fission
-270Db	105	165	fission
-258Sg	106	152	fission
-259Sg	106	153	alpha
-260Sg	106	154	alpha
-261Sg	106	155	alpha
-262Sg	106	156	fission
-263Sg	106	157	alpha
-264Sg	106	158	fission
-265Sg	106	159	alpha
-266Sg	106	160	fission
-267Sg	106	161	unknown
-268Sg	106	162	alpha
-269Sg	106	163	unknown
-270Sg	106	164	fission
-271Sg	106	165	fission
-272Sg	106	166	fission
-273Sg	106	167	fission
-260Bh	107	153	alpha
-261Bh	107	154	alpha
-262Bh	107	155	alpha
-263Bh	107	156	alpha
-264Bh	107	157	alpha
-265Bh	107	158	alpha
-266Bh	107	159	alpha
-267Bh	107	160	alpha
-268Bh	107	161	unknown
-269Bh	107	162	unknown
-270Bh	107	163	alpha
-271Bh	107	164	alpha
-272Bh	107	165	alpha
-273Bh	107	166	fission
-274Bh	107	167	alpha
-275Bh	107	168	fission
-263Hs	108	155	alpha
-264Hs	108	156	alpha
-265Hs	108	157	alpha
-266Hs	108	158	alpha
-267Hs	108	159	alpha
-268Hs	108	160	alpha
-269Hs	108	161	alpha
-270Hs	108	162	alpha
-271Hs	108	163	fission
-272Hs	108	164	alpha
-273Hs	108	165	alpha
-274Hs	108	166	alpha
-275Hs	108	167	alpha
-276Hs	108	168	fission
-277Hs	108	169	unknown
-265Mt	109	156	alpha
-266Mt	109	157	alpha
-267Mt	109	158	alpha
-268Mt	109	159	alpha
-269Mt	109	160	unknown
-270Mt	109	161	alpha
-271Mt	109	162	alpha
-272Mt	109	163	fission
-273Mt	109	164	fission
-274Mt	109	165	alpha
-275Mt	109	166	alpha
-276Mt	109	167	alpha
-277Mt	109	168	unknown
-278Mt	109	169	alpha
-279Mt	109	170	alpha
-267Ds	110	157	alpha
-268Ds	110	158	alpha
-269Ds	110	159	alpha
-270Ds	110	160	alpha
-271Ds	110	161	alpha
-272Ds	110	162	fission
-273Ds	110	163	alpha
-274Ds	110	164	alpha
-275Ds	110	165	alpha
-276Ds	110	166	alpha
-277Ds	110	167	alpha
-278Ds	110	168	alpha
-279Ds	110	169	fission
-280Ds	110	170	unknown
-281Ds	110	171	fission
-272Rg	111	161	alpha
-273Rg	111	162	alpha
-274Rg	111	163	alpha
-275Rg	111	164	alpha
-276Rg	111	165	fission
-277Rg	111	166	alpha
-278Rg	111	167	alpha
-279Rg	111	168	alpha
-280Rg	111	169	alpha
-281Rg	111	170	fission
-282Rg	111	171	alpha
-283Rg	111	172	fission
-276Cn	112	164	unknown
-277Cn	112	165	unknown
-278Cn	112	166	fission
-279Cn	112	167	alpha
-280Cn	112	168	fission
-281Cn	112	169	alpha
-282Cn	112	170	fission
-283Cn	112	171	alpha
-284Cn	112	172	fission
-285Cn	112	173	alpha
-278Uut	113	165	alpha
-279Uut	113	166	unknown
-280Uut	113	167	unknown
-281Uut	113	168	unknown
-282Uut	113	169	alpha
-283Uut	113	170	alpha
-284Uut	113	171	alpha
-285Uut	113	172	alpha
-286Uut	113	173	alpha
-287Uut	113	174	fission
-285Fl	114	171	alpha
-286Fl	114	172	fission
-287Fl	114	173	alpha
-288Fl	114	174	alpha
-289Fl	114	175	alpha
-287Uup	115	172	alpha
-288Uup	115	173	alpha
-289Uup	115	174	alpha
-290Uup	115	175	alpha
-291Uup	115	176	fission
-289Lv	116	173	unknown
-290Lv	116	174	alpha
-291Lv	116	175	alpha
-292Lv	116	176	alpha
-293Lv	116	177	alpha
-291Uus	117	174	alpha
-292Uus	117	175	alpha
-293Uus	117	176	alpha
-294Uus	117	177	alpha
+1n	0	1
+1H	1	0
+2H	1	1
+3H	1	2
+4H	1	3
+5H	1	4
+6H	1	5
+7H	1	6
+3He	2	1
+4He	2	2
+5He	2	3
+6He	2	4
+7He	2	5
+8He	2	6
+9He	2	7
+10He	2	8
+3Li	3	0
+4Li	3	1
+5Li	3	2
+6Li	3	3
+7Li	3	4
+8Li	3	5
+9Li	3	6
+10Li	3	7
+11Li	3	8
+12Li	3	9
+13Li	3	10
+5Be	4	1
+6Be	4	2
+7Be	4	3
+8Be	4	4
+9Be	4	5
+10Be	4	6
+11Be	4	7
+12Be	4	8
+13Be	4	9
+14Be	4	10
+15Be	4	11
+16Be	4	12
+6B	5	1
+7B	5	2
+8B	5	3
+9B	5	4
+10B	5	5
+11B	5	6
+12B	5	7
+13B	5	8
+14B	5	9
+15B	5	10
+16B	5	11
+17B	5	12
+18B	5	13
+19B	5	14
+20B	5	15
+21B	5	16
+8C	6	2
+9C	6	3
+10C	6	4
+11C	6	5
+12C	6	6
+13C	6	7
+14C	6	8
+15C	6	9
+16C	6	10
+17C	6	11
+18C	6	12
+19C	6	13
+20C	6	14
+21C	6	15
+22C	6	16
+23C	6	17
+10N	7	3
+11N	7	4
+12N	7	5
+13N	7	6
+14N	7	7
+15N	7	8
+16N	7	9
+17N	7	10
+18N	7	11
+19N	7	12
+20N	7	13
+21N	7	14
+22N	7	15
+23N	7	16
+24N	7	17
+25N	7	18
+12O	8	4
+13O	8	5
+14O	8	6
+15O	8	7
+16O	8	8
+17O	8	9
+18O	8	10
+19O	8	11
+20O	8	12
+21O	8	13
+22O	8	14
+23O	8	15
+24O	8	16
+25O	8	17
+26O	8	18
+27O	8	19
+28O	8	20
+14F	9	5
+15F	9	6
+16F	9	7
+17F	9	8
+18F	9	9
+19F	9	10
+20F	9	11
+21F	9	12
+22F	9	13
+23F	9	14
+24F	9	15
+25F	9	16
+26F	9	17
+27F	9	18
+28F	9	19
+29F	9	20
+30F	9	21
+31F	9	22
+16Ne	10	6
+17Ne	10	7
+18Ne	10	8
+19Ne	10	9
+20Ne	10	10
+21Ne	10	11
+22Ne	10	12
+23Ne	10	13
+24Ne	10	14
+25Ne	10	15
+26Ne	10	16
+27Ne	10	17
+28Ne	10	18
+29Ne	10	19
+30Ne	10	20
+31Ne	10	21
+32Ne	10	22
+33Ne	10	23
+34Ne	10	24
+18Na	11	7
+19Na	11	8
+20Na	11	9
+21Na	11	10
+22Na	11	11
+23Na	11	12
+24Na	11	13
+25Na	11	14
+26Na	11	15
+27Na	11	16
+28Na	11	17
+29Na	11	18
+30Na	11	19
+31Na	11	20
+32Na	11	21
+33Na	11	22
+34Na	11	23
+35Na	11	24
+36Na	11	25
+37Na	11	26
+19Mg	12	7
+20Mg	12	8
+21Mg	12	9
+22Mg	12	10
+23Mg	12	11
+24Mg	12	12
+25Mg	12	13
+26Mg	12	14
+27Mg	12	15
+28Mg	12	16
+29Mg	12	17
+30Mg	12	18
+31Mg	12	19
+32Mg	12	20
+33Mg	12	21
+34Mg	12	22
+35Mg	12	23
+36Mg	12	24
+37Mg	12	25
+38Mg	12	26
+39Mg	12	27
+40Mg	12	28
+21Al	13	8
+22Al	13	9
+23Al	13	10
+24Al	13	11
+25Al	13	12
+26Al	13	13
+27Al	13	14
+28Al	13	15
+29Al	13	16
+30Al	13	17
+31Al	13	18
+32Al	13	19
+33Al	13	20
+34Al	13	21
+35Al	13	22
+36Al	13	23
+37Al	13	24
+38Al	13	25
+39Al	13	26
+40Al	13	27
+41Al	13	28
+42Al	13	29
+43Al	13	30
+22Si	14	8
+23Si	14	9
+24Si	14	10
+25Si	14	11
+26Si	14	12
+27Si	14	13
+28Si	14	14
+29Si	14	15
+30Si	14	16
+31Si	14	17
+32Si	14	18
+33Si	14	19
+34Si	14	20
+35Si	14	21
+36Si	14	22
+37Si	14	23
+38Si	14	24
+39Si	14	25
+40Si	14	26
+41Si	14	27
+42Si	14	28
+43Si	14	29
+44Si	14	30
+45Si	14	31
+24P	15	9
+25P	15	10
+26P	15	11
+27P	15	12
+28P	15	13
+29P	15	14
+30P	15	15
+31P	15	16
+32P	15	17
+33P	15	18
+34P	15	19
+35P	15	20
+36P	15	21
+37P	15	22
+38P	15	23
+39P	15	24
+40P	15	25
+41P	15	26
+42P	15	27
+43P	15	28
+44P	15	29
+45P	15	30
+46P	15	31
+47P	15	32
+26S	16	10
+27S	16	11
+28S	16	12
+29S	16	13
+30S	16	14
+31S	16	15
+32S	16	16
+33S	16	17
+34S	16	18
+35S	16	19
+36S	16	20
+37S	16	21
+38S	16	22
+39S	16	23
+40S	16	24
+41S	16	25
+42S	16	26
+43S	16	27
+44S	16	28
+45S	16	29
+46S	16	30
+47S	16	31
+48S	16	32
+49S	16	33
+28Cl	17	11
+29Cl	17	12
+30Cl	17	13
+31Cl	17	14
+32Cl	17	15
+33Cl	17	16
+34Cl	17	17
+35Cl	17	18
+36Cl	17	19
+37Cl	17	20
+38Cl	17	21
+39Cl	17	22
+40Cl	17	23
+41Cl	17	24
+42Cl	17	25
+43Cl	17	26
+44Cl	17	27
+45Cl	17	28
+46Cl	17	29
+47Cl	17	30
+48Cl	17	31
+49Cl	17	32
+50Cl	17	33
+51Cl	17	34
+30Ar	18	12
+31Ar	18	13
+32Ar	18	14
+33Ar	18	15
+34Ar	18	16
+35Ar	18	17
+36Ar	18	18
+37Ar	18	19
+38Ar	18	20
+39Ar	18	21
+40Ar	18	22
+41Ar	18	23
+42Ar	18	24
+43Ar	18	25
+44Ar	18	26
+45Ar	18	27
+46Ar	18	28
+47Ar	18	29
+48Ar	18	30
+49Ar	18	31
+50Ar	18	32
+51Ar	18	33
+52Ar	18	34
+53Ar	18	35
+32K	19	13
+33K	19	14
+34K	19	15
+35K	19	16
+36K	19	17
+37K	19	18
+38K	19	19
+39K	19	20
+40K	19	21
+41K	19	22
+42K	19	23
+43K	19	24
+44K	19	25
+45K	19	26
+46K	19	27
+47K	19	28
+48K	19	29
+49K	19	30
+50K	19	31
+51K	19	32
+52K	19	33
+53K	19	34
+54K	19	35
+55K	19	36
+56K	19	37
+34Ca	20	14
+35Ca	20	15
+36Ca	20	16
+37Ca	20	17
+38Ca	20	18
+39Ca	20	19
+40Ca	20	20
+41Ca	20	21
+42Ca	20	22
+43Ca	20	23
+44Ca	20	24
+45Ca	20	25
+46Ca	20	26
+47Ca	20	27
+48Ca	20	28
+49Ca	20	29
+50Ca	20	30
+51Ca	20	31
+52Ca	20	32
+53Ca	20	33
+54Ca	20	34
+55Ca	20	35
+56Ca	20	36
+57Ca	20	37
+58Ca	20	38
+36Sc	21	15
+37Sc	21	16
+38Sc	21	17
+39Sc	21	18
+40Sc	21	19
+41Sc	21	20
+42Sc	21	21
+43Sc	21	22
+44Sc	21	23
+45Sc	21	24
+46Sc	21	25
+47Sc	21	26
+48Sc	21	27
+49Sc	21	28
+50Sc	21	29
+51Sc	21	30
+52Sc	21	31
+53Sc	21	32
+54Sc	21	33
+55Sc	21	34
+56Sc	21	35
+57Sc	21	36
+58Sc	21	37
+59Sc	21	38
+60Sc	21	39
+61Sc	21	40
+38Ti	22	16
+39Ti	22	17
+40Ti	22	18
+41Ti	22	19
+42Ti	22	20
+43Ti	22	21
+44Ti	22	22
+45Ti	22	23
+46Ti	22	24
+47Ti	22	25
+48Ti	22	26
+49Ti	22	27
+50Ti	22	28
+51Ti	22	29
+52Ti	22	30
+53Ti	22	31
+54Ti	22	32
+55Ti	22	33
+56Ti	22	34
+57Ti	22	35
+58Ti	22	36
+59Ti	22	37
+60Ti	22	38
+61Ti	22	39
+62Ti	22	40
+63Ti	22	41
+40V	23	17
+41V	23	18
+42V	23	19
+43V	23	20
+44V	23	21
+45V	23	22
+46V	23	23
+47V	23	24
+48V	23	25
+49V	23	26
+50V	23	27
+51V	23	28
+52V	23	29
+53V	23	30
+54V	23	31
+55V	23	32
+56V	23	33
+57V	23	34
+58V	23	35
+59V	23	36
+60V	23	37
+61V	23	38
+62V	23	39
+63V	23	40
+64V	23	41
+65V	23	42
+66V	23	43
+42Cr	24	18
+43Cr	24	19
+44Cr	24	20
+45Cr	24	21
+46Cr	24	22
+47Cr	24	23
+48Cr	24	24
+49Cr	24	25
+50Cr	24	26
+51Cr	24	27
+52Cr	24	28
+53Cr	24	29
+54Cr	24	30
+55Cr	24	31
+56Cr	24	32
+57Cr	24	33
+58Cr	24	34
+59Cr	24	35
+60Cr	24	36
+61Cr	24	37
+62Cr	24	38
+63Cr	24	39
+64Cr	24	40
+65Cr	24	41
+66Cr	24	42
+67Cr	24	43
+68Cr	24	44
+44Mn	25	19
+45Mn	25	20
+46Mn	25	21
+47Mn	25	22
+48Mn	25	23
+49Mn	25	24
+50Mn	25	25
+51Mn	25	26
+52Mn	25	27
+53Mn	25	28
+54Mn	25	29
+55Mn	25	30
+56Mn	25	31
+57Mn	25	32
+58Mn	25	33
+59Mn	25	34
+60Mn	25	35
+61Mn	25	36
+62Mn	25	37
+63Mn	25	38
+64Mn	25	39
+65Mn	25	40
+66Mn	25	41
+67Mn	25	42
+68Mn	25	43
+69Mn	25	44
+70Mn	25	45
+71Mn	25	46
+45Fe	26	19
+46Fe	26	20
+47Fe	26	21
+48Fe	26	22
+49Fe	26	23
+50Fe	26	24
+51Fe	26	25
+52Fe	26	26
+53Fe	26	27
+54Fe	26	28
+55Fe	26	29
+56Fe	26	30
+57Fe	26	31
+58Fe	26	32
+59Fe	26	33
+60Fe	26	34
+61Fe	26	35
+62Fe	26	36
+63Fe	26	37
+64Fe	26	38
+65Fe	26	39
+66Fe	26	40
+67Fe	26	41
+68Fe	26	42
+69Fe	26	43
+70Fe	26	44
+71Fe	26	45
+72Fe	26	46
+73Fe	26	47
+74Fe	26	48
+47Co	27	20
+48Co	27	21
+49Co	27	22
+50Co	27	23
+51Co	27	24
+52Co	27	25
+53Co	27	26
+54Co	27	27
+55Co	27	28
+56Co	27	29
+57Co	27	30
+58Co	27	31
+59Co	27	32
+60Co	27	33
+61Co	27	34
+62Co	27	35
+63Co	27	36
+64Co	27	37
+65Co	27	38
+66Co	27	39
+67Co	27	40
+68Co	27	41
+69Co	27	42
+70Co	27	43
+71Co	27	44
+72Co	27	45
+73Co	27	46
+74Co	27	47
+75Co	27	48
+76Co	27	49
+48Ni	28	20
+49Ni	28	21
+50Ni	28	22
+51Ni	28	23
+52Ni	28	24
+53Ni	28	25
+54Ni	28	26
+55Ni	28	27
+56Ni	28	28
+57Ni	28	29
+58Ni	28	30
+59Ni	28	31
+60Ni	28	32
+61Ni	28	33
+62Ni	28	34
+63Ni	28	35
+64Ni	28	36
+65Ni	28	37
+66Ni	28	38
+67Ni	28	39
+68Ni	28	40
+69Ni	28	41
+70Ni	28	42
+71Ni	28	43
+72Ni	28	44
+73Ni	28	45
+74Ni	28	46
+75Ni	28	47
+76Ni	28	48
+77Ni	28	49
+78Ni	28	50
+79Ni	28	51
+52Cu	29	23
+53Cu	29	24
+54Cu	29	25
+55Cu	29	26
+56Cu	29	27
+57Cu	29	28
+58Cu	29	29
+59Cu	29	30
+60Cu	29	31
+61Cu	29	32
+62Cu	29	33
+63Cu	29	34
+64Cu	29	35
+65Cu	29	36
+66Cu	29	37
+67Cu	29	38
+68Cu	29	39
+69Cu	29	40
+70Cu	29	41
+71Cu	29	42
+72Cu	29	43
+73Cu	29	44
+74Cu	29	45
+75Cu	29	46
+76Cu	29	47
+77Cu	29	48
+78Cu	29	49
+79Cu	29	50
+80Cu	29	51
+81Cu	29	52
+82Cu	29	53
+54Zn	30	24
+55Zn	30	25
+56Zn	30	26
+57Zn	30	27
+58Zn	30	28
+59Zn	30	29
+60Zn	30	30
+61Zn	30	31
+62Zn	30	32
+63Zn	30	33
+64Zn	30	34
+65Zn	30	35
+66Zn	30	36
+67Zn	30	37
+68Zn	30	38
+69Zn	30	39
+70Zn	30	40
+71Zn	30	41
+72Zn	30	42
+73Zn	30	43
+74Zn	30	44
+75Zn	30	45
+76Zn	30	46
+77Zn	30	47
+78Zn	30	48
+79Zn	30	49
+80Zn	30	50
+81Zn	30	51
+82Zn	30	52
+83Zn	30	53
+84Zn	30	54
+85Zn	30	55
+56Ga	31	25
+57Ga	31	26
+58Ga	31	27
+59Ga	31	28
+60Ga	31	29
+61Ga	31	30
+62Ga	31	31
+63Ga	31	32
+64Ga	31	33
+65Ga	31	34
+66Ga	31	35
+67Ga	31	36
+68Ga	31	37
+69Ga	31	38
+70Ga	31	39
+71Ga	31	40
+72Ga	31	41
+73Ga	31	42
+74Ga	31	43
+75Ga	31	44
+76Ga	31	45
+77Ga	31	46
+78Ga	31	47
+79Ga	31	48
+80Ga	31	49
+81Ga	31	50
+82Ga	31	51
+83Ga	31	52
+84Ga	31	53
+85Ga	31	54
+86Ga	31	55
+87Ga	31	56
+58Ge	32	26
+59Ge	32	27
+60Ge	32	28
+61Ge	32	29
+62Ge	32	30
+63Ge	32	31
+64Ge	32	32
+65Ge	32	33
+66Ge	32	34
+67Ge	32	35
+68Ge	32	36
+69Ge	32	37
+70Ge	32	38
+71Ge	32	39
+72Ge	32	40
+73Ge	32	41
+74Ge	32	42
+75Ge	32	43
+76Ge	32	44
+77Ge	32	45
+78Ge	32	46
+79Ge	32	47
+80Ge	32	48
+81Ge	32	49
+82Ge	32	50
+83Ge	32	51
+84Ge	32	52
+85Ge	32	53
+86Ge	32	54
+87Ge	32	55
+88Ge	32	56
+89Ge	32	57
+90Ge	32	58
+60As	33	27
+61As	33	28
+62As	33	29
+63As	33	30
+64As	33	31
+65As	33	32
+66As	33	33
+67As	33	34
+68As	33	35
+69As	33	36
+70As	33	37
+71As	33	38
+72As	33	39
+73As	33	40
+74As	33	41
+75As	33	42
+76As	33	43
+77As	33	44
+78As	33	45
+79As	33	46
+80As	33	47
+81As	33	48
+82As	33	49
+83As	33	50
+84As	33	51
+85As	33	52
+86As	33	53
+87As	33	54
+88As	33	55
+89As	33	56
+90As	33	57
+91As	33	58
+92As	33	59
+64Se	34	30
+65Se	34	31
+66Se	34	32
+67Se	34	33
+68Se	34	34
+69Se	34	35
+70Se	34	36
+71Se	34	37
+72Se	34	38
+73Se	34	39
+74Se	34	40
+75Se	34	41
+76Se	34	42
+77Se	34	43
+78Se	34	44
+79Se	34	45
+80Se	34	46
+81Se	34	47
+82Se	34	48
+83Se	34	49
+84Se	34	50
+85Se	34	51
+86Se	34	52
+87Se	34	53
+88Se	34	54
+89Se	34	55
+90Se	34	56
+91Se	34	57
+92Se	34	58
+93Se	34	59
+94Se	34	60
+95Se	34	61
+67Br	35	32
+68Br	35	33
+69Br	35	34
+70Br	35	35
+71Br	35	36
+72Br	35	37
+73Br	35	38
+74Br	35	39
+75Br	35	40
+76Br	35	41
+77Br	35	42
+78Br	35	43
+79Br	35	44
+80Br	35	45
+81Br	35	46
+82Br	35	47
+83Br	35	48
+84Br	35	49
+85Br	35	50
+86Br	35	51
+87Br	35	52
+88Br	35	53
+89Br	35	54
+90Br	35	55
+91Br	35	56
+92Br	35	57
+93Br	35	58
+94Br	35	59
+95Br	35	60
+96Br	35	61
+97Br	35	62
+98Br	35	63
+69Kr	36	33
+70Kr	36	34
+71Kr	36	35
+72Kr	36	36
+73Kr	36	37
+74Kr	36	38
+75Kr	36	39
+76Kr	36	40
+77Kr	36	41
+78Kr	36	42
+79Kr	36	43
+80Kr	36	44
+81Kr	36	45
+82Kr	36	46
+83Kr	36	47
+84Kr	36	48
+85Kr	36	49
+86Kr	36	50
+87Kr	36	51
+88Kr	36	52
+89Kr	36	53
+90Kr	36	54
+91Kr	36	55
+92Kr	36	56
+93Kr	36	57
+94Kr	36	58
+95Kr	36	59
+96Kr	36	60
+97Kr	36	61
+98Kr	36	62
+99Kr	36	63
+100Kr	36	64
+101Kr	36	65
+71Rb	37	34
+72Rb	37	35
+73Rb	37	36
+74Rb	37	37
+75Rb	37	38
+76Rb	37	39
+77Rb	37	40
+78Rb	37	41
+79Rb	37	42
+80Rb	37	43
+81Rb	37	44
+82Rb	37	45
+83Rb	37	46
+84Rb	37	47
+85Rb	37	48
+86Rb	37	49
+87Rb	37	50
+88Rb	37	51
+89Rb	37	52
+90Rb	37	53
+91Rb	37	54
+92Rb	37	55
+93Rb	37	56
+94Rb	37	57
+95Rb	37	58
+96Rb	37	59
+97Rb	37	60
+98Rb	37	61
+99Rb	37	62
+100Rb	37	63
+101Rb	37	64
+102Rb	37	65
+103Rb	37	66
+73Sr	38	35
+74Sr	38	36
+75Sr	38	37
+76Sr	38	38
+77Sr	38	39
+78Sr	38	40
+79Sr	38	41
+80Sr	38	42
+81Sr	38	43
+82Sr	38	44
+83Sr	38	45
+84Sr	38	46
+85Sr	38	47
+86Sr	38	48
+87Sr	38	49
+88Sr	38	50
+89Sr	38	51
+90Sr	38	52
+91Sr	38	53
+92Sr	38	54
+93Sr	38	55
+94Sr	38	56
+95Sr	38	57
+96Sr	38	58
+97Sr	38	59
+98Sr	38	60
+99Sr	38	61
+100Sr	38	62
+101Sr	38	63
+102Sr	38	64
+103Sr	38	65
+104Sr	38	66
+105Sr	38	67
+106Sr	38	68
+107Sr	38	69
+76Y	39	37
+77Y	39	38
+78Y	39	39
+79Y	39	40
+80Y	39	41
+81Y	39	42
+82Y	39	43
+83Y	39	44
+84Y	39	45
+85Y	39	46
+86Y	39	47
+87Y	39	48
+88Y	39	49
+89Y	39	50
+90Y	39	51
+91Y	39	52
+92Y	39	53
+93Y	39	54
+94Y	39	55
+95Y	39	56
+96Y	39	57
+97Y	39	58
+98Y	39	59
+99Y	39	60
+100Y	39	61
+101Y	39	62
+102Y	39	63
+103Y	39	64
+104Y	39	65
+105Y	39	66
+106Y	39	67
+107Y	39	68
+108Y	39	69
+109Y	39	70
+78Zr	40	38
+79Zr	40	39
+80Zr	40	40
+81Zr	40	41
+82Zr	40	42
+83Zr	40	43
+84Zr	40	44
+85Zr	40	45
+86Zr	40	46
+87Zr	40	47
+88Zr	40	48
+89Zr	40	49
+90Zr	40	50
+91Zr	40	51
+92Zr	40	52
+93Zr	40	53
+94Zr	40	54
+95Zr	40	55
+96Zr	40	56
+97Zr	40	57
+98Zr	40	58
+99Zr	40	59
+100Zr	40	60
+101Zr	40	61
+102Zr	40	62
+103Zr	40	63
+104Zr	40	64
+105Zr	40	65
+106Zr	40	66
+107Zr	40	67
+108Zr	40	68
+109Zr	40	69
+110Zr	40	70
+111Zr	40	71
+112Zr	40	72
+81Nb	41	40
+82Nb	41	41
+83Nb	41	42
+84Nb	41	43
+85Nb	41	44
+86Nb	41	45
+87Nb	41	46
+88Nb	41	47
+89Nb	41	48
+90Nb	41	49
+91Nb	41	50
+92Nb	41	51
+93Nb	41	52
+94Nb	41	53
+95Nb	41	54
+96Nb	41	55
+97Nb	41	56
+98Nb	41	57
+99Nb	41	58
+100Nb	41	59
+101Nb	41	60
+102Nb	41	61
+103Nb	41	62
+104Nb	41	63
+105Nb	41	64
+106Nb	41	65
+107Nb	41	66
+108Nb	41	67
+109Nb	41	68
+110Nb	41	69
+111Nb	41	70
+112Nb	41	71
+113Nb	41	72
+114Nb	41	73
+115Nb	41	74
+83Mo	42	41
+84Mo	42	42
+85Mo	42	43
+86Mo	42	44
+87Mo	42	45
+88Mo	42	46
+89Mo	42	47
+90Mo	42	48
+91Mo	42	49
+92Mo	42	50
+93Mo	42	51
+94Mo	42	52
+95Mo	42	53
+96Mo	42	54
+97Mo	42	55
+98Mo	42	56
+99Mo	42	57
+100Mo	42	58
+101Mo	42	59
+102Mo	42	60
+103Mo	42	61
+104Mo	42	62
+105Mo	42	63
+106Mo	42	64
+107Mo	42	65
+108Mo	42	66
+109Mo	42	67
+110Mo	42	68
+111Mo	42	69
+112Mo	42	70
+113Mo	42	71
+114Mo	42	72
+115Mo	42	73
+116Mo	42	74
+117Mo	42	75
+85Tc	43	42
+86Tc	43	43
+87Tc	43	44
+88Tc	43	45
+89Tc	43	46
+90Tc	43	47
+91Tc	43	48
+92Tc	43	49
+93Tc	43	50
+94Tc	43	51
+95Tc	43	52
+96Tc	43	53
+97Tc	43	54
+98Tc	43	55
+99Tc	43	56
+100Tc	43	57
+101Tc	43	58
+102Tc	43	59
+103Tc	43	60
+104Tc	43	61
+105Tc	43	62
+106Tc	43	63
+107Tc	43	64
+108Tc	43	65
+109Tc	43	66
+110Tc	43	67
+111Tc	43	68
+112Tc	43	69
+113Tc	43	70
+114Tc	43	71
+115Tc	43	72
+116Tc	43	73
+117Tc	43	74
+118Tc	43	75
+119Tc	43	76
+120Tc	43	77
+87Ru	44	43
+88Ru	44	44
+89Ru	44	45
+90Ru	44	46
+91Ru	44	47
+92Ru	44	48
+93Ru	44	49
+94Ru	44	50
+95Ru	44	51
+96Ru	44	52
+97Ru	44	53
+98Ru	44	54
+99Ru	44	55
+100Ru	44	56
+101Ru	44	57
+102Ru	44	58
+103Ru	44	59
+104Ru	44	60
+105Ru	44	61
+106Ru	44	62
+107Ru	44	63
+108Ru	44	64
+109Ru	44	65
+110Ru	44	66
+111Ru	44	67
+112Ru	44	68
+113Ru	44	69
+114Ru	44	70
+115Ru	44	71
+116Ru	44	72
+117Ru	44	73
+118Ru	44	74
+119Ru	44	75
+120Ru	44	76
+121Ru	44	77
+122Ru	44	78
+123Ru	44	79
+124Ru	44	80
+89Rh	45	44
+90Rh	45	45
+91Rh	45	46
+92Rh	45	47
+93Rh	45	48
+94Rh	45	49
+95Rh	45	50
+96Rh	45	51
+97Rh	45	52
+98Rh	45	53
+99Rh	45	54
+100Rh	45	55
+101Rh	45	56
+102Rh	45	57
+103Rh	45	58
+104Rh	45	59
+105Rh	45	60
+106Rh	45	61
+107Rh	45	62
+108Rh	45	63
+109Rh	45	64
+110Rh	45	65
+111Rh	45	66
+112Rh	45	67
+113Rh	45	68
+114Rh	45	69
+115Rh	45	70
+116Rh	45	71
+117Rh	45	72
+118Rh	45	73
+119Rh	45	74
+120Rh	45	75
+121Rh	45	76
+122Rh	45	77
+123Rh	45	78
+124Rh	45	79
+125Rh	45	80
+126Rh	45	81
+91Pd	46	45
+92Pd	46	46
+93Pd	46	47
+94Pd	46	48
+95Pd	46	49
+96Pd	46	50
+97Pd	46	51
+98Pd	46	52
+99Pd	46	53
+100Pd	46	54
+101Pd	46	55
+102Pd	46	56
+103Pd	46	57
+104Pd	46	58
+105Pd	46	59
+106Pd	46	60
+107Pd	46	61
+108Pd	46	62
+109Pd	46	63
+110Pd	46	64
+111Pd	46	65
+112Pd	46	66
+113Pd	46	67
+114Pd	46	68
+115Pd	46	69
+116Pd	46	70
+117Pd	46	71
+118Pd	46	72
+119Pd	46	73
+120Pd	46	74
+121Pd	46	75
+122Pd	46	76
+123Pd	46	77
+124Pd	46	78
+125Pd	46	79
+126Pd	46	80
+128Pd	46	82
+93Ag	47	46
+94Ag	47	47
+95Ag	47	48
+96Ag	47	49
+97Ag	47	50
+98Ag	47	51
+99Ag	47	52
+100Ag	47	53
+101Ag	47	54
+102Ag	47	55
+103Ag	47	56
+104Ag	47	57
+105Ag	47	58
+106Ag	47	59
+107Ag	47	60
+108Ag	47	61
+109Ag	47	62
+110Ag	47	63
+111Ag	47	64
+112Ag	47	65
+113Ag	47	66
+114Ag	47	67
+115Ag	47	68
+116Ag	47	69
+117Ag	47	70
+118Ag	47	71
+119Ag	47	72
+120Ag	47	73
+121Ag	47	74
+122Ag	47	75
+123Ag	47	76
+124Ag	47	77
+125Ag	47	78
+126Ag	47	79
+127Ag	47	80
+128Ag	47	81
+129Ag	47	82
+130Ag	47	83
+95Cd	48	47
+96Cd	48	48
+97Cd	48	49
+98Cd	48	50
+99Cd	48	51
+100Cd	48	52
+101Cd	48	53
+102Cd	48	54
+103Cd	48	55
+104Cd	48	56
+105Cd	48	57
+106Cd	48	58
+107Cd	48	59
+108Cd	48	60
+109Cd	48	61
+110Cd	48	62
+111Cd	48	63
+112Cd	48	64
+113Cd	48	65
+114Cd	48	66
+115Cd	48	67
+116Cd	48	68
+117Cd	48	69
+118Cd	48	70
+119Cd	48	71
+120Cd	48	72
+121Cd	48	73
+122Cd	48	74
+123Cd	48	75
+124Cd	48	76
+125Cd	48	77
+126Cd	48	78
+127Cd	48	79
+128Cd	48	80
+129Cd	48	81
+130Cd	48	82
+131Cd	48	83
+132Cd	48	84
+133Cd	48	85
+97In	49	48
+98In	49	49
+99In	49	50
+100In	49	51
+101In	49	52
+102In	49	53
+103In	49	54
+104In	49	55
+105In	49	56
+106In	49	57
+107In	49	58
+108In	49	59
+109In	49	60
+110In	49	61
+111In	49	62
+112In	49	63
+113In	49	64
+114In	49	65
+115In	49	66
+116In	49	67
+117In	49	68
+118In	49	69
+119In	49	70
+120In	49	71
+121In	49	72
+122In	49	73
+123In	49	74
+124In	49	75
+125In	49	76
+126In	49	77
+127In	49	78
+128In	49	79
+129In	49	80
+130In	49	81
+131In	49	82
+132In	49	83
+133In	49	84
+134In	49	85
+135In	49	86
+99Sn	50	49
+100Sn	50	50
+101Sn	50	51
+102Sn	50	52
+103Sn	50	53
+104Sn	50	54
+105Sn	50	55
+106Sn	50	56
+107Sn	50	57
+108Sn	50	58
+109Sn	50	59
+110Sn	50	60
+111Sn	50	61
+112Sn	50	62
+113Sn	50	63
+114Sn	50	64
+115Sn	50	65
+116Sn	50	66
+117Sn	50	67
+118Sn	50	68
+119Sn	50	69
+120Sn	50	70
+121Sn	50	71
+122Sn	50	72
+123Sn	50	73
+124Sn	50	74
+125Sn	50	75
+126Sn	50	76
+127Sn	50	77
+128Sn	50	78
+129Sn	50	79
+130Sn	50	80
+131Sn	50	81
+132Sn	50	82
+133Sn	50	83
+134Sn	50	84
+135Sn	50	85
+136Sn	50	86
+137Sn	50	87
+138Sn	50	88
+103Sb	51	52
+104Sb	51	53
+105Sb	51	54
+106Sb	51	55
+107Sb	51	56
+108Sb	51	57
+109Sb	51	58
+110Sb	51	59
+111Sb	51	60
+112Sb	51	61
+113Sb	51	62
+114Sb	51	63
+115Sb	51	64
+116Sb	51	65
+117Sb	51	66
+118Sb	51	67
+119Sb	51	68
+120Sb	51	69
+121Sb	51	70
+122Sb	51	71
+123Sb	51	72
+124Sb	51	73
+125Sb	51	74
+126Sb	51	75
+127Sb	51	76
+128Sb	51	77
+129Sb	51	78
+130Sb	51	79
+131Sb	51	80
+132Sb	51	81
+133Sb	51	82
+134Sb	51	83
+135Sb	51	84
+136Sb	51	85
+137Sb	51	86
+138Sb	51	87
+139Sb	51	88
+140Sb	51	89
+105Te	52	53
+106Te	52	54
+107Te	52	55
+108Te	52	56
+109Te	52	57
+110Te	52	58
+111Te	52	59
+112Te	52	60
+113Te	52	61
+114Te	52	62
+115Te	52	63
+116Te	52	64
+117Te	52	65
+118Te	52	66
+119Te	52	67
+120Te	52	68
+121Te	52	69
+122Te	52	70
+123Te	52	71
+124Te	52	72
+125Te	52	73
+126Te	52	74
+127Te	52	75
+128Te	52	76
+129Te	52	77
+130Te	52	78
+131Te	52	79
+132Te	52	80
+133Te	52	81
+134Te	52	82
+135Te	52	83
+136Te	52	84
+137Te	52	85
+138Te	52	86
+139Te	52	87
+140Te	52	88
+141Te	52	89
+142Te	52	90
+143Te	52	91
+107I	53	54
+108I	53	55
+109I	53	56
+110I	53	57
+111I	53	58
+112I	53	59
+113I	53	60
+114I	53	61
+115I	53	62
+116I	53	63
+117I	53	64
+118I	53	65
+119I	53	66
+120I	53	67
+121I	53	68
+122I	53	69
+123I	53	70
+124I	53	71
+125I	53	72
+126I	53	73
+127I	53	74
+128I	53	75
+129I	53	76
+130I	53	77
+131I	53	78
+132I	53	79
+133I	53	80
+134I	53	81
+135I	53	82
+136I	53	83
+137I	53	84
+138I	53	85
+139I	53	86
+140I	53	87
+141I	53	88
+142I	53	89
+143I	53	90
+144I	53	91
+145I	53	92
+108Xe	54	54
+109Xe	54	55
+110Xe	54	56
+111Xe	54	57
+112Xe	54	58
+113Xe	54	59
+114Xe	54	60
+115Xe	54	61
+116Xe	54	62
+117Xe	54	63
+118Xe	54	64
+119Xe	54	65
+120Xe	54	66
+121Xe	54	67
+122Xe	54	68
+123Xe	54	69
+124Xe	54	70
+125Xe	54	71
+126Xe	54	72
+127Xe	54	73
+128Xe	54	74
+129Xe	54	75
+130Xe	54	76
+131Xe	54	77
+132Xe	54	78
+133Xe	54	79
+134Xe	54	80
+135Xe	54	81
+136Xe	54	82
+137Xe	54	83
+138Xe	54	84
+139Xe	54	85
+140Xe	54	86
+141Xe	54	87
+142Xe	54	88
+143Xe	54	89
+144Xe	54	90
+145Xe	54	91
+146Xe	54	92
+147Xe	54	93
+148Xe	54	94
+112Cs	55	57
+113Cs	55	58
+114Cs	55	59
+115Cs	55	60
+116Cs	55	61
+117Cs	55	62
+118Cs	55	63
+119Cs	55	64
+120Cs	55	65
+121Cs	55	66
+122Cs	55	67
+123Cs	55	68
+124Cs	55	69
+125Cs	55	70
+126Cs	55	71
+127Cs	55	72
+128Cs	55	73
+129Cs	55	74
+130Cs	55	75
+131Cs	55	76
+132Cs	55	77
+133Cs	55	78
+134Cs	55	79
+135Cs	55	80
+136Cs	55	81
+137Cs	55	82
+138Cs	55	83
+139Cs	55	84
+140Cs	55	85
+141Cs	55	86
+142Cs	55	87
+143Cs	55	88
+144Cs	55	89
+145Cs	55	90
+146Cs	55	91
+147Cs	55	92
+148Cs	55	93
+149Cs	55	94
+150Cs	55	95
+151Cs	55	96
+112Ba	56	56
+113Ba	56	57
+114Ba	56	58
+115Ba	56	59
+116Ba	56	60
+117Ba	56	61
+118Ba	56	62
+119Ba	56	63
+120Ba	56	64
+121Ba	56	65
+122Ba	56	66
+123Ba	56	67
+124Ba	56	68
+125Ba	56	69
+126Ba	56	70
+127Ba	56	71
+128Ba	56	72
+129Ba	56	73
+130Ba	56	74
+131Ba	56	75
+132Ba	56	76
+133Ba	56	77
+134Ba	56	78
+135Ba	56	79
+136Ba	56	80
+137Ba	56	81
+138Ba	56	82
+139Ba	56	83
+140Ba	56	84
+141Ba	56	85
+142Ba	56	86
+143Ba	56	87
+144Ba	56	88
+145Ba	56	89
+146Ba	56	90
+147Ba	56	91
+148Ba	56	92
+149Ba	56	93
+150Ba	56	94
+151Ba	56	95
+152Ba	56	96
+153Ba	56	97
+117La	57	60
+118La	57	61
+119La	57	62
+120La	57	63
+121La	57	64
+122La	57	65
+123La	57	66
+124La	57	67
+125La	57	68
+126La	57	69
+127La	57	70
+128La	57	71
+129La	57	72
+130La	57	73
+131La	57	74
+132La	57	75
+133La	57	76
+134La	57	77
+135La	57	78
+136La	57	79
+137La	57	80
+138La	57	81
+139La	57	82
+140La	57	83
+141La	57	84
+142La	57	85
+143La	57	86
+144La	57	87
+145La	57	88
+146La	57	89
+147La	57	90
+148La	57	91
+149La	57	92
+150La	57	93
+151La	57	94
+152La	57	95
+153La	57	96
+154La	57	97
+155La	57	98
+119Ce	58	61
+120Ce	58	62
+121Ce	58	63
+122Ce	58	64
+123Ce	58	65
+124Ce	58	66
+125Ce	58	67
+126Ce	58	68
+127Ce	58	69
+128Ce	58	70
+129Ce	58	71
+130Ce	58	72
+131Ce	58	73
+132Ce	58	74
+133Ce	58	75
+134Ce	58	76
+135Ce	58	77
+136Ce	58	78
+137Ce	58	79
+138Ce	58	80
+139Ce	58	81
+140Ce	58	82
+141Ce	58	83
+142Ce	58	84
+143Ce	58	85
+144Ce	58	86
+145Ce	58	87
+146Ce	58	88
+147Ce	58	89
+148Ce	58	90
+149Ce	58	91
+150Ce	58	92
+151Ce	58	93
+152Ce	58	94
+153Ce	58	95
+154Ce	58	96
+155Ce	58	97
+156Ce	58	98
+157Ce	58	99
+121Pr	59	62
+122Pr	59	63
+123Pr	59	64
+124Pr	59	65
+125Pr	59	66
+126Pr	59	67
+127Pr	59	68
+128Pr	59	69
+129Pr	59	70
+130Pr	59	71
+131Pr	59	72
+132Pr	59	73
+133Pr	59	74
+134Pr	59	75
+135Pr	59	76
+136Pr	59	77
+137Pr	59	78
+138Pr	59	79
+139Pr	59	80
+140Pr	59	81
+141Pr	59	82
+142Pr	59	83
+143Pr	59	84
+144Pr	59	85
+145Pr	59	86
+146Pr	59	87
+147Pr	59	88
+148Pr	59	89
+149Pr	59	90
+150Pr	59	91
+151Pr	59	92
+152Pr	59	93
+153Pr	59	94
+154Pr	59	95
+155Pr	59	96
+156Pr	59	97
+157Pr	59	98
+158Pr	59	99
+159Pr	59	100
+124Nd	60	64
+125Nd	60	65
+126Nd	60	66
+127Nd	60	67
+128Nd	60	68
+129Nd	60	69
+130Nd	60	70
+131Nd	60	71
+132Nd	60	72
+133Nd	60	73
+134Nd	60	74
+135Nd	60	75
+136Nd	60	76
+137Nd	60	77
+138Nd	60	78
+139Nd	60	79
+140Nd	60	80
+141Nd	60	81
+142Nd	60	82
+143Nd	60	83
+144Nd	60	84
+145Nd	60	85
+146Nd	60	86
+147Nd	60	87
+148Nd	60	88
+149Nd	60	89
+150Nd	60	90
+151Nd	60	91
+152Nd	60	92
+153Nd	60	93
+154Nd	60	94
+155Nd	60	95
+156Nd	60	96
+157Nd	60	97
+158Nd	60	98
+159Nd	60	99
+160Nd	60	100
+161Nd	60	101
+126Pm	61	65
+127Pm	61	66
+128Pm	61	67
+129Pm	61	68
+130Pm	61	69
+131Pm	61	70
+132Pm	61	71
+133Pm	61	72
+134Pm	61	73
+135Pm	61	74
+136Pm	61	75
+137Pm	61	76
+138Pm	61	77
+139Pm	61	78
+140Pm	61	79
+141Pm	61	80
+142Pm	61	81
+143Pm	61	82
+144Pm	61	83
+145Pm	61	84
+146Pm	61	85
+147Pm	61	86
+148Pm	61	87
+149Pm	61	88
+150Pm	61	89
+151Pm	61	90
+152Pm	61	91
+153Pm	61	92
+154Pm	61	93
+155Pm	61	94
+156Pm	61	95
+157Pm	61	96
+158Pm	61	97
+159Pm	61	98
+160Pm	61	99
+161Pm	61	100
+162Pm	61	101
+163Pm	61	102
+128Sm	62	66
+129Sm	62	67
+130Sm	62	68
+131Sm	62	69
+132Sm	62	70
+133Sm	62	71
+134Sm	62	72
+135Sm	62	73
+136Sm	62	74
+137Sm	62	75
+138Sm	62	76
+139Sm	62	77
+140Sm	62	78
+141Sm	62	79
+142Sm	62	80
+143Sm	62	81
+144Sm	62	82
+145Sm	62	83
+146Sm	62	84
+147Sm	62	85
+148Sm	62	86
+149Sm	62	87
+150Sm	62	88
+151Sm	62	89
+152Sm	62	90
+153Sm	62	91
+154Sm	62	92
+155Sm	62	93
+156Sm	62	94
+157Sm	62	95
+158Sm	62	96
+159Sm	62	97
+160Sm	62	98
+161Sm	62	99
+162Sm	62	100
+163Sm	62	101
+164Sm	62	102
+165Sm	62	103
+130Eu	63	67
+131Eu	63	68
+132Eu	63	69
+133Eu	63	70
+134Eu	63	71
+135Eu	63	72
+136Eu	63	73
+137Eu	63	74
+138Eu	63	75
+139Eu	63	76
+140Eu	63	77
+141Eu	63	78
+142Eu	63	79
+143Eu	63	80
+144Eu	63	81
+145Eu	63	82
+146Eu	63	83
+147Eu	63	84
+148Eu	63	85
+149Eu	63	86
+150Eu	63	87
+151Eu	63	88
+152Eu	63	89
+153Eu	63	90
+154Eu	63	91
+155Eu	63	92
+156Eu	63	93
+157Eu	63	94
+158Eu	63	95
+159Eu	63	96
+160Eu	63	97
+161Eu	63	98
+162Eu	63	99
+163Eu	63	100
+164Eu	63	101
+165Eu	63	102
+166Eu	63	103
+167Eu	63	104
+133Gd	64	69
+134Gd	64	70
+135Gd	64	71
+136Gd	64	72
+137Gd	64	73
+138Gd	64	74
+139Gd	64	75
+140Gd	64	76
+141Gd	64	77
+142Gd	64	78
+143Gd	64	79
+144Gd	64	80
+145Gd	64	81
+146Gd	64	82
+147Gd	64	83
+148Gd	64	84
+149Gd	64	85
+150Gd	64	86
+151Gd	64	87
+152Gd	64	88
+153Gd	64	89
+154Gd	64	90
+155Gd	64	91
+156Gd	64	92
+157Gd	64	93
+158Gd	64	94
+159Gd	64	95
+160Gd	64	96
+161Gd	64	97
+162Gd	64	98
+163Gd	64	99
+164Gd	64	100
+165Gd	64	101
+166Gd	64	102
+167Gd	64	103
+168Gd	64	104
+169Gd	64	105
+135Tb	65	70
+136Tb	65	71
+137Tb	65	72
+138Tb	65	73
+139Tb	65	74
+140Tb	65	75
+141Tb	65	76
+142Tb	65	77
+143Tb	65	78
+144Tb	65	79
+145Tb	65	80
+146Tb	65	81
+147Tb	65	82
+148Tb	65	83
+149Tb	65	84
+150Tb	65	85
+151Tb	65	86
+152Tb	65	87
+153Tb	65	88
+154Tb	65	89
+155Tb	65	90
+156Tb	65	91
+157Tb	65	92
+158Tb	65	93
+159Tb	65	94
+160Tb	65	95
+161Tb	65	96
+162Tb	65	97
+163Tb	65	98
+164Tb	65	99
+165Tb	65	100
+166Tb	65	101
+167Tb	65	102
+168Tb	65	103
+169Tb	65	104
+170Tb	65	105
+171Tb	65	106
+138Dy	66	72
+139Dy	66	73
+140Dy	66	74
+141Dy	66	75
+142Dy	66	76
+143Dy	66	77
+144Dy	66	78
+145Dy	66	79
+146Dy	66	80
+147Dy	66	81
+148Dy	66	82
+149Dy	66	83
+150Dy	66	84
+151Dy	66	85
+152Dy	66	86
+153Dy	66	87
+154Dy	66	88
+155Dy	66	89
+156Dy	66	90
+157Dy	66	91
+158Dy	66	92
+159Dy	66	93
+160Dy	66	94
+161Dy	66	95
+162Dy	66	96
+163Dy	66	97
+164Dy	66	98
+165Dy	66	99
+166Dy	66	100
+167Dy	66	101
+168Dy	66	102
+169Dy	66	103
+170Dy	66	104
+171Dy	66	105
+172Dy	66	106
+173Dy	66	107
+140Ho	67	73
+141Ho	67	74
+142Ho	67	75
+143Ho	67	76
+144Ho	67	77
+145Ho	67	78
+146Ho	67	79
+147Ho	67	80
+148Ho	67	81
+149Ho	67	82
+150Ho	67	83
+151Ho	67	84
+152Ho	67	85
+153Ho	67	86
+154Ho	67	87
+155Ho	67	88
+156Ho	67	89
+157Ho	67	90
+158Ho	67	91
+159Ho	67	92
+160Ho	67	93
+161Ho	67	94
+162Ho	67	95
+163Ho	67	96
+164Ho	67	97
+165Ho	67	98
+166Ho	67	99
+167Ho	67	100
+168Ho	67	101
+169Ho	67	102
+170Ho	67	103
+171Ho	67	104
+172Ho	67	105
+173Ho	67	106
+174Ho	67	107
+175Ho	67	108
+142Er	68	74
+143Er	68	75
+144Er	68	76
+145Er	68	77
+146Er	68	78
+147Er	68	79
+148Er	68	80
+149Er	68	81
+150Er	68	82
+151Er	68	83
+152Er	68	84
+153Er	68	85
+154Er	68	86
+155Er	68	87
+156Er	68	88
+157Er	68	89
+158Er	68	90
+159Er	68	91
+160Er	68	92
+161Er	68	93
+162Er	68	94
+163Er	68	95
+164Er	68	96
+165Er	68	97
+166Er	68	98
+167Er	68	99
+168Er	68	100
+169Er	68	101
+170Er	68	102
+171Er	68	103
+172Er	68	104
+173Er	68	105
+174Er	68	106
+175Er	68	107
+176Er	68	108
+177Er	68	109
+144Tm	69	75
+145Tm	69	76
+146Tm	69	77
+147Tm	69	78
+148Tm	69	79
+149Tm	69	80
+150Tm	69	81
+151Tm	69	82
+152Tm	69	83
+153Tm	69	84
+154Tm	69	85
+155Tm	69	86
+156Tm	69	87
+157Tm	69	88
+158Tm	69	89
+159Tm	69	90
+160Tm	69	91
+161Tm	69	92
+162Tm	69	93
+163Tm	69	94
+164Tm	69	95
+165Tm	69	96
+166Tm	69	97
+167Tm	69	98
+168Tm	69	99
+169Tm	69	100
+170Tm	69	101
+171Tm	69	102
+172Tm	69	103
+173Tm	69	104
+174Tm	69	105
+175Tm	69	106
+176Tm	69	107
+177Tm	69	108
+178Tm	69	109
+179Tm	69	110
+148Yb	70	78
+149Yb	70	79
+150Yb	70	80
+151Yb	70	81
+152Yb	70	82
+153Yb	70	83
+154Yb	70	84
+155Yb	70	85
+156Yb	70	86
+157Yb	70	87
+158Yb	70	88
+159Yb	70	89
+160Yb	70	90
+161Yb	70	91
+162Yb	70	92
+163Yb	70	93
+164Yb	70	94
+165Yb	70	95
+166Yb	70	96
+167Yb	70	97
+168Yb	70	98
+169Yb	70	99
+170Yb	70	100
+171Yb	70	101
+172Yb	70	102
+173Yb	70	103
+174Yb	70	104
+175Yb	70	105
+176Yb	70	106
+177Yb	70	107
+178Yb	70	108
+179Yb	70	109
+180Yb	70	110
+181Yb	70	111
+150Lu	71	79
+151Lu	71	80
+152Lu	71	81
+153Lu	71	82
+154Lu	71	83
+155Lu	71	84
+156Lu	71	85
+157Lu	71	86
+158Lu	71	87
+159Lu	71	88
+160Lu	71	89
+161Lu	71	90
+162Lu	71	91
+163Lu	71	92
+164Lu	71	93
+165Lu	71	94
+166Lu	71	95
+167Lu	71	96
+168Lu	71	97
+169Lu	71	98
+170Lu	71	99
+171Lu	71	100
+172Lu	71	101
+173Lu	71	102
+174Lu	71	103
+175Lu	71	104
+176Lu	71	105
+177Lu	71	106
+178Lu	71	107
+179Lu	71	108
+180Lu	71	109
+181Lu	71	110
+182Lu	71	111
+183Lu	71	112
+184Lu	71	113
+153Hf	72	81
+154Hf	72	82
+155Hf	72	83
+156Hf	72	84
+157Hf	72	85
+158Hf	72	86
+159Hf	72	87
+160Hf	72	88
+161Hf	72	89
+162Hf	72	90
+163Hf	72	91
+164Hf	72	92
+165Hf	72	93
+166Hf	72	94
+167Hf	72	95
+168Hf	72	96
+169Hf	72	97
+170Hf	72	98
+171Hf	72	99
+172Hf	72	100
+173Hf	72	101
+174Hf	72	102
+175Hf	72	103
+176Hf	72	104
+177Hf	72	105
+178Hf	72	106
+179Hf	72	107
+180Hf	72	108
+181Hf	72	109
+182Hf	72	110
+183Hf	72	111
+184Hf	72	112
+185Hf	72	113
+186Hf	72	114
+187Hf	72	115
+188Hf	72	116
+189Hf	72	117
+155Ta	73	82
+156Ta	73	83
+157Ta	73	84
+158Ta	73	85
+159Ta	73	86
+160Ta	73	87
+161Ta	73	88
+162Ta	73	89
+163Ta	73	90
+164Ta	73	91
+165Ta	73	92
+166Ta	73	93
+167Ta	73	94
+168Ta	73	95
+169Ta	73	96
+170Ta	73	97
+171Ta	73	98
+172Ta	73	99
+173Ta	73	100
+174Ta	73	101
+175Ta	73	102
+176Ta	73	103
+177Ta	73	104
+178Ta	73	105
+179Ta	73	106
+180Ta	73	107
+181Ta	73	108
+182Ta	73	109
+183Ta	73	110
+184Ta	73	111
+185Ta	73	112
+186Ta	73	113
+187Ta	73	114
+188Ta	73	115
+189Ta	73	116
+190Ta	73	117
+191Ta	73	118
+192Ta	73	119
+157W	74	83
+158W	74	84
+159W	74	85
+160W	74	86
+161W	74	87
+162W	74	88
+163W	74	89
+164W	74	90
+165W	74	91
+166W	74	92
+167W	74	93
+168W	74	94
+169W	74	95
+170W	74	96
+171W	74	97
+172W	74	98
+173W	74	99
+174W	74	100
+175W	74	101
+176W	74	102
+177W	74	103
+178W	74	104
+179W	74	105
+180W	74	106
+181W	74	107
+182W	74	108
+183W	74	109
+184W	74	110
+185W	74	111
+186W	74	112
+187W	74	113
+188W	74	114
+189W	74	115
+190W	74	116
+191W	74	117
+192W	74	118
+193W	74	119
+194W	74	120
+159Re	75	84
+160Re	75	85
+161Re	75	86
+162Re	75	87
+163Re	75	88
+164Re	75	89
+165Re	75	90
+166Re	75	91
+167Re	75	92
+168Re	75	93
+169Re	75	94
+170Re	75	95
+171Re	75	96
+172Re	75	97
+173Re	75	98
+174Re	75	99
+175Re	75	100
+176Re	75	101
+177Re	75	102
+178Re	75	103
+179Re	75	104
+180Re	75	105
+181Re	75	106
+182Re	75	107
+183Re	75	108
+184Re	75	109
+185Re	75	110
+186Re	75	111
+187Re	75	112
+188Re	75	113
+189Re	75	114
+190Re	75	115
+191Re	75	116
+192Re	75	117
+193Re	75	118
+194Re	75	119
+195Re	75	120
+196Re	75	121
+161Os	76	85
+162Os	76	86
+163Os	76	87
+164Os	76	88
+165Os	76	89
+166Os	76	90
+167Os	76	91
+168Os	76	92
+169Os	76	93
+170Os	76	94
+171Os	76	95
+172Os	76	96
+173Os	76	97
+174Os	76	98
+175Os	76	99
+176Os	76	100
+177Os	76	101
+178Os	76	102
+179Os	76	103
+180Os	76	104
+181Os	76	105
+182Os	76	106
+183Os	76	107
+184Os	76	108
+185Os	76	109
+186Os	76	110
+187Os	76	111
+188Os	76	112
+189Os	76	113
+190Os	76	114
+191Os	76	115
+192Os	76	116
+193Os	76	117
+194Os	76	118
+195Os	76	119
+196Os	76	120
+197Os	76	121
+198Os	76	122
+199Os	76	123
+200Os	76	124
+201Os	76	125
+202Os	76	126
+164Ir	77	87
+165Ir	77	88
+166Ir	77	89
+167Ir	77	90
+168Ir	77	91
+169Ir	77	92
+170Ir	77	93
+171Ir	77	94
+172Ir	77	95
+173Ir	77	96
+174Ir	77	97
+175Ir	77	98
+176Ir	77	99
+177Ir	77	100
+178Ir	77	101
+179Ir	77	102
+180Ir	77	103
+181Ir	77	104
+182Ir	77	105
+183Ir	77	106
+184Ir	77	107
+185Ir	77	108
+186Ir	77	109
+187Ir	77	110
+188Ir	77	111
+189Ir	77	112
+190Ir	77	113
+191Ir	77	114
+192Ir	77	115
+193Ir	77	116
+194Ir	77	117
+195Ir	77	118
+196Ir	77	119
+197Ir	77	120
+198Ir	77	121
+199Ir	77	122
+200Ir	77	123
+201Ir	77	124
+202Ir	77	125
+203Ir	77	126
+204Ir	77	127
+166Pt	78	88
+167Pt	78	89
+168Pt	78	90
+169Pt	78	91
+170Pt	78	92
+171Pt	78	93
+172Pt	78	94
+173Pt	78	95
+174Pt	78	96
+175Pt	78	97
+176Pt	78	98
+177Pt	78	99
+178Pt	78	100
+179Pt	78	101
+180Pt	78	102
+181Pt	78	103
+182Pt	78	104
+183Pt	78	105
+184Pt	78	106
+185Pt	78	107
+186Pt	78	108
+187Pt	78	109
+188Pt	78	110
+189Pt	78	111
+190Pt	78	112
+191Pt	78	113
+192Pt	78	114
+193Pt	78	115
+194Pt	78	116
+195Pt	78	117
+196Pt	78	118
+197Pt	78	119
+198Pt	78	120
+199Pt	78	121
+200Pt	78	122
+201Pt	78	123
+202Pt	78	124
+203Pt	78	125
+204Pt	78	126
+205Pt	78	127
+169Au	79	90
+170Au	79	91
+171Au	79	92
+172Au	79	93
+173Au	79	94
+174Au	79	95
+175Au	79	96
+176Au	79	97
+177Au	79	98
+178Au	79	99
+179Au	79	100
+180Au	79	101
+181Au	79	102
+182Au	79	103
+183Au	79	104
+184Au	79	105
+185Au	79	106
+186Au	79	107
+187Au	79	108
+188Au	79	109
+189Au	79	110
+190Au	79	111
+191Au	79	112
+192Au	79	113
+193Au	79	114
+194Au	79	115
+195Au	79	116
+196Au	79	117
+197Au	79	118
+198Au	79	119
+199Au	79	120
+200Au	79	121
+201Au	79	122
+202Au	79	123
+203Au	79	124
+204Au	79	125
+205Au	79	126
+206Au	79	127
+207Au	79	128
+208Au	79	129
+209Au	79	130
+210Au	79	131
+171Hg	80	91
+172Hg	80	92
+173Hg	80	93
+174Hg	80	94
+175Hg	80	95
+176Hg	80	96
+177Hg	80	97
+178Hg	80	98
+179Hg	80	99
+180Hg	80	100
+181Hg	80	101
+182Hg	80	102
+183Hg	80	103
+184Hg	80	104
+185Hg	80	105
+186Hg	80	106
+187Hg	80	107
+188Hg	80	108
+189Hg	80	109
+190Hg	80	110
+191Hg	80	111
+192Hg	80	112
+193Hg	80	113
+194Hg	80	114
+195Hg	80	115
+196Hg	80	116
+197Hg	80	117
+198Hg	80	118
+199Hg	80	119
+200Hg	80	120
+201Hg	80	121
+202Hg	80	122
+203Hg	80	123
+204Hg	80	124
+205Hg	80	125
+206Hg	80	126
+207Hg	80	127
+208Hg	80	128
+209Hg	80	129
+210Hg	80	130
+211Hg	80	131
+212Hg	80	132
+213Hg	80	133
+214Hg	80	134
+215Hg	80	135
+216Hg	80	136
+176Tl	81	95
+177Tl	81	96
+178Tl	81	97
+179Tl	81	98
+180Tl	81	99
+181Tl	81	100
+182Tl	81	101
+183Tl	81	102
+184Tl	81	103
+185Tl	81	104
+186Tl	81	105
+187Tl	81	106
+188Tl	81	107
+189Tl	81	108
+190Tl	81	109
+191Tl	81	110
+192Tl	81	111
+193Tl	81	112
+194Tl	81	113
+195Tl	81	114
+196Tl	81	115
+197Tl	81	116
+198Tl	81	117
+199Tl	81	118
+200Tl	81	119
+201Tl	81	120
+202Tl	81	121
+203Tl	81	122
+204Tl	81	123
+205Tl	81	124
+206Tl	81	125
+207Tl	81	126
+208Tl	81	127
+209Tl	81	128
+210Tl	81	129
+211Tl	81	130
+212Tl	81	131
+213Tl	81	132
+214Tl	81	133
+215Tl	81	134
+216Tl	81	135
+217Tl	81	136
+178Pb	82	96
+179Pb	82	97
+180Pb	82	98
+181Pb	82	99
+182Pb	82	100
+183Pb	82	101
+184Pb	82	102
+185Pb	82	103
+186Pb	82	104
+187Pb	82	105
+188Pb	82	106
+189Pb	82	107
+190Pb	82	108
+191Pb	82	109
+192Pb	82	110
+193Pb	82	111
+194Pb	82	112
+195Pb	82	113
+196Pb	82	114
+197Pb	82	115
+198Pb	82	116
+199Pb	82	117
+200Pb	82	118
+201Pb	82	119
+202Pb	82	120
+203Pb	82	121
+204Pb	82	122
+205Pb	82	123
+206Pb	82	124
+207Pb	82	125
+208Pb	82	126
+209Pb	82	127
+210Pb	82	128
+211Pb	82	129
+212Pb	82	130
+213Pb	82	131
+214Pb	82	132
+215Pb	82	133
+216Pb	82	134
+217Pb	82	135
+218Pb	82	136
+219Pb	82	137
+220Pb	82	138
+184Bi	83	101
+185Bi	83	102
+186Bi	83	103
+187Bi	83	104
+188Bi	83	105
+189Bi	83	106
+190Bi	83	107
+191Bi	83	108
+192Bi	83	109
+193Bi	83	110
+194Bi	83	111
+195Bi	83	112
+196Bi	83	113
+197Bi	83	114
+198Bi	83	115
+199Bi	83	116
+200Bi	83	117
+201Bi	83	118
+202Bi	83	119
+203Bi	83	120
+204Bi	83	121
+205Bi	83	122
+206Bi	83	123
+207Bi	83	124
+208Bi	83	125
+209Bi	83	126
+210Bi	83	127
+211Bi	83	128
+212Bi	83	129
+213Bi	83	130
+214Bi	83	131
+215Bi	83	132
+216Bi	83	133
+217Bi	83	134
+218Bi	83	135
+219Bi	83	136
+220Bi	83	137
+221Bi	83	138
+222Bi	83	139
+223Bi	83	140
+224Bi	83	141
+186Po	84	102
+187Po	84	103
+188Po	84	104
+189Po	84	105
+190Po	84	106
+191Po	84	107
+192Po	84	108
+193Po	84	109
+194Po	84	110
+195Po	84	111
+196Po	84	112
+197Po	84	113
+198Po	84	114
+199Po	84	115
+200Po	84	116
+201Po	84	117
+202Po	84	118
+203Po	84	119
+204Po	84	120
+205Po	84	121
+206Po	84	122
+207Po	84	123
+208Po	84	124
+209Po	84	125
+210Po	84	126
+211Po	84	127
+212Po	84	128
+213Po	84	129
+214Po	84	130
+215Po	84	131
+216Po	84	132
+217Po	84	133
+218Po	84	134
+219Po	84	135
+220Po	84	136
+221Po	84	137
+222Po	84	138
+223Po	84	139
+224Po	84	140
+225Po	84	141
+226Po	84	142
+227Po	84	143
+191At	85	106
+192At	85	107
+193At	85	108
+194At	85	109
+195At	85	110
+196At	85	111
+197At	85	112
+198At	85	113
+199At	85	114
+200At	85	115
+201At	85	116
+202At	85	117
+203At	85	118
+204At	85	119
+205At	85	120
+206At	85	121
+207At	85	122
+208At	85	123
+209At	85	124
+210At	85	125
+211At	85	126
+212At	85	127
+213At	85	128
+214At	85	129
+215At	85	130
+216At	85	131
+217At	85	132
+218At	85	133
+219At	85	134
+220At	85	135
+221At	85	136
+222At	85	137
+223At	85	138
+224At	85	139
+225At	85	140
+226At	85	141
+227At	85	142
+228At	85	143
+229At	85	144
+193Rn	86	107
+194Rn	86	108
+195Rn	86	109
+196Rn	86	110
+197Rn	86	111
+198Rn	86	112
+199Rn	86	113
+200Rn	86	114
+201Rn	86	115
+202Rn	86	116
+203Rn	86	117
+204Rn	86	118
+205Rn	86	119
+206Rn	86	120
+207Rn	86	121
+208Rn	86	122
+209Rn	86	123
+210Rn	86	124
+211Rn	86	125
+212Rn	86	126
+213Rn	86	127
+214Rn	86	128
+215Rn	86	129
+216Rn	86	130
+217Rn	86	131
+218Rn	86	132
+219Rn	86	133
+220Rn	86	134
+221Rn	86	135
+222Rn	86	136
+223Rn	86	137
+224Rn	86	138
+225Rn	86	139
+226Rn	86	140
+227Rn	86	141
+228Rn	86	142
+229Rn	86	143
+230Rn	86	144
+231Rn	86	145
+199Fr	87	112
+200Fr	87	113
+201Fr	87	114
+202Fr	87	115
+203Fr	87	116
+204Fr	87	117
+205Fr	87	118
+206Fr	87	119
+207Fr	87	120
+208Fr	87	121
+209Fr	87	122
+210Fr	87	123
+211Fr	87	124
+212Fr	87	125
+213Fr	87	126
+214Fr	87	127
+215Fr	87	128
+216Fr	87	129
+217Fr	87	130
+218Fr	87	131
+219Fr	87	132
+220Fr	87	133
+221Fr	87	134
+222Fr	87	135
+223Fr	87	136
+224Fr	87	137
+225Fr	87	138
+226Fr	87	139
+227Fr	87	140
+228Fr	87	141
+229Fr	87	142
+230Fr	87	143
+231Fr	87	144
+232Fr	87	145
+233Fr	87	146
+201Ra	88	113
+202Ra	88	114
+203Ra	88	115
+204Ra	88	116
+205Ra	88	117
+206Ra	88	118
+207Ra	88	119
+208Ra	88	120
+209Ra	88	121
+210Ra	88	122
+211Ra	88	123
+212Ra	88	124
+213Ra	88	125
+214Ra	88	126
+215Ra	88	127
+216Ra	88	128
+217Ra	88	129
+218Ra	88	130
+219Ra	88	131
+220Ra	88	132
+221Ra	88	133
+222Ra	88	134
+223Ra	88	135
+224Ra	88	136
+225Ra	88	137
+226Ra	88	138
+227Ra	88	139
+228Ra	88	140
+229Ra	88	141
+230Ra	88	142
+231Ra	88	143
+232Ra	88	144
+233Ra	88	145
+234Ra	88	146
+235Ra	88	147
+206Ac	89	117
+207Ac	89	118
+208Ac	89	119
+209Ac	89	120
+210Ac	89	121
+211Ac	89	122
+212Ac	89	123
+213Ac	89	124
+214Ac	89	125
+215Ac	89	126
+216Ac	89	127
+217Ac	89	128
+218Ac	89	129
+219Ac	89	130
+220Ac	89	131
+221Ac	89	132
+222Ac	89	133
+223Ac	89	134
+224Ac	89	135
+225Ac	89	136
+226Ac	89	137
+227Ac	89	138
+228Ac	89	139
+229Ac	89	140
+230Ac	89	141
+231Ac	89	142
+232Ac	89	143
+233Ac	89	144
+234Ac	89	145
+235Ac	89	146
+236Ac	89	147
+237Ac	89	148
+208Th	90	118
+209Th	90	119
+210Th	90	120
+211Th	90	121
+212Th	90	122
+213Th	90	123
+214Th	90	124
+215Th	90	125
+216Th	90	126
+217Th	90	127
+218Th	90	128
+219Th	90	129
+220Th	90	130
+221Th	90	131
+222Th	90	132
+223Th	90	133
+224Th	90	134
+225Th	90	135
+226Th	90	136
+227Th	90	137
+228Th	90	138
+229Th	90	139
+230Th	90	140
+231Th	90	141
+232Th	90	142
+233Th	90	143
+234Th	90	144
+235Th	90	145
+236Th	90	146
+237Th	90	147
+238Th	90	148
+239Th	90	149
+212Pa	91	121
+213Pa	91	122
+214Pa	91	123
+215Pa	91	124
+216Pa	91	125
+217Pa	91	126
+218Pa	91	127
+219Pa	91	128
+220Pa	91	129
+221Pa	91	130
+222Pa	91	131
+223Pa	91	132
+224Pa	91	133
+225Pa	91	134
+226Pa	91	135
+227Pa	91	136
+228Pa	91	137
+229Pa	91	138
+230Pa	91	139
+231Pa	91	140
+232Pa	91	141
+233Pa	91	142
+234Pa	91	143
+235Pa	91	144
+236Pa	91	145
+237Pa	91	146
+238Pa	91	147
+239Pa	91	148
+240Pa	91	149
+241Pa	91	150
+217U	92	125
+218U	92	126
+219U	92	127
+220U	92	128
+221U	92	129
+222U	92	130
+223U	92	131
+224U	92	132
+225U	92	133
+226U	92	134
+227U	92	135
+228U	92	136
+229U	92	137
+230U	92	138
+231U	92	139
+232U	92	140
+233U	92	141
+234U	92	142
+235U	92	143
+236U	92	144
+237U	92	145
+238U	92	146
+239U	92	147
+240U	92	148
+241U	92	149
+242U	92	150
+243U	92	151
+225Np	93	132
+226Np	93	133
+227Np	93	134
+228Np	93	135
+229Np	93	136
+230Np	93	137
+231Np	93	138
+232Np	93	139
+233Np	93	140
+234Np	93	141
+235Np	93	142
+236Np	93	143
+237Np	93	144
+238Np	93	145
+239Np	93	146
+240Np	93	147
+241Np	93	148
+242Np	93	149
+243Np	93	150
+244Np	93	151
+245Np	93	152
+228Pu	94	134
+229Pu	94	135
+230Pu	94	136
+231Pu	94	137
+232Pu	94	138
+233Pu	94	139
+234Pu	94	140
+235Pu	94	141
+236Pu	94	142
+237Pu	94	143
+238Pu	94	144
+239Pu	94	145
+240Pu	94	146
+241Pu	94	147
+242Pu	94	148
+243Pu	94	149
+244Pu	94	150
+245Pu	94	151
+246Pu	94	152
+247Pu	94	153
+230Am	95	135
+231Am	95	136
+232Am	95	137
+233Am	95	138
+234Am	95	139
+235Am	95	140
+236Am	95	141
+237Am	95	142
+238Am	95	143
+239Am	95	144
+240Am	95	145
+241Am	95	146
+242Am	95	147
+243Am	95	148
+244Am	95	149
+245Am	95	150
+246Am	95	151
+247Am	95	152
+248Am	95	153
+249Am	95	154
+233Cm	96	137
+234Cm	96	138
+235Cm	96	139
+236Cm	96	140
+237Cm	96	141
+238Cm	96	142
+239Cm	96	143
+240Cm	96	144
+241Cm	96	145
+242Cm	96	146
+243Cm	96	147
+244Cm	96	148
+245Cm	96	149
+246Cm	96	150
+247Cm	96	151
+248Cm	96	152
+249Cm	96	153
+250Cm	96	154
+251Cm	96	155
+252Cm	96	156
+234Bk	97	137
+235Bk	97	138
+236Bk	97	139
+237Bk	97	140
+238Bk	97	141
+239Bk	97	142
+240Bk	97	143
+241Bk	97	144
+242Bk	97	145
+243Bk	97	146
+244Bk	97	147
+245Bk	97	148
+246Bk	97	149
+247Bk	97	150
+248Bk	97	151
+249Bk	97	152
+250Bk	97	153
+251Bk	97	154
+252Bk	97	155
+253Bk	97	156
+254Bk	97	157
+237Cf	98	139
+238Cf	98	140
+239Cf	98	141
+240Cf	98	142
+241Cf	98	143
+242Cf	98	144
+243Cf	98	145
+244Cf	98	146
+245Cf	98	147
+246Cf	98	148
+247Cf	98	149
+248Cf	98	150
+249Cf	98	151
+250Cf	98	152
+251Cf	98	153
+252Cf	98	154
+253Cf	98	155
+254Cf	98	156
+255Cf	98	157
+256Cf	98	158
+240Es	99	141
+241Es	99	142
+242Es	99	143
+243Es	99	144
+244Es	99	145
+245Es	99	146
+246Es	99	147
+247Es	99	148
+248Es	99	149
+249Es	99	150
+250Es	99	151
+251Es	99	152
+252Es	99	153
+253Es	99	154
+254Es	99	155
+255Es	99	156
+256Es	99	157
+257Es	99	158
+258Es	99	159
+241Fm	100	141
+242Fm	100	142
+243Fm	100	143
+244Fm	100	144
+245Fm	100	145
+246Fm	100	146
+247Fm	100	147
+248Fm	100	148
+249Fm	100	149
+250Fm	100	150
+251Fm	100	151
+252Fm	100	152
+253Fm	100	153
+254Fm	100	154
+255Fm	100	155
+256Fm	100	156
+257Fm	100	157
+258Fm	100	158
+259Fm	100	159
+260Fm	100	160
+245Md	101	144
+246Md	101	145
+247Md	101	146
+248Md	101	147
+249Md	101	148
+250Md	101	149
+251Md	101	150
+252Md	101	151
+253Md	101	152
+254Md	101	153
+255Md	101	154
+256Md	101	155
+257Md	101	156
+258Md	101	157
+259Md	101	158
+260Md	101	159
+261Md	101	160
+262Md	101	161
+248No	102	146
+249No	102	147
+250No	102	148
+251No	102	149
+252No	102	150
+253No	102	151
+254No	102	152
+255No	102	153
+256No	102	154
+257No	102	155
+258No	102	156
+259No	102	157
+260No	102	158
+261No	102	159
+262No	102	160
+263No	102	161
+264No	102	162
+251Lr	103	148
+252Lr	103	149
+253Lr	103	150
+254Lr	103	151
+255Lr	103	152
+256Lr	103	153
+257Lr	103	154
+258Lr	103	155
+259Lr	103	156
+260Lr	103	157
+261Lr	103	158
+262Lr	103	159
+263Lr	103	160
+264Lr	103	161
+265Lr	103	162
+266Lr	103	163
+253Rf	104	149
+254Rf	104	150
+255Rf	104	151
+256Rf	104	152
+257Rf	104	153
+258Rf	104	154
+259Rf	104	155
+260Rf	104	156
+261Rf	104	157
+262Rf	104	158
+263Rf	104	159
+264Rf	104	160
+265Rf	104	161
+266Rf	104	162
+267Rf	104	163
+268Rf	104	164
+255Db	105	150
+256Db	105	151
+257Db	105	152
+258Db	105	153
+259Db	105	154
+260Db	105	155
+261Db	105	156
+262Db	105	157
+263Db	105	158
+264Db	105	159
+265Db	105	160
+266Db	105	161
+267Db	105	162
+268Db	105	163
+269Db	105	164
+270Db	105	165
+258Sg	106	152
+259Sg	106	153
+260Sg	106	154
+261Sg	106	155
+262Sg	106	156
+263Sg	106	157
+264Sg	106	158
+265Sg	106	159
+266Sg	106	160
+267Sg	106	161
+268Sg	106	162
+269Sg	106	163
+270Sg	106	164
+271Sg	106	165
+272Sg	106	166
+273Sg	106	167
+260Bh	107	153
+261Bh	107	154
+262Bh	107	155
+263Bh	107	156
+264Bh	107	157
+265Bh	107	158
+266Bh	107	159
+267Bh	107	160
+268Bh	107	161
+269Bh	107	162
+270Bh	107	163
+271Bh	107	164
+272Bh	107	165
+273Bh	107	166
+274Bh	107	167
+275Bh	107	168
+263Hs	108	155
+264Hs	108	156
+265Hs	108	157
+266Hs	108	158
+267Hs	108	159
+268Hs	108	160
+269Hs	108	161
+270Hs	108	162
+271Hs	108	163
+272Hs	108	164
+273Hs	108	165
+274Hs	108	166
+275Hs	108	167
+276Hs	108	168
+277Hs	108	169
+265Mt	109	156
+266Mt	109	157
+267Mt	109	158
+268Mt	109	159
+269Mt	109	160
+270Mt	109	161
+271Mt	109	162
+272Mt	109	163
+273Mt	109	164
+274Mt	109	165
+275Mt	109	166
+276Mt	109	167
+277Mt	109	168
+278Mt	109	169
+279Mt	109	170
+267Ds	110	157
+268Ds	110	158
+269Ds	110	159
+270Ds	110	160
+271Ds	110	161
+272Ds	110	162
+273Ds	110	163
+274Ds	110	164
+275Ds	110	165
+276Ds	110	166
+277Ds	110	167
+278Ds	110	168
+279Ds	110	169
+280Ds	110	170
+281Ds	110	171
+272Rg	111	161
+273Rg	111	162
+274Rg	111	163
+275Rg	111	164
+276Rg	111	165
+277Rg	111	166
+278Rg	111	167
+279Rg	111	168
+280Rg	111	169
+281Rg	111	170
+282Rg	111	171
+283Rg	111	172
+276Cn	112	164
+277Cn	112	165
+278Cn	112	166
+279Cn	112	167
+280Cn	112	168
+281Cn	112	169
+282Cn	112	170
+283Cn	112	171
+284Cn	112	172
+285Cn	112	173
+278Uut	113	165
+279Uut	113	166
+280Uut	113	167
+281Uut	113	168
+282Uut	113	169
+283Uut	113	170
+284Uut	113	171
+285Uut	113	172
+286Uut	113	173
+287Uut	113	174
+285Fl	114	171
+286Fl	114	172
+287Fl	114	173
+288Fl	114	174
+289Fl	114	175
+287Uup	115	172
+288Uup	115	173
+289Uup	115	174
+290Uup	115	175
+291Uup	115	176
+289Lv	116	173
+290Lv	116	174
+291Lv	116	175
+292Lv	116	176
+293Lv	116	177
+291Uus	117	174
+292Uus	117	175
+293Uus	117	176
+294Uus	117	177
