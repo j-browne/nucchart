@@ -1,41 +1,12 @@
+mod nucleus;
+mod color;
+
 use std::io::{BufReader,BufRead};
 use std::fs::File;
 use std::collections::HashMap;
 use std::collections::HashSet;
-
-struct Color {
-    r: u8,
-    g: u8,
-    b: u8,
-}
-
-impl Color {
-    fn new(rs: String, gs: String, bs: String) -> Color {
-        Color {
-            r: rs.parse::<u8>().unwrap(),
-            g: gs.parse::<u8>().unwrap(),
-            b: bs.parse::<u8>().unwrap(),
-        }
-    }
-}
-
-struct Nucleus {
-    z: u8,
-    n: u8,
-}
-
-impl Nucleus {
-    fn new(zs: String, ns: String) -> Nucleus {
-        Nucleus {
-            z: zs.parse::<u8>().unwrap(),
-            n: ns.parse::<u8>().unwrap(),
-        }
-    }
-
-    fn a(&self) -> u16 {
-        (self.z as u16)+(self.n as u16)
-    }
-}
+use nucleus::Nucleus;
+use color::Color;
 
 fn get_col(fname: String) -> HashMap<String, Color> {
     let mut col = HashMap::new();
