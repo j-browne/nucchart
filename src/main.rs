@@ -145,10 +145,11 @@ fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, c
     for (name,n) in nucl {
         let x = n.n;
         let y = max_z - n.z;
-        let ref c = nuccol[name];
-        let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
-        let _ = write!(svgfile, " width=\"1\" height=\"1\"");
-        let _ = write!(svgfile, " class=\"nucBox {}\" />\n", c);
+        if let Some(c) = nuccol.get(name) {
+            let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
+            let _ = write!(svgfile, " width=\"1\" height=\"1\"");
+            let _ = write!(svgfile, " class=\"nucBox {}\" />\n", c);
+        }
     }
 
     // Element Symbols
