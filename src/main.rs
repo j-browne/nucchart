@@ -133,18 +133,18 @@ fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, c
     let _ = write!(svgfile, ".magBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
 
     for (name,c) in col {
-        let _ = write!(svgfile, ".{}{{fill:rgb({},{},{})}}\n", name, c.r, c.g, c.b);
+        let _ = write!(svgfile, ".{}{{fill:rgb({},{},{});}}\n", name, c.r, c.g, c.b);
     }
 
     let _ = write!(svgfile, "</style>\n");
 
     // Create Transform Group
-    let _ = write!(svgfile, "<g transform=\"scale({}) translate(2,1)\">\n", scale);
+    let _ = write!(svgfile, "<g transform=\"scale({}) translate(2,{}) scale(1,-1)\">\n", scale, max_z+2);
 
     // Nuclide Boxes
     for (name,n) in nucl {
         let x = n.n;
-        let y = max_z - n.z;
+        let y = n.z;
         if let Some(c) = nuccol.get(name) {
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
             let _ = write!(svgfile, " width=\"1\" height=\"1\"");
@@ -164,9 +164,12 @@ fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, c
                 }
             }
 
-            let xpos = (x as f32)-0.25;
-            let ypos = (max_z as f32)-(*z as f32)+0.75;
-            let _ = write!(svgfile, "<text x=\"{}\" y=\"{}\"", xpos, ypos);
+            let xpos = x;
+            let ypos = *z;
+            let xoff = -0.25;
+            let yoff = -0.25;
+            let _ = write!(svgfile, "<text x=\"{}\" y=\"{}\"", xoff, yoff);
+            let _ = write!(svgfile, " transform=\"translate({},{}) scale(1,-1)\"", xpos, ypos);
             let _ = write!(svgfile, " font-size=\".9\" class=\"elName\">");
             let _ = write!(svgfile, "{}", e);
             let _ = write!(svgfile, "</text>\n");
@@ -178,7 +181,7 @@ fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, c
         // Only include magic number outline if one of those isotones is include
         if let Some(nl) = n_limits.get(&m) {
             let xpos = m;
-            let ypos = max_z-nl.1;
+            let ypos = nl.0;
             let h = nl.1-nl.0+1;
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", xpos, ypos);
             let _ = write!(svgfile, " width=\"1\" height=\"{}\"", h);
@@ -187,7 +190,7 @@ fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, c
         // Only include magic number outline if one of those isotopes is include
         if let Some(zl) = z_limits.get(&m) {
             let xpos = zl.0;
-            let ypos = max_z-m;
+            let ypos = m;
             let w = zl.1-zl.0+1;
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", xpos, ypos);
             let _ = write!(svgfile, " width=\"{}\" height=\"1\"", w);
