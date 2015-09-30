@@ -85,18 +85,33 @@ fn get_magic(fname: String) -> HashSet<u8> {
 fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, col: &HashMap<String,Color>, elem: &HashMap<u8,String>, magic: &HashSet<u8>) {
     let mut z_limits = HashMap::<u8,(u8,u8)>::new();
     let mut n_limits = HashMap::<u8,(u8,u8)>::new();
-    let mut max_z: u8 = 0;
-    let mut max_n: u8 = 0;
+    let mut chart_z: Option<(u8,u8)> = None;
+    let mut chart_n: Option<(u8,u8)> = None;
     let scale = 10;
 
-    //TODO: Min as well?
     // Determine the limits of the chart
     for (_,n) in nucl {
-        if n.n > max_n {
-            max_n = n.n;
+        if chart_z == None {
+            chart_z = Some((n.z,n.z));
+        } else {
+            let z0 = chart_z.unwrap().0;
+            let z1 = chart_z.unwrap().1;
+            if n.z < z0 {
+                chart_z = Some((n.z,z1));
+            } else if n.z > z1 {
+                chart_z = Some((z0,n.z));
+            }
         }
-        if n.z > max_z {
-            max_z = n.z;
+        if chart_n == None {
+            chart_n = Some((n.n,n.n));
+        } else {
+            let n0 = chart_n.unwrap().0;
+            let n1 = chart_n.unwrap().1;
+            if n.n < n0 {
+                chart_n = Some((n.n,n1));
+            } else if n.n > n1 {
+                chart_n = Some((n0,n.n));
+            }
         }
     }
 
@@ -120,8 +135,8 @@ fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, c
     // Output the SVG
     let mut svgfile = File::create("out.svg").unwrap();
     // Header
-    let w = ((max_n as u32)+4)*scale;
-    let h = ((max_z as u32)+3)*scale;
+    let w = ((chart_n.unwrap().1 as u32)-(chart_n.unwrap().0 as u32)+4)*scale;
+    let h = ((chart_z.unwrap().1 as u32)-(chart_z.unwrap().0 as u32)+3)*scale;
     let _ = write!(svgfile, "<svg xmlns=\"http://www.w3.org/2000/svg\"");
     let _ = write!(svgfile, " xmlns:xlink=\"http://www.w3.org/1999/xlink\"");
     let _ = write!(svgfile, " width=\"{}\" height=\"{}\">\n", w, h);
@@ -139,7 +154,7 @@ fn output_svg(nucl: &HashMap<String,Nucleus>, nuccol: &HashMap<String,String>, c
     let _ = write!(svgfile, "</style>\n");
 
     // Create Transform Group
-    let _ = write!(svgfile, "<g transform=\"scale({}) translate(2,{}) scale(1,-1)\">\n", scale, max_z+2);
+    let _ = write!(svgfile, "<g transform=\"scale({}) translate({},{}) scale(1,-1)\">\n", scale, 2-(chart_n.unwrap().0 as i32), (chart_z.unwrap().1 as i32)+2);
 
     // Nuclide Boxes
     for (name,n) in nucl {
