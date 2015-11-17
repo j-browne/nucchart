@@ -5,8 +5,8 @@ mod color;
 
 use std::io::{BufReader, BufRead, Write};
 use std::fs::File;
+use std::vec::Vec;
 use std::collections::HashMap;
-use std::collections::HashSet;
 use std::env;
 use getopts::Options;
 use nucleus::Nucleus;
@@ -27,8 +27,8 @@ fn get_col(fname: String) -> HashMap<String, Color> {
     col
 }
 
-fn get_nucl(fname: String) -> HashMap<String, Nucleus> {
-    let mut nucl = HashMap::new();
+fn get_nucl(fname: String) -> Vec<(String, Nucleus)> {
+    let mut nucl = Vec::new();
     let f = BufReader::new(File::open(fname).unwrap());
     for l in f.lines() {
         let l: String = l.unwrap();
@@ -36,14 +36,14 @@ fn get_nucl(fname: String) -> HashMap<String, Nucleus> {
 
         let name = x[0].to_string();
         let n = Nucleus::new(x[1].to_string(), x[2].to_string());
-        nucl.insert(name, n);
+        nucl.push((name, n));
     }
 
     nucl
 }
 
-fn get_elem(fname: String) -> HashMap<u8, String> {
-    let mut elem = HashMap::new();
+fn get_elem(fname: String) -> Vec<(u8, String)> {
+    let mut elem = Vec::new();
     let f = BufReader::new(File::open(fname).unwrap());
     for l in f.lines() {
         let l: String = l.unwrap();
@@ -51,7 +51,7 @@ fn get_elem(fname: String) -> HashMap<u8, String> {
 
         let z = x[0].to_string().parse::<u8>().unwrap();
         let name = x[1].to_string();
-        elem.insert(z, name);
+        elem.push((z, name));
     }
 
     elem
@@ -72,25 +72,25 @@ fn get_nuccol(fname: String) -> HashMap<String, String> {
     nuccol
 }
 
-fn get_magic(fname: String) -> HashSet<u8> {
-    let mut magic = HashSet::new();
+fn get_magic(fname: String) -> Vec<u8> {
+    let mut magic = Vec::new();
     let f = BufReader::new(File::open(fname).unwrap());
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
 
         let m = x[0].to_string().parse::<u8>().unwrap();
-        magic.insert(m);
+        magic.push(m);
     }
 
     magic
 }
 
-fn output_svg(nucl: &HashMap<String, Nucleus>,
+fn output_svg(nucl: &Vec<(String, Nucleus)>,
               nuccol: &HashMap<String, String>,
               col: &HashMap<String, Color>,
-              elem: &HashMap<u8, String>,
-              magic: &HashSet<u8>) {
+              elem: &Vec<(u8, String)>,
+              magic: &Vec<u8>) {
     let mut z_limits = HashMap::<u8, (u8, u8)>::new();
     let mut n_limits = HashMap::<u8, (u8, u8)>::new();
     let mut chart_z: Option<(u8, u8)> = None;
@@ -98,7 +98,7 @@ fn output_svg(nucl: &HashMap<String, Nucleus>,
     let scale = 10;
 
     // Determine the limits of the chart
-    for (_, n) in nucl {
+    for &(_, ref n) in nucl {
         if chart_z == None {
             chart_z = Some((n.z, n.z));
         } else {
@@ -125,7 +125,7 @@ fn output_svg(nucl: &HashMap<String, Nucleus>,
 
     // Determine the lowest and highest Z for each N and lowest and highest N for
     // each Z
-    for (_, n) in nucl {
+    for &(_, ref n) in nucl {
         let x = z_limits.entry(n.z).or_insert((n.n, n.n));
         if n.n < x.0 {
             *x = (n.n, x.1);
@@ -171,7 +171,7 @@ fn output_svg(nucl: &HashMap<String, Nucleus>,
                    (chart_z.unwrap().1 as i32) + 2);
 
     // Nuclide Boxes
-    for (name, n) in nucl {
+    for &(ref name, ref n) in nucl {
         let x = n.n;
         let y = n.z;
         if let Some(c) = nuccol.get(name) {
@@ -182,7 +182,7 @@ fn output_svg(nucl: &HashMap<String, Nucleus>,
     }
 
     // Element Symbols
-    for (z, e) in elem {
+    for &(ref z, ref e) in elem {
         // Determine x position
         // Only include element symbol if one of its isotopes is included
         if let Some(z1) = z_limits.get(&z) {
@@ -194,7 +194,7 @@ fn output_svg(nucl: &HashMap<String, Nucleus>,
             }
 
             let xpos = x;
-            let ypos = *z;
+            let ypos = z;
             let xoff = -0.25;
             let yoff = -0.25;
             let _ = write!(svgfile, "<text x=\"{}\" y=\"{}\"", xoff, yoff);
