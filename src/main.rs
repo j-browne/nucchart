@@ -86,7 +86,8 @@ fn get_magic(fname: String) -> Vec<u8> {
     magic
 }
 
-fn output_svg(nucl: &Vec<(String, Nucleus)>,
+fn output_svg(out_fname: &String,
+              nucl: &Vec<(String, Nucleus)>,
               nuccol: &HashMap<String, String>,
               col: &HashMap<String, Color>,
               elem: &Vec<(u8, String)>,
@@ -142,7 +143,7 @@ fn output_svg(nucl: &Vec<(String, Nucleus)>,
     }
 
     // Output the SVG
-    let mut svgfile = File::create("out.svg").unwrap();
+    let mut svgfile = File::create(out_fname).unwrap();
     // Header
     let w = ((chart_n.unwrap().1 as u32) - (chart_n.unwrap().0 as u32) + 4) * scale;
     let h = ((chart_z.unwrap().1 as u32) - (chart_z.unwrap().0 as u32) + 3) * scale;
@@ -238,6 +239,7 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let mut opts = Options::new();
 
+    // These are the command line options
     opts.optopt("o",
                 "output",
                 "The SVG output file",
@@ -263,22 +265,27 @@ fn main() {
                 "The data file containing magic number information",
                 "FILE");
 
+    // Parse the command line arguments
     let matches = match opts.parse(&args[1..]) {
         Ok(m) => { m }
         Err(f) => { panic!(f.to_string()) }
     };
 
+    // Apply defaults
+    let out_fname = matches.opt_str("o").unwrap_or("out.svg".to_string());
     let nucl_fname = matches.opt_str("n").unwrap_or("data/nuclei".to_string());
     let nuccol_fname = matches.opt_str("u").unwrap_or("data/nuccol".to_string());
     let col_fname = matches.opt_str("c").unwrap_or("data/colors".to_string());
     let elem_fname = matches.opt_str("e").unwrap_or("data/elements".to_string());
     let magic_fname = matches.opt_str("m").unwrap_or("data/magic".to_string());
 
+    // Read in data files
     let nucl = get_nucl(nucl_fname);
     let nuccol = get_nuccol(nuccol_fname);
     let col = get_col(col_fname);
     let elem = get_elem(elem_fname);
     let magic = get_magic(magic_fname);
 
-    output_svg(&nucl, &nuccol, &col, &elem, &magic);
+    // Create the image
+    output_svg(&out_fname, &nucl, &nuccol, &col, &elem, &magic);
 }
