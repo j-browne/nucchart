@@ -12,6 +12,6 @@ impl Nucleus {
     }
 
     pub fn a(&self) -> u16 {
-        (self.z as u16)+(self.n as u16)
+        (self.z as u16) + (self.n as u16)
     }
 }
