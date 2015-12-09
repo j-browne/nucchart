@@ -159,7 +159,7 @@ fn output_svg(out_fname: &String,
                    ".magBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
 
     for (name, c) in col {
-        let _ = write!(svgfile, ".{}{{fill:rgb({},{},{});}}\n", name, c.r, c.g, c.b);
+        let _ = write!(svgfile, ".{}{{fill:rgb({:.1}%,{:.1}%,{:.1}%);}}\n", name, c.r, c.g, c.b);
     }
 
     let _ = write!(svgfile, "</style>\n");

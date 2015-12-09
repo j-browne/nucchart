@@ -1,15 +1,15 @@
 pub struct Color {
-    pub r: u8,
-    pub g: u8,
-    pub b: u8,
+    pub r: f32,
+    pub g: f32,
+    pub b: f32,
 }
 
 impl Color {
     pub fn new(rs: String, gs: String, bs: String) -> Color {
         Color {
-            r: rs.parse::<u8>().unwrap(),
-            g: gs.parse::<u8>().unwrap(),
-            b: bs.parse::<u8>().unwrap(),
+            r: rs.parse::<f32>().unwrap(),
+            g: gs.parse::<f32>().unwrap(),
+            b: bs.parse::<f32>().unwrap(),
         }
     }
 }
