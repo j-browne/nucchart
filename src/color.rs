@@ -12,4 +12,9 @@ impl Color {
             b: bs.parse::<f32>().unwrap(),
         }
     }
+
+    pub fn to_string_rgb_p(&self) -> String {
+        let s = format!("rgb({:.1}%,{:.1}%,{:.1}%)", self.r, self.g, self.b);
+        s
+    }
 }

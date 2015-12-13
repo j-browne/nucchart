@@ -27,8 +27,8 @@ fn get_col(fname: String) -> HashMap<String, Color> {
     col
 }
 
-fn get_nucl(fname: String) -> Vec<(String, Nucleus)> {
-    let mut nucl = Vec::new();
+fn get_nucl(fname: String) -> HashMap<String, Nucleus> {
+    let mut nucl = HashMap::new();
     let f = BufReader::new(File::open(fname).unwrap());
     for l in f.lines() {
         let l: String = l.unwrap();
@@ -36,7 +36,7 @@ fn get_nucl(fname: String) -> Vec<(String, Nucleus)> {
 
         let name = x[0].to_string();
         let n = Nucleus::new(x[1].to_string(), x[2].to_string());
-        nucl.push((name, n));
+        nucl.insert(name, n);
     }
 
     nucl
@@ -49,7 +49,7 @@ fn get_elem(fname: String) -> Vec<(u8, String)> {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
 
-        let z = x[0].to_string().parse::<u8>().unwrap();
+        let z = x[0].parse::<u8>().unwrap();
         let name = x[1].to_string();
         elem.push((z, name));
     }
@@ -57,6 +57,7 @@ fn get_elem(fname: String) -> Vec<(u8, String)> {
     elem
 }
 
+#[allow(dead_code)]
 fn get_nuccol(fname: String) -> HashMap<String, String> {
     let mut nuccol = HashMap::new();
     let f = BufReader::new(File::open(fname).unwrap());
@@ -79,16 +80,45 @@ fn get_magic(fname: String) -> Vec<u8> {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
 
-        let m = x[0].to_string().parse::<u8>().unwrap();
+        let m = x[0].parse::<u8>().unwrap();
         magic.push(m);
     }
 
     magic
 }
 
+fn get_abun(fname: String) -> Vec<(String, f32)> {
+    let mut abun = Vec::new();
+    let f = BufReader::new(File::open(fname).unwrap());
+    for l in f.lines() {
+        const CHUNK_SIZE: usize = 15;
+        let b = l.unwrap().into_bytes();
+        let c = b.chunks(CHUNK_SIZE);
+        for s in c {
+            let s = std::str::from_utf8(s).unwrap();
+            let x: Vec<&str> = s.split_whitespace().collect();
+
+            let n = x[0].to_string();
+            let a = x[1].parse::<f32>().unwrap();
+
+            abun.push((n, a));
+        }
+    }
+
+    abun
+}
+
+fn color_func(x: f32) -> Color {
+    Color {
+        r: (0.5f32 - x / 2f32) * 100f32,
+        g: 0f32,
+        b: x * 100f32,
+    }
+}
+
 fn output_svg(out_fname: &String,
-              nucl: &Vec<(String, Nucleus)>,
-              nuccol: &HashMap<String, String>,
+              abun: &Vec<(String, f32)>,
+              nucl: &HashMap<String, Nucleus>,
               col: &HashMap<String, Color>,
               elem: &Vec<(u8, String)>,
               magic: &Vec<u8>) {
@@ -96,57 +126,71 @@ fn output_svg(out_fname: &String,
     let mut n_limits = HashMap::<u8, (u8, u8)>::new();
     let mut chart_z: Option<(u8, u8)> = None;
     let mut chart_n: Option<(u8, u8)> = None;
-    let scale = 10;
+    let mut max_ab: f32;
+    const SVG_SCALE: u32 = 10u32;
 
     // Determine the limits of the chart
-    for &(_, ref n) in nucl {
-        if chart_z == None {
-            chart_z = Some((n.z, n.z));
-        } else {
-            let z0 = chart_z.unwrap().0;
-            let z1 = chart_z.unwrap().1;
-            if n.z < z0 {
-                chart_z = Some((n.z, z1));
-            } else if n.z > z1 {
-                chart_z = Some((z0, n.z));
+    for &(ref name, _) in abun {
+        if let Some(n) = nucl.get(name) {
+            if chart_z == None {
+                chart_z = Some((n.z, n.z));
+            } else {
+                let z0 = chart_z.unwrap().0;
+                let z1 = chart_z.unwrap().1;
+                if n.z < z0 {
+                    chart_z = Some((n.z, z1));
+                } else if n.z > z1 {
+                    chart_z = Some((z0, n.z));
+                }
             }
-        }
-        if chart_n == None {
-            chart_n = Some((n.n, n.n));
-        } else {
-            let n0 = chart_n.unwrap().0;
-            let n1 = chart_n.unwrap().1;
-            if n.n < n0 {
-                chart_n = Some((n.n, n1));
-            } else if n.n > n1 {
-                chart_n = Some((n0, n.n));
+            if chart_n == None {
+                chart_n = Some((n.n, n.n));
+            } else {
+                let n0 = chart_n.unwrap().0;
+                let n1 = chart_n.unwrap().1;
+                if n.n < n0 {
+                    chart_n = Some((n.n, n1));
+                } else if n.n > n1 {
+                    chart_n = Some((n0, n.n));
+                }
             }
+        } else {
+            let _ = writeln!(&mut std::io::stderr(), "{} is not in nucl", name);
         }
     }
 
     // Determine the lowest and highest Z for each N and lowest and highest N for
     // each Z
-    for &(_, ref n) in nucl {
-        let x = z_limits.entry(n.z).or_insert((n.n, n.n));
-        if n.n < x.0 {
-            *x = (n.n, x.1);
-        } else if n.n > x.1 {
-            *x = (x.0, n.n);
-        }
+    for &(ref name, _) in abun {
+        if let Some(n) = nucl.get(name) {
+            let x = z_limits.entry(n.z).or_insert((n.n, n.n));
+            if n.n < x.0 {
+                *x = (n.n, x.1);
+            } else if n.n > x.1 {
+                *x = (x.0, n.n);
+            }
 
-        let x = n_limits.entry(n.n).or_insert((n.z, n.z));
-        if n.z < x.0 {
-            *x = (n.z, x.1);
-        } else if n.z > x.1 {
-            *x = (x.0, n.z);
+            let x = n_limits.entry(n.n).or_insert((n.z, n.z));
+            if n.z < x.0 {
+                *x = (n.z, x.1);
+            } else if n.z > x.1 {
+                *x = (x.0, n.z);
+            }
         }
+    }
+
+    // Determine max abundance
+    max_ab = abun[0].1;
+    for &(_, ab) in abun {
+        max_ab = f32::max(max_ab, ab);
     }
 
     // Output the SVG
     let mut svgfile = File::create(out_fname).unwrap();
+
     // Header
-    let w = ((chart_n.unwrap().1 as u32) - (chart_n.unwrap().0 as u32) + 4) * scale;
-    let h = ((chart_z.unwrap().1 as u32) - (chart_z.unwrap().0 as u32) + 3) * scale;
+    let w = ((chart_n.unwrap().1 as u32) - (chart_n.unwrap().0 as u32) + 4) * SVG_SCALE;
+    let h = ((chart_z.unwrap().1 as u32) - (chart_z.unwrap().0 as u32) + 3) * SVG_SCALE;
     let _ = write!(svgfile, "<svg xmlns=\"http://www.w3.org/2000/svg\"");
     let _ = write!(svgfile, " xmlns:xlink=\"http://www.w3.org/1999/xlink\"");
     let _ = write!(svgfile, " width=\"{}\" height=\"{}\">\n", w, h);
@@ -159,7 +203,7 @@ fn output_svg(out_fname: &String,
                    ".magBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
 
     for (name, c) in col {
-        let _ = write!(svgfile, ".{}{{fill:rgb({:.1}%,{:.1}%,{:.1}%);}}\n", name, c.r, c.g, c.b);
+        let _ = write!(svgfile, ".{}{{fill:{};}}\n", name, c.to_string_rgb_p());
     }
 
     let _ = write!(svgfile, "</style>\n");
@@ -167,18 +211,21 @@ fn output_svg(out_fname: &String,
     // Create Transform Group
     let _ = write!(svgfile,
                    "<g transform=\"scale({}) translate({},{}) scale(1,-1)\">\n",
-                   scale,
+                   SVG_SCALE,
                    2 - (chart_n.unwrap().0 as i32),
                    (chart_z.unwrap().1 as i32) + 2);
 
     // Nuclide Boxes
-    for &(ref name, ref n) in nucl {
-        let x = n.n;
-        let y = n.z;
-        if let Some(c) = nuccol.get(name) {
+    for &(ref name, ab) in abun {
+        if let Some(n) = nucl.get(name) {
+            let x = n.n;
+            let y = n.z;
+            let c = color_func(f32::log2(ab / max_ab + 1f32));
+
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
             let _ = write!(svgfile, " width=\"1\" height=\"1\"");
-            let _ = write!(svgfile, " class=\"nucBox {}\" />\n", c);
+            let _ = write!(svgfile, " fill=\"{}\" ", c.to_string_rgb_p());
+            let _ = write!(svgfile, " class=\"nucBox\" />\n");
         }
     }
 
@@ -264,6 +311,10 @@ fn main() {
                 "magic",
                 "The data file containing magic number information",
                 "FILE");
+    opts.optopt("a",
+                "abun",
+                "The file containing abundances",
+                "FILE");
 
     // Parse the command line arguments
     let matches = match opts.parse(&args[1..]) {
@@ -274,18 +325,20 @@ fn main() {
     // Apply defaults
     let out_fname = matches.opt_str("o").unwrap_or("out.svg".to_string());
     let nucl_fname = matches.opt_str("n").unwrap_or("data/nuclei".to_string());
-    let nuccol_fname = matches.opt_str("u").unwrap_or("data/nuccol".to_string());
+    //let nuccol_fname = matches.opt_str("u").unwrap_or("data/nuccol".to_string());
     let col_fname = matches.opt_str("c").unwrap_or("data/colors".to_string());
     let elem_fname = matches.opt_str("e").unwrap_or("data/elements".to_string());
     let magic_fname = matches.opt_str("m").unwrap_or("data/magic".to_string());
+    let abun_fname = matches.opt_str("a").unwrap_or("abun".to_string());
 
     // Read in data files
     let nucl = get_nucl(nucl_fname);
-    let nuccol = get_nuccol(nuccol_fname);
+    //let nuccol = get_nuccol(nuccol_fname);
     let col = get_col(col_fname);
     let elem = get_elem(elem_fname);
     let magic = get_magic(magic_fname);
+    let abun = get_abun(abun_fname);
 
     // Create the image
-    output_svg(&out_fname, &nucl, &nuccol, &col, &elem, &magic);
+    output_svg(&out_fname, &abun, &nucl, &col, &elem, &magic);
 }
