@@ -6,7 +6,7 @@ mod color;
 use std::io::{BufReader, BufRead, Write};
 use std::fs::File;
 use std::vec::Vec;
-use std::collections::HashMap;
+use std::collections::{HashMap,HashSet};
 use std::env;
 use getopts::Options;
 use nucleus::Nucleus;
@@ -48,6 +48,20 @@ fn get_nucl(fname: String) -> Vec<(String, Nucleus)> {
     }
 
     nucl
+}
+
+fn get_stable(fname: String) -> HashSet<String> {
+    let mut stable = HashSet::new();
+    let f = bufreader_from_name(fname);
+    for l in f.lines() {
+        let l: String = l.unwrap();
+        let x: Vec<_> = l.split("\t").collect();
+
+        let n = x[0].to_string();
+        stable.insert(n);
+    }
+
+    stable
 }
 
 fn get_elem(fname: String) -> Vec<(u8, String)> {
@@ -98,6 +112,7 @@ fn output_svg(out_fname: &String,
               nucl: &Vec<(String, Nucleus)>,
               nuccol: &HashMap<String, String>,
               col: &HashMap<String, Color>,
+              stable: &HashSet<String>,
               elem: &Vec<(u8, String)>,
               magic: &Vec<u8>) {
     let mut z_limits = HashMap::<u8, (u8, u8)>::new();
@@ -162,10 +177,10 @@ fn output_svg(out_fname: &String,
 
     // Styling
     let _ = write!(svgfile, "<style>\n");
-    let _ = write!(svgfile, ".nucBox{{stroke:black;stroke-width:.1;}}\n");
+    let _ = write!(svgfile, ".stableBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
+    let _ = write!(svgfile, ".unstableBox{{fill:none;stroke:black;stroke-width:.05;}}\n");
+    let _ = write!(svgfile, ".magBox{{fill:none;stroke:black;stroke-width:.15;}}\n");
     let _ = write!(svgfile, ".elName{{text-anchor:end;}}\n");
-    let _ = write!(svgfile,
-                   ".magBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
 
     for (name, c) in col {
         let _ = write!(svgfile, ".{}{{fill:rgb({:.1}%,{:.1}%,{:.1}%);}}\n", name, c.r, c.g, c.b);
@@ -180,14 +195,29 @@ fn output_svg(out_fname: &String,
                    2 - (chart_n.unwrap().0 as i32),
                    (chart_z.unwrap().1 as i32) + 2);
 
-    // Nuclide Boxes
+    // Nuclide Colors
     for &(ref name, ref n) in nucl {
         let x = n.n;
         let y = n.z;
         if let Some(c) = nuccol.get(name) {
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
             let _ = write!(svgfile, " width=\"1\" height=\"1\"");
-            let _ = write!(svgfile, " class=\"nucBox {}\" />\n", c);
+            let _ = write!(svgfile, " class=\"{}\" />\n", c);
+        }
+    }
+
+    // Nuclide Outlines
+    for &(ref name, ref n) in nucl {
+        let x = n.n;
+        let y = n.z;
+        if let Some(_) = nuccol.get(name) {
+            let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
+            let _ = write!(svgfile, " width=\"1\" height=\"1\"");
+            if stable.contains(name) {
+                let _ = write!(svgfile, " class=\"stableBox\" />\n");
+            } else {
+                let _ = write!(svgfile, " class=\"unstableBox\" />\n");
+            }
         }
     }
 
@@ -265,6 +295,10 @@ fn main() {
                 "colors",
                 "The data file containing color definitions",
                 "FILE");
+    opts.optopt("s",
+                "stable",
+                "The data file containing stable nuclide information",
+                "FILE");
     opts.optopt("e",
                 "elements",
                 "The data file containing element information",
@@ -285,6 +319,7 @@ fn main() {
     let nucl_fname = matches.opt_str("n").unwrap_or("data/nuclei".to_string());
     let nuccol_fname = matches.opt_str("u").unwrap_or("data/nuccol".to_string());
     let col_fname = matches.opt_str("c").unwrap_or("data/colors".to_string());
+    let stable_fname = matches.opt_str("s").unwrap_or("data/stable".to_string());
     let elem_fname = matches.opt_str("e").unwrap_or("data/elements".to_string());
     let magic_fname = matches.opt_str("m").unwrap_or("data/magic".to_string());
 
@@ -293,8 +328,9 @@ fn main() {
     let nuccol = get_nuccol(nuccol_fname);
     let col = get_col(col_fname);
     let elem = get_elem(elem_fname);
+    let stable = get_stable(stable_fname);
     let magic = get_magic(magic_fname);
 
     // Create the image
-    output_svg(&out_fname, &nucl, &nuccol, &col, &elem, &magic);
+    output_svg(&out_fname, &nucl, &nuccol, &col, &stable, &elem, &magic);
 }
