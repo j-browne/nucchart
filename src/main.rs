@@ -12,10 +12,19 @@ use getopts::Options;
 use nucleus::Nucleus;
 use color::Color;
 
+fn bufreader_from_name (fname: String) -> BufReader<File> {
+    let file = match File::open(&fname) {
+        Ok(f) => f,
+        Err(_) => panic!{"ERROR: Error opening \'{}\'.", fname},
+    };
+    BufReader::new(file)
+}
+
+
 #[allow(dead_code)]
 fn get_col(fname: String) -> HashMap<String, Color> {
     let mut col = HashMap::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -30,7 +39,7 @@ fn get_col(fname: String) -> HashMap<String, Color> {
 
 fn get_nucl(fname: String) -> HashMap<String, Nucleus> {
     let mut nucl = HashMap::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -45,7 +54,7 @@ fn get_nucl(fname: String) -> HashMap<String, Nucleus> {
 
 fn get_elem(fname: String) -> Vec<(u8, String)> {
     let mut elem = Vec::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -61,7 +70,7 @@ fn get_elem(fname: String) -> Vec<(u8, String)> {
 #[allow(dead_code)]
 fn get_nuccol(fname: String) -> HashMap<String, String> {
     let mut nuccol = HashMap::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -76,7 +85,7 @@ fn get_nuccol(fname: String) -> HashMap<String, String> {
 
 fn get_magic(fname: String) -> Vec<u8> {
     let mut magic = Vec::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -90,7 +99,7 @@ fn get_magic(fname: String) -> Vec<u8> {
 
 fn get_abun(fname: String) -> Vec<(String, f32)> {
     let mut abun = Vec::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         const CHUNK_SIZE: usize = 15;
         let b = l.unwrap().into_bytes();
@@ -202,7 +211,7 @@ fn output_svg(out_fname: &String,
     }
 
     // Output the SVG
-    let mut svgfile = File::create(out_fname).unwrap();
+    let mut svgfile = File::create(out_fname).expect(&format!("Error opening {}", out_fname));
 
     // Header
     let w = ((chart_n.unwrap().1 as u32) - (chart_n.unwrap().0 as u32) + 4) * SVG_SCALE;
@@ -334,8 +343,8 @@ fn main() {
 
     // Parse the command line arguments
     let matches = match opts.parse(&args[1..]) {
-        Ok(m) => { m }
-        Err(f) => { panic!(f.to_string()) }
+        Ok(m) => m,
+        Err(f) => panic!(f.to_string()),
     };
 
     // Apply defaults
@@ -358,9 +367,7 @@ fn main() {
     clean_abun(&mut abun, &nucl);
 
     if abun.is_empty() {
-        let _ = writeln!(&mut std::io::stderr(),
-                         "ERROR: abun is empty.");
-        panic!("Empty container: abun");
+        panic!("ERROR: abun is empty.");
     }
 
     // Create the image
