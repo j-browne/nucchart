@@ -12,6 +12,7 @@ use getopts::Options;
 use nucleus::Nucleus;
 use color::Color;
 
+#[allow(dead_code)]
 fn get_col(fname: String) -> HashMap<String, Color> {
     let mut col = HashMap::new();
     let f = BufReader::new(File::open(fname).unwrap());
@@ -116,10 +117,26 @@ fn color_func(x: f32) -> Color {
     }
 }
 
+fn clean_abun(abun: &mut Vec<(String, f32)>,
+              nucl: &HashMap<String, Nucleus>) {
+    let mut to_remove = Vec::<usize>::new();
+    for (i, &(ref name, _)) in abun.iter().enumerate() {
+        if !nucl.contains_key(name) {
+            let _ = writeln!(&mut std::io::stderr(),
+                             "WARNING: {} is not in nucl. Removing from abun.",
+                             name);
+            to_remove.push(i);
+        }
+    }
+    to_remove.reverse();
+    for i in to_remove {
+        abun.remove(i);
+    }
+}
+
 fn output_svg(out_fname: &String,
               abun: &Vec<(String, f32)>,
               nucl: &HashMap<String, Nucleus>,
-              col: &HashMap<String, Color>,
               elem: &Vec<(u8, String)>,
               magic: &Vec<u8>) {
     let mut z_limits = HashMap::<u8, (u8, u8)>::new();
@@ -128,6 +145,7 @@ fn output_svg(out_fname: &String,
     let mut chart_n: Option<(u8, u8)> = None;
     let mut max_ab: f32;
     const SVG_SCALE: u32 = 10u32;
+
 
     // Determine the limits of the chart
     for &(ref name, _) in abun {
@@ -154,8 +172,6 @@ fn output_svg(out_fname: &String,
                     chart_n = Some((n0, n.n));
                 }
             }
-        } else {
-            let _ = writeln!(&mut std::io::stderr(), "{} is not in nucl", name);
         }
     }
 
@@ -201,11 +217,11 @@ fn output_svg(out_fname: &String,
     let _ = write!(svgfile, ".elName{{text-anchor:end;}}\n");
     let _ = write!(svgfile,
                    ".magBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
-
+/*
     for (name, c) in col {
         let _ = write!(svgfile, ".{}{{fill:{};}}\n", name, c.to_string_rgb_p());
     }
-
+*/
     let _ = write!(svgfile, "</style>\n");
 
     // Create Transform Group
@@ -326,7 +342,7 @@ fn main() {
     let out_fname = matches.opt_str("o").unwrap_or("out.svg".to_string());
     let nucl_fname = matches.opt_str("n").unwrap_or("data/nuclei".to_string());
     //let nuccol_fname = matches.opt_str("u").unwrap_or("data/nuccol".to_string());
-    let col_fname = matches.opt_str("c").unwrap_or("data/colors".to_string());
+    //let col_fname = matches.opt_str("c").unwrap_or("data/colors".to_string());
     let elem_fname = matches.opt_str("e").unwrap_or("data/elements".to_string());
     let magic_fname = matches.opt_str("m").unwrap_or("data/magic".to_string());
     let abun_fname = matches.opt_str("a").unwrap_or("abun".to_string());
@@ -334,11 +350,19 @@ fn main() {
     // Read in data files
     let nucl = get_nucl(nucl_fname);
     //let nuccol = get_nuccol(nuccol_fname);
-    let col = get_col(col_fname);
+    //let col = get_col(col_fname);
     let elem = get_elem(elem_fname);
     let magic = get_magic(magic_fname);
-    let abun = get_abun(abun_fname);
+    let mut abun = get_abun(abun_fname);
+
+    clean_abun(&mut abun, &nucl);
+
+    if abun.is_empty() {
+        let _ = writeln!(&mut std::io::stderr(),
+                         "ERROR: abun is empty.");
+        panic!("Empty container: abun");
+    }
 
     // Create the image
-    output_svg(&out_fname, &abun, &nucl, &col, &elem, &magic);
+    output_svg(&out_fname, &abun, &nucl, &elem, &magic);
 }
