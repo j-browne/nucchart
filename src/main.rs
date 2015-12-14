@@ -12,9 +12,17 @@ use getopts::Options;
 use nucleus::Nucleus;
 use color::Color;
 
+fn bufreader_from_name (fname: String) -> BufReader<File> {
+    let file = match File::open(&fname) {
+        Ok(f) => f,
+        Err(_) => panic!{"ERROR: Error opening \'{}\'.", fname},
+    };
+    BufReader::new(file)
+}
+
 fn get_col(fname: String) -> HashMap<String, Color> {
     let mut col = HashMap::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -29,7 +37,7 @@ fn get_col(fname: String) -> HashMap<String, Color> {
 
 fn get_nucl(fname: String) -> Vec<(String, Nucleus)> {
     let mut nucl = Vec::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -44,7 +52,7 @@ fn get_nucl(fname: String) -> Vec<(String, Nucleus)> {
 
 fn get_elem(fname: String) -> Vec<(u8, String)> {
     let mut elem = Vec::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -59,7 +67,7 @@ fn get_elem(fname: String) -> Vec<(u8, String)> {
 
 fn get_nuccol(fname: String) -> HashMap<String, String> {
     let mut nuccol = HashMap::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -74,7 +82,7 @@ fn get_nuccol(fname: String) -> HashMap<String, String> {
 
 fn get_magic(fname: String) -> Vec<u8> {
     let mut magic = Vec::new();
-    let f = BufReader::new(File::open(fname).unwrap());
+    let f = bufreader_from_name(fname);
     for l in f.lines() {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
@@ -143,7 +151,8 @@ fn output_svg(out_fname: &String,
     }
 
     // Output the SVG
-    let mut svgfile = File::create(out_fname).unwrap();
+    let mut svgfile = File::create(out_fname).expect(&format!("Error opening {}", out_fname));
+
     // Header
     let w = ((chart_n.unwrap().1 as u32) - (chart_n.unwrap().0 as u32) + 4) * scale;
     let h = ((chart_z.unwrap().1 as u32) - (chart_z.unwrap().0 as u32) + 3) * scale;
@@ -267,8 +276,8 @@ fn main() {
 
     // Parse the command line arguments
     let matches = match opts.parse(&args[1..]) {
-        Ok(m) => { m }
-        Err(f) => { panic!(f.to_string()) }
+        Ok(m) => m,
+        Err(f) => panic!(f.to_string()),
     };
 
     // Apply defaults
