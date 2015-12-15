@@ -6,7 +6,7 @@ mod color;
 use std::io::{BufReader, BufRead, Write};
 use std::fs::File;
 use std::vec::Vec;
-use std::collections::HashMap;
+use std::collections::{HashMap,HashSet};
 use std::env;
 use getopts::Options;
 use nucleus::Nucleus;
@@ -19,7 +19,6 @@ fn bufreader_from_name (fname: String) -> BufReader<File> {
     };
     BufReader::new(file)
 }
-
 
 #[allow(dead_code)]
 fn get_col(fname: String) -> HashMap<String, Color> {
@@ -50,6 +49,20 @@ fn get_nucl(fname: String) -> HashMap<String, Nucleus> {
     }
 
     nucl
+}
+
+fn get_stable(fname: String) -> HashSet<String> {
+    let mut stable = HashSet::new();
+    let f = bufreader_from_name(fname);
+    for l in f.lines() {
+        let l: String = l.unwrap();
+        let x: Vec<_> = l.split("\t").collect();
+
+        let n = x[0].to_string();
+        stable.insert(n);
+    }
+
+    stable
 }
 
 fn get_elem(fname: String) -> Vec<(u8, String)> {
@@ -146,6 +159,7 @@ fn clean_abun(abun: &mut Vec<(String, f32)>,
 fn output_svg(out_fname: &String,
               abun: &Vec<(String, f32)>,
               nucl: &HashMap<String, Nucleus>,
+              stable: &HashSet<String>,
               elem: &Vec<(u8, String)>,
               magic: &Vec<u8>) {
     let mut z_limits = HashMap::<u8, (u8, u8)>::new();
@@ -210,6 +224,9 @@ fn output_svg(out_fname: &String,
         max_ab = f32::max(max_ab, ab);
     }
 
+    //TODO: Get rid of this
+    max_ab = 5E-4;
+
     // Output the SVG
     let mut svgfile = File::create(out_fname).expect(&format!("Error opening {}", out_fname));
 
@@ -222,10 +239,11 @@ fn output_svg(out_fname: &String,
 
     // Styling
     let _ = write!(svgfile, "<style>\n");
-    let _ = write!(svgfile, ".nucBox{{stroke:black;stroke-width:.1;}}\n");
-    let _ = write!(svgfile, ".elName{{text-anchor:end;}}\n");
-    let _ = write!(svgfile,
-                   ".magBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
+    let _ = write!(svgfile, ".stableBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
+    let _ = write!(svgfile, ".unstableBox{{fill:none;stroke:black;stroke-width:.05;}}\n");
+    let _ = write!(svgfile, ".magBox{{fill:none;stroke:black;stroke-width:.15;}}\n");
+    let _ = write!(svgfile, ".elLabel{{text-anchor:end;}}\n");
+    let _ = write!(svgfile, ".nLabel{{text-anchor:start;}}\n");
 /*
     for (name, c) in col {
         let _ = write!(svgfile, ".{}{{fill:{};}}\n", name, c.to_string_rgb_p());
@@ -245,12 +263,28 @@ fn output_svg(out_fname: &String,
         if let Some(n) = nucl.get(name) {
             let x = n.n;
             let y = n.z;
-            let c = color_func(f32::log2(ab / max_ab + 1f32));
+            let mut s = f32::log2(ab / max_ab + 1f32);
+            s = f32::min(s, 1f32);
+            let c = color_func(s);
 
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
             let _ = write!(svgfile, " width=\"1\" height=\"1\"");
             let _ = write!(svgfile, " fill=\"{}\" ", c.to_string_rgb_p());
-            let _ = write!(svgfile, " class=\"nucBox\" />\n");
+        }
+    }
+
+    // Nuclide Outlines
+    for &(ref name, _) in abun {
+        if let Some(n) = nucl.get(name) {
+            let x = n.n;
+            let y = n.z;
+            let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
+            let _ = write!(svgfile, " width=\"1\" height=\"1\"");
+            if stable.contains(name) {
+                let _ = write!(svgfile, " class=\"stableBox\" />\n");
+            } else {
+                let _ = write!(svgfile, " class=\"unstableBox\" />\n");
+            }
         }
     }
 
@@ -275,9 +309,38 @@ fn output_svg(out_fname: &String,
                            " transform=\"translate({},{}) scale(1,-1)\"",
                            xpos,
                            ypos);
-            let _ = write!(svgfile, " font-size=\".9\" class=\"elName\">");
+            let _ = write!(svgfile, " font-size=\".9\" class=\"elLabel\">");
             let _ = write!(svgfile, "{}", e);
             let _ = write!(svgfile, "</text>\n");
+        }
+    }
+
+    // Number of Neutrons
+    for n in chart_n.unwrap().0..chart_n.unwrap().1 {
+        // Determine y position
+        // Only include element symbol if one of its isotopes is included
+        if n % 2 == 0 {
+            if let Some(n1) = n_limits.get(&n) {
+                let mut y = n1.0;
+                if let Some(n2) = n_limits.get(&(n + 1)) {
+                    if n2 < n1 {
+                        y = n2.0;
+                    }
+                }
+
+                let xpos = n;
+                let ypos = y;
+                let xoff = 0.05;
+                let yoff = 0.9;
+                let _ = write!(svgfile, "<text x=\"{}\" y=\"{}\"", xoff, yoff);
+                let _ = write!(svgfile,
+                               " transform=\"translate({},{}) scale(1,-1)\"",
+                               xpos,
+                               ypos);
+                let _ = write!(svgfile, " font-size=\".9\" class=\"nLabel\">");
+                let _ = write!(svgfile, "{}", n);
+                let _ = write!(svgfile, "</text>\n");
+            }
         }
     }
 
@@ -328,6 +391,10 @@ fn main() {
                 "colors",
                 "The data file containing color definitions",
                 "FILE");
+    opts.optopt("s",
+                "stable",
+                "The data file containing stable nuclide information",
+                "FILE");
     opts.optopt("e",
                 "elements",
                 "The data file containing element information",
@@ -352,6 +419,7 @@ fn main() {
     let nucl_fname = matches.opt_str("n").unwrap_or("data/nuclei".to_string());
     //let nuccol_fname = matches.opt_str("u").unwrap_or("data/nuccol".to_string());
     //let col_fname = matches.opt_str("c").unwrap_or("data/colors".to_string());
+    let stable_fname = matches.opt_str("s").unwrap_or("data/stable".to_string());
     let elem_fname = matches.opt_str("e").unwrap_or("data/elements".to_string());
     let magic_fname = matches.opt_str("m").unwrap_or("data/magic".to_string());
     let abun_fname = matches.opt_str("a").unwrap_or("abun".to_string());
@@ -361,6 +429,7 @@ fn main() {
     //let nuccol = get_nuccol(nuccol_fname);
     //let col = get_col(col_fname);
     let elem = get_elem(elem_fname);
+    let stable = get_stable(stable_fname);
     let magic = get_magic(magic_fname);
     let mut abun = get_abun(abun_fname);
 
@@ -371,5 +440,5 @@ fn main() {
     }
 
     // Create the image
-    output_svg(&out_fname, &abun, &nucl, &elem, &magic);
+    output_svg(&out_fname, &abun, &nucl, &stable, &elem, &magic);
 }
