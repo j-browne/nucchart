@@ -28,7 +28,7 @@ fn get_col(fname: String) -> HashMap<String, Color> {
         let x: Vec<_> = l.split("\t").collect();
 
         let name = x[0].to_string();
-        let c = Color::new(x[1].to_string(), x[2].to_string(), x[3].to_string());
+        let c = Color::from_string_rgb_p(x[1].to_string(), x[2].to_string(), x[3].to_string()).unwrap();
         col.insert(name, c);
     }
 
