@@ -180,7 +180,8 @@ fn output_svg(out_fname: &String,
     let _ = write!(svgfile, ".stableBox{{fill:none;stroke:black;stroke-width:.25;}}\n");
     let _ = write!(svgfile, ".unstableBox{{fill:none;stroke:black;stroke-width:.05;}}\n");
     let _ = write!(svgfile, ".magBox{{fill:none;stroke:black;stroke-width:.15;}}\n");
-    let _ = write!(svgfile, ".elName{{text-anchor:end;}}\n");
+    let _ = write!(svgfile, ".elLabel{{text-anchor:end;}}\n");
+    let _ = write!(svgfile, ".nLabel{{text-anchor:start;}}\n");
 
     for (name, c) in col {
         let _ = write!(svgfile, ".{}{{fill:rgb({:.1}%,{:.1}%,{:.1}%);}}\n", name, c.r, c.g, c.b);
@@ -242,9 +243,38 @@ fn output_svg(out_fname: &String,
                            " transform=\"translate({},{}) scale(1,-1)\"",
                            xpos,
                            ypos);
-            let _ = write!(svgfile, " font-size=\".9\" class=\"elName\">");
+            let _ = write!(svgfile, " font-size=\".9\" class=\"elLabel\">");
             let _ = write!(svgfile, "{}", e);
             let _ = write!(svgfile, "</text>\n");
+        }
+    }
+
+    // Number of Neutrons
+    for n in chart_n.unwrap().0..chart_n.unwrap().1 {
+        // Determine y position
+        // Only include element symbol if one of its isotopes is included
+        if n % 2 == 0 {
+            if let Some(n1) = n_limits.get(&n) {
+                let mut y = n1.0;
+                if let Some(n2) = n_limits.get(&(n + 1)) {
+                    if n2 < n1 {
+                        y = n2.0;
+                    }
+                }
+
+                let xpos = n;
+                let ypos = y;
+                let xoff = 0.05;
+                let yoff = 0.9;
+                let _ = write!(svgfile, "<text x=\"{}\" y=\"{}\"", xoff, yoff);
+                let _ = write!(svgfile,
+                               " transform=\"translate({},{}) scale(1,-1)\"",
+                               xpos,
+                               ypos);
+                let _ = write!(svgfile, " font-size=\".9\" class=\"nLabel\">");
+                let _ = write!(svgfile, "{}", n);
+                let _ = write!(svgfile, "</text>\n");
+            }
         }
     }
 
