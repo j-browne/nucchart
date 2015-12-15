@@ -29,7 +29,7 @@ fn get_col(fname: String) -> HashMap<String, Color> {
         let x: Vec<_> = l.split("\t").collect();
 
         let name = x[0].to_string();
-        let c = Color::new(x[1].to_string(), x[2].to_string(), x[3].to_string());
+        let c = Color::from_string_rgb_p(x[1].to_string(), x[2].to_string(), x[3].to_string()).unwrap();
         col.insert(name, c);
     }
 
@@ -133,9 +133,9 @@ fn get_abun(fname: String) -> Vec<(String, f32)> {
 
 fn color_func(x: f32) -> Color {
     Color {
-        r: (0.5f32 - x / 2f32) * 100f32,
-        g: 0f32,
-        b: x * 100f32,
+        r: 0.5 - x / 2.,
+        g: 0.,
+        b: x,
     }
 }
 
@@ -269,7 +269,7 @@ fn output_svg(out_fname: &String,
 
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
             let _ = write!(svgfile, " width=\"1\" height=\"1\"");
-            let _ = write!(svgfile, " fill=\"{}\" ", c.to_string_rgb_p());
+            let _ = write!(svgfile, " fill=\"{}\" />\n", c.to_string_rgb_p());
         }
     }
 
