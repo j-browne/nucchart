@@ -184,7 +184,7 @@ fn output_svg(out_fname: &String,
     let _ = write!(svgfile, ".nLabel{{text-anchor:start;}}\n");
 
     for (name, c) in col {
-        let _ = write!(svgfile, ".{}{{fill:rgb({:.1}%,{:.1}%,{:.1}%);}}\n", name, c.r, c.g, c.b);
+        let _ = write!(svgfile, ".{}{{fill:{};}}\n", name, c.to_string_rgb_p());
     }
 
     let _ = write!(svgfile, "</style>\n");
