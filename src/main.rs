@@ -71,7 +71,7 @@ fn get_elem(fname: String) -> Vec<(u8, String)> {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
 
-        let z = x[0].to_string().parse::<u8>().unwrap();
+        let z = x[0].parse::<u8>().unwrap();
         let name = x[1].to_string();
         elem.push((z, name));
     }
@@ -101,7 +101,7 @@ fn get_magic(fname: String) -> Vec<u8> {
         let l: String = l.unwrap();
         let x: Vec<_> = l.split("\t").collect();
 
-        let m = x[0].to_string().parse::<u8>().unwrap();
+        let m = x[0].parse::<u8>().unwrap();
         magic.push(m);
     }
 
