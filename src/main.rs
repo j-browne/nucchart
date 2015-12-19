@@ -131,11 +131,18 @@ fn get_abun(fname: String) -> Vec<(String, f32)> {
     abun
 }
 
-fn color_func(x: f32) -> Color {
-    Color {
-        r: 0.5 - x / 2.,
-        g: 0.,
-        b: x,
+fn color_func(mut x: f32) -> Color {
+    x  = x.max(0.).min(1.);
+    x = f32::log10(9. * x + 1.);
+
+    // Maroon to Cyan
+    let h = 0. + (180. - 0.) * x;
+    let s = 1.;
+    let l = 0.15 + (0.35 - 0.15) * x;
+
+    match Color::from_hsl(h, s, l) {
+        Some(c) => c,
+        None => panic!("{} {} {}", h, s, l),
     }
 }
 
@@ -225,7 +232,7 @@ fn output_svg(out_fname: &String,
     }
 
     //TODO: Get rid of this
-    max_ab = 5E-4;
+    //max_ab = 5E-5;
 
     // Output the SVG
     let mut svgfile = File::create(out_fname).expect(&format!("Error opening {}", out_fname));
@@ -258,14 +265,12 @@ fn output_svg(out_fname: &String,
                    2 - (chart_n.unwrap().0 as i32),
                    (chart_z.unwrap().1 as i32) + 2);
 
-    // Nuclide Boxes
+    // Nuclide Colors
     for &(ref name, ab) in abun {
         if let Some(n) = nucl.get(name) {
             let x = n.n;
             let y = n.z;
-            let mut s = f32::log2(ab / max_ab + 1f32);
-            s = f32::min(s, 1f32);
-            let c = color_func(s);
+            let c = color_func(ab / max_ab);
 
             let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", x, y);
             let _ = write!(svgfile, " width=\"1\" height=\"1\"");
@@ -367,6 +372,21 @@ fn output_svg(out_fname: &String,
     }
 
     let _ = write!(svgfile, "</g>\n");
+
+    // Color Legend
+    const LEGEND_NUM: u8 = 50;
+    let _ = write!(svgfile,
+                   "<g transform=\"scale({}, {}) translate({},{})\">\n",
+                   10*SVG_SCALE, 100*SVG_SCALE,
+                   0, 0);
+    for i in 0..(LEGEND_NUM+1) {
+        let c = color_func((i as f32)/(LEGEND_NUM as f32));
+        let _ = write!(svgfile, "<rect x=\"{}\" y=\"{}\"", 0, (i as f32)/(LEGEND_NUM as f32));
+        let _ = write!(svgfile, " width=\"1\" height=\".1\"");
+        let _ = write!(svgfile, " fill=\"{}\" />\n", c.to_string_rgb_p());
+    }
+    let _ = write!(svgfile, "</g>\n");
+
     let _ = write!(svgfile, "</svg>\n");
 }
 
